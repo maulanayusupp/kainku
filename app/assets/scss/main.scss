@@ -1,0 +1,50 @@
+// =============================================================================
+// Kainku — stylesheet entry point
+// -----------------------------------------------------------------------------
+// This is the ONLY stylesheet registered in nuxt.config.ts.
+//
+// Rules for this project (see CLAUDE.md § Styling):
+//   • Components carry NO <style> blocks and templates carry NO `style`
+//     attributes. Every rule lives in a partial below.
+//   • Dynamic colour comes from CSS custom properties set by a class
+//     (e.g. `.swatch--indigo-kapas`), never from a bound style attribute.
+//   • Partials are ordered by specificity, ITCSS-style: tokens → base →
+//     layout → components → pages → utilities. Utilities load last so they can
+//     win without `!important`.
+// =============================================================================
+
+// 1. Settings & tools — emits no CSS of its own.
+@use 'abstracts';
+
+// 2. Base — theme variables, reset, element defaults, keyframes.
+@use 'base/root';
+@use 'base/reset';
+@use 'base/typography';
+@use 'base/animations';
+
+// 3. Layout — the page shell and its fixed furniture.
+@use 'layout/shell';
+@use 'layout/header';
+@use 'layout/footer';
+
+// 4. Components — reusable, self-contained blocks.
+@use 'components/button';
+@use 'components/form';
+@use 'components/badge';
+@use 'components/section';
+@use 'components/swatch';
+@use 'components/product-card';
+@use 'components/gallery';
+@use 'components/filters';
+@use 'components/cart';
+@use 'components/overlay';
+
+// 5. Pages — composition rules that only apply to one route group.
+@use 'pages/home';
+@use 'pages/catalogue';
+@use 'pages/product';
+@use 'pages/checkout';
+@use 'pages/editorial';
+
+// 6. Utilities — single-purpose helpers, loaded last on purpose.
+@use 'utilities/helpers';

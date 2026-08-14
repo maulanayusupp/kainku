@@ -1,0 +1,318 @@
+@use '../abstracts' as *;
+
+.field {
+  display: grid;
+  gap: $space-2;
+}
+
+.field__label {
+  display: flex;
+  align-items: center;
+  gap: $space-2;
+  font-size: $fs-sm;
+  font-weight: $fw-semibold;
+  color: var(--c-text);
+}
+
+.field__optional {
+  font-weight: $fw-regular;
+  font-size: $fs-xs;
+  color: var(--c-text-subtle);
+}
+
+.field__hint {
+  font-size: $fs-xs;
+  color: var(--c-text-subtle);
+}
+
+.field__error {
+  display: flex;
+  align-items: center;
+  gap: $space-2;
+  font-size: $fs-xs;
+  font-weight: $fw-medium;
+  color: $color-danger;
+}
+
+.field__error-icon {
+  width: 1em;
+  height: 1em;
+  flex: none;
+}
+
+/* -- Controls --------------------------------------------------------------- */
+
+.control {
+  width: 100%;
+  padding: 0.85rem 1.05rem;
+  border: 1px solid var(--c-border);
+  border-radius: $radius-md;
+  background: var(--c-surface);
+  color: var(--c-text);
+  font-size: $fs-sm;
+  line-height: 1.4;
+  transition:
+    border-color $dur-fast $ease-out,
+    box-shadow $dur-fast $ease-out,
+    background-color $dur-fast $ease-out;
+
+  &::placeholder {
+    color: var(--c-text-subtle);
+  }
+
+  &:hover:not(:disabled) {
+    border-color: var(--c-border-strong);
+  }
+
+  &:focus {
+    outline: none;
+    border-color: var(--c-accent);
+    box-shadow: 0 0 0 3px var(--c-accent-soft);
+  }
+
+  &:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+  }
+
+  &[aria-invalid='true'] {
+    border-color: $color-danger;
+
+    &:focus {
+      box-shadow: 0 0 0 3px rgba($color-danger, 0.16);
+    }
+  }
+}
+
+.control--textarea {
+  min-height: 8.5rem;
+  resize: vertical;
+}
+
+.control--select {
+  appearance: none;
+  padding-right: 2.75rem;
+  cursor: pointer;
+  // Chevron drawn as a background image so no extra element is needed. The data
+  // URI uses `currentColor`-independent ink; the arrow is muted by design.
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8' fill='none' stroke='%238792a5' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M1 1.5 6 6.5 11 1.5'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1.05rem center;
+  background-size: 0.75rem;
+}
+
+/* -- Checkbox & radio ------------------------------------------------------- */
+
+.choice {
+  display: flex;
+  align-items: flex-start;
+  gap: $space-3;
+  cursor: pointer;
+  font-size: $fs-sm;
+  line-height: 1.5;
+
+  input {
+    appearance: none;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-top: 0.15rem;
+    flex: none;
+    border: 1px solid var(--c-border-strong);
+    background: var(--c-surface);
+    cursor: pointer;
+    transition:
+      background-color $dur-fast $ease-out,
+      border-color $dur-fast $ease-out;
+
+    @include focus-ring;
+
+    &:checked {
+      background-color: var(--c-accent);
+      border-color: var(--c-accent);
+    }
+  }
+
+  input[type='checkbox'] {
+    border-radius: $radius-xs;
+
+    &:checked {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14' fill='none' stroke='%23fdfaf4' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M2.5 7.5 5.5 10.5 11.5 3.5'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 0.8rem;
+    }
+  }
+
+  input[type='radio'] {
+    border-radius: $radius-pill;
+
+    &:checked {
+      background-image: radial-gradient(
+        circle,
+        var(--c-on-accent) 0 28%,
+        transparent 30%
+      );
+    }
+  }
+}
+
+.choice__text {
+  color: var(--c-text-muted);
+}
+
+/* -- Selectable option card (shipping & payment pickers) -------------------- */
+
+.option-card {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: $space-3;
+  padding: $space-4;
+  border: 1px solid var(--c-border);
+  border-radius: $radius-md;
+  background: var(--c-surface);
+  cursor: pointer;
+  transition:
+    border-color $dur-fast $ease-out,
+    background-color $dur-fast $ease-out,
+    box-shadow $dur-fast $ease-out;
+
+  @include hover {
+    border-color: var(--c-border-strong);
+  }
+
+  &:has(input:checked) {
+    border-color: var(--c-accent);
+    box-shadow: 0 0 0 1px var(--c-accent);
+    background: var(--c-accent-soft);
+  }
+
+  &:has(input:focus-visible) {
+    outline: 2px solid var(--c-accent);
+    outline-offset: 3px;
+  }
+}
+
+.option-card__body {
+  display: grid;
+  gap: 0.15rem;
+  flex: 1;
+}
+
+.option-card__title {
+  font-size: $fs-sm;
+  font-weight: $fw-semibold;
+  color: var(--c-text);
+}
+
+.option-card__meta {
+  font-size: $fs-xs;
+  color: var(--c-text-subtle);
+}
+
+.option-card__price {
+  font-size: $fs-sm;
+  font-weight: $fw-semibold;
+  white-space: nowrap;
+}
+
+/* -- Quantity stepper ------------------------------------------------------- */
+
+.quantity {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--c-border-strong);
+  border-radius: $radius-pill;
+  background: var(--c-surface);
+  overflow: hidden;
+}
+
+.quantity__btn {
+  width: 2.75rem;
+  height: 2.75rem;
+  display: grid;
+  place-items: center;
+  color: var(--c-text);
+  transition: background-color $dur-fast $ease-out;
+
+  @include focus-ring($offset: -2px);
+
+  @include hover {
+    background: var(--c-accent-soft);
+  }
+
+  &:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+  }
+
+  svg {
+    width: 0.95rem;
+    height: 0.95rem;
+  }
+}
+
+.quantity__value {
+  min-width: 4.5rem;
+  padding-inline: $space-2;
+  text-align: center;
+  font-size: $fs-sm;
+  font-weight: $fw-semibold;
+  font-variant-numeric: tabular-nums;
+}
+
+.quantity--sm {
+  .quantity__btn {
+    width: 2.125rem;
+    height: 2.125rem;
+  }
+
+  .quantity__value {
+    min-width: 3.5rem;
+    font-size: $fs-xs;
+  }
+}
+
+/* -- Search input with leading icon ----------------------------------------- */
+
+.search-field {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-field__icon {
+  position: absolute;
+  left: 1rem;
+  width: 1.05rem;
+  height: 1.05rem;
+  color: var(--c-text-subtle);
+  pointer-events: none;
+}
+
+.search-field__input {
+  padding-left: 2.75rem;
+}
+
+.search-field__clear {
+  position: absolute;
+  right: 0.65rem;
+  width: 1.85rem;
+  height: 1.85rem;
+  display: grid;
+  place-items: center;
+  border-radius: $radius-pill;
+  color: var(--c-text-subtle);
+
+  @include focus-ring;
+
+  @include hover {
+    background: var(--c-accent-soft);
+    color: var(--c-text);
+  }
+
+  svg {
+    width: 0.85rem;
+    height: 0.85rem;
+  }
+}

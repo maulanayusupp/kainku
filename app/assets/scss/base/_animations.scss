@@ -1,0 +1,129 @@
+@use '../abstracts' as *;
+
+// Keyframes are declared once here and referenced by name elsewhere.
+
+@keyframes kk-fade-up {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 22px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes kk-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes kk-marquee {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@keyframes kk-shimmer {
+  from {
+    background-position: 220% 0;
+  }
+  to {
+    background-position: -20% 0;
+  }
+}
+
+@keyframes kk-weave {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 48px 48px;
+  }
+}
+
+@keyframes kk-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes kk-pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.45;
+  }
+}
+
+@keyframes kk-drift {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, -14px, 0);
+  }
+}
+
+// -- Scroll reveal -------------------------------------------------------------
+// `useScrollReveal()` toggles `.is-revealed`. The element must be visible if JS
+// never runs, so the hidden state is only applied when the root is marked
+// `js-enabled` by the reveal plugin.
+.js-enabled [data-reveal] {
+  opacity: 0;
+  transform: translate3d(0, 26px, 0);
+  transition:
+    opacity $dur-slow $ease-out,
+    transform $dur-slow $ease-out;
+  transition-delay: var(--reveal-delay, 0ms);
+  will-change: opacity, transform;
+}
+
+.js-enabled [data-reveal].is-revealed {
+  opacity: 1;
+  transform: none;
+}
+
+@include reduced-motion {
+  .js-enabled [data-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+// Staggered delays, applied via `data-reveal-step` — keeps timing out of markup
+// as an inline style.
+@for $i from 1 through 12 {
+  [data-reveal-step='#{$i}'] {
+    --reveal-delay: #{$i * 70}ms;
+  }
+}
+
+// -- Route transitions ---------------------------------------------------------
+.page-enter-active,
+.page-leave-active {
+  transition:
+    opacity $dur-base $ease-out,
+    transform $dur-base $ease-out;
+}
+
+.page-enter-from {
+  opacity: 0;
+  transform: translate3d(0, 12px, 0);
+}
+
+.page-leave-to {
+  opacity: 0;
+  transform: translate3d(0, -8px, 0);
+}

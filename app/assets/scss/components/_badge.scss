@@ -1,0 +1,137 @@
+@use '../abstracts' as *;
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: $space-2;
+  padding: 0.3rem 0.7rem;
+  border-radius: $radius-pill;
+  border: 1px solid var(--c-border);
+  background: var(--c-surface-alt);
+  color: var(--c-text-muted);
+  font-size: $fs-xxs;
+  font-weight: $fw-semibold;
+  letter-spacing: $ls-wide;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.badge--accent {
+  border-color: transparent;
+  background: linear-gradient(100deg, $color-gold-600, $color-gold-400);
+  color: $color-ink-900;
+}
+
+.badge--new {
+  border-color: rgba($color-success, 0.35);
+  background: rgba($color-success, 0.12);
+  color: $color-success;
+}
+
+.badge--limited {
+  border-color: rgba($color-terracotta-500, 0.4);
+  background: rgba($color-terracotta-500, 0.12);
+  color: $color-terracotta-500;
+}
+
+.badge--sale {
+  border-color: transparent;
+  background: $color-terracotta-500;
+  color: $color-cream-100;
+}
+
+.badge--sold-out {
+  border-color: var(--c-border-strong);
+  background: var(--c-bg-alt);
+  color: var(--c-text-subtle);
+}
+
+.badge--dot::before {
+  content: '';
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: $radius-pill;
+  background: currentcolor;
+}
+
+/* -- Filter chip (toggleable) ----------------------------------------------- */
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: $space-2;
+  padding: 0.5rem 0.95rem;
+  border: 1px solid var(--c-border);
+  border-radius: $radius-pill;
+  background: var(--c-surface);
+  color: var(--c-text-muted);
+  font-size: $fs-xs;
+  font-weight: $fw-medium;
+  cursor: pointer;
+  transition:
+    border-color $dur-fast $ease-out,
+    background-color $dur-fast $ease-out,
+    color $dur-fast $ease-out;
+
+  @include focus-ring;
+
+  @include hover {
+    border-color: var(--c-border-strong);
+    color: var(--c-text);
+  }
+
+  &[aria-pressed='true'] {
+    border-color: var(--c-accent);
+    background: var(--c-accent-soft);
+    color: var(--c-text);
+    font-weight: $fw-semibold;
+  }
+}
+
+.chip__count {
+  font-variant-numeric: tabular-nums;
+  color: var(--c-text-subtle);
+  font-size: $fs-xxs;
+}
+
+.chip__remove {
+  display: grid;
+  place-items: center;
+  width: 1.05rem;
+  height: 1.05rem;
+  border-radius: $radius-pill;
+  background: var(--c-border-strong);
+  color: var(--c-bg);
+
+  svg {
+    width: 0.55rem;
+    height: 0.55rem;
+  }
+}
+
+/* -- Pill used for specs (width, weight, origin) ---------------------------- */
+
+.spec-pill {
+  display: inline-flex;
+  align-items: baseline;
+  gap: $space-2;
+  padding: 0.45rem 0.85rem;
+  border-radius: $radius-sm;
+  background: var(--c-surface-alt);
+  border: 1px solid var(--c-border);
+  font-size: $fs-xs;
+}
+
+.spec-pill__label {
+  color: var(--c-text-subtle);
+  text-transform: uppercase;
+  letter-spacing: $ls-wide;
+  font-size: $fs-xxs;
+  font-weight: $fw-semibold;
+}
+
+.spec-pill__value {
+  color: var(--c-text);
+  font-weight: $fw-semibold;
+  font-variant-numeric: tabular-nums;
+}

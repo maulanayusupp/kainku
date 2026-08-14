@@ -1,0 +1,217 @@
+@use '../abstracts' as *;
+
+.catalogue-layout {
+  display: grid;
+  gap: $space-6;
+  align-items: start;
+
+  @include mq('lg') {
+    grid-template-columns: 16.5rem minmax(0, 1fr);
+    gap: $space-8;
+  }
+}
+
+/* -- Filter panel ----------------------------------------------------------- */
+
+.filters {
+  display: grid;
+  gap: $space-5;
+
+  @include mq('lg') {
+    position: sticky;
+    top: calc(var(--header-h) + #{$space-5});
+    max-height: calc(100svh - var(--header-h) - #{$space-8});
+    overflow-y: auto;
+    padding-right: $space-2;
+    @include slim-scrollbar;
+  }
+}
+
+// On small screens the panel becomes a bottom sheet.
+.filters--sheet {
+  position: fixed;
+  inset: auto 0 0;
+  z-index: $z-drawer;
+  max-height: 86svh;
+  overflow-y: auto;
+  padding: $space-5 $gutter calc(#{$space-8} + env(safe-area-inset-bottom));
+  border-radius: $radius-xl $radius-xl 0 0;
+  background: var(--c-bg);
+  border-top: 1px solid var(--c-border);
+  box-shadow: 0 -24px 60px rgba(8, 13, 24, 0.28);
+
+  @include mq('lg') {
+    position: static;
+    max-height: none;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+    border-radius: 0;
+  }
+}
+
+.filters__group {
+  display: grid;
+  gap: $space-3;
+  padding-bottom: $space-5;
+  border-bottom: 1px solid var(--c-border);
+
+  &:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+
+.filters__legend {
+  @include eyebrow;
+  color: var(--c-text);
+}
+
+.filters__options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $space-2;
+}
+
+.filters__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: $space-3;
+}
+
+.filters__reset {
+  font-size: $fs-xs;
+  font-weight: $fw-semibold;
+  color: var(--c-accent);
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
+
+  @include focus-ring;
+}
+
+.filters__grab {
+  width: 2.5rem;
+  height: 4px;
+  border-radius: $radius-pill;
+  background: var(--c-border-strong);
+  margin: 0 auto $space-4;
+
+  @include mq('lg') {
+    display: none;
+  }
+}
+
+/* -- Price range ------------------------------------------------------------ */
+
+.price-range {
+  display: grid;
+  gap: $space-3;
+}
+
+.price-range__values {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: $fs-xs;
+  font-variant-numeric: tabular-nums;
+  color: var(--c-text-muted);
+}
+
+.price-range__input {
+  width: 100%;
+  appearance: none;
+  height: 2px;
+  border-radius: $radius-pill;
+  background: var(--c-border-strong);
+  cursor: pointer;
+
+  @include focus-ring;
+
+  &::-webkit-slider-thumb {
+    appearance: none;
+    width: 1.15rem;
+    height: 1.15rem;
+    border-radius: $radius-pill;
+    background: var(--c-accent);
+    border: 2px solid var(--c-bg);
+    box-shadow: $shadow-sm;
+    cursor: grab;
+  }
+
+  &::-moz-range-thumb {
+    width: 1.15rem;
+    height: 1.15rem;
+    border: 2px solid var(--c-bg);
+    border-radius: $radius-pill;
+    background: var(--c-accent);
+    box-shadow: $shadow-sm;
+    cursor: grab;
+  }
+}
+
+/* -- Toolbar above the results ---------------------------------------------- */
+
+.catalogue-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: $space-3;
+  margin-bottom: $space-5;
+  padding-bottom: $space-4;
+  border-bottom: 1px solid var(--c-border);
+}
+
+.catalogue-toolbar__count {
+  font-size: $fs-sm;
+  color: var(--c-text-muted);
+
+  strong {
+    color: var(--c-text);
+    font-weight: $fw-semibold;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.catalogue-toolbar__actions {
+  display: flex;
+  align-items: center;
+  gap: $space-3;
+  margin-left: auto;
+}
+
+.catalogue-toolbar__select {
+  min-width: 11rem;
+  padding-block: 0.55rem;
+  font-size: $fs-xs;
+}
+
+/* -- Active filter summary -------------------------------------------------- */
+
+.active-filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: $space-2;
+  margin-bottom: $space-5;
+}
+
+.active-filters__label {
+  font-size: $fs-xs;
+  color: var(--c-text-subtle);
+}
+
+/* -- Backdrop for the mobile sheet ------------------------------------------ */
+
+.sheet-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: calc(#{$z-drawer} - 1);
+  background: rgba($color-ink-900, 0.5);
+  backdrop-filter: blur(2px);
+
+  @include mq('lg') {
+    display: none;
+  }
+}

@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" width="900" height="1200" role="img">
+  <defs>
+  
+  <linearGradient id="f-ulos-batak-ragidup-drape" x1="0" y1="0" x2="1" y2="0.4">
+    <stop offset="0%" stop-color="#7d5f12"/>
+    <stop offset="30%" stop-color="#f6e3a1"/>
+    <stop offset="55%" stop-color="#c9a227"/>
+    <stop offset="78%" stop-color="#f6e3a1"/>
+    <stop offset="100%" stop-color="#7d5f12"/>
+  </linearGradient>
+  
+  <pattern id="p-ulos-batak-ragidup-drape" width="120" height="132" patternUnits="userSpaceOnUse">
+    <rect width="120" height="132" fill="#1a1614"/>
+    <rect y="0" width="120" height="26" fill="#9c1f22"/>
+    <rect y="30" width="120" height="5" fill="#e8e0d2"/>
+    <rect y="39" width="120" height="3" fill="#d4a017"/>
+    <rect y="60" width="120" height="34" fill="#9c1f22" opacity="0.55"/>
+    <rect y="100" width="120" height="5" fill="#e8e0d2"/>
+    <rect y="110" width="120" height="3" fill="#d4a017"/>
+    <g fill="#e8e0d2">
+      <path d="M10 60 L22 77 L10 94 Z"/><path d="M40 60 L52 77 L40 94 Z"/>
+      <path d="M70 60 L82 77 L70 94 Z"/><path d="M100 60 L112 77 L100 94 Z"/>
+    </g>
+    <path d="M0 13H120" stroke="#d4a017" stroke-width="3" stroke-dasharray="6 6"/>
+  </pattern>
+  
+  <pattern id="w-ulos-batak-ragidup-drape" width="6" height="6" patternUnits="userSpaceOnUse">
+    <rect width="6" height="6" fill="none"/>
+    <path d="M0 0.5H6M0 3.5H6" stroke="#ffffff" stroke-width="0.6" opacity="0.16"/>
+    <path d="M0.5 0V6M3.5 0V6" stroke="#000000" stroke-width="0.6" opacity="0.12"/>
+  </pattern>
+  
+  <linearGradient id="d-ulos-batak-ragidup-drape" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#ffffff" stop-opacity="0.20"/>
+    <stop offset="22%" stop-color="#000000" stop-opacity="0.16"/>
+    <stop offset="44%" stop-color="#ffffff" stop-opacity="0.14"/>
+    <stop offset="63%" stop-color="#000000" stop-opacity="0.20"/>
+    <stop offset="82%" stop-color="#ffffff" stop-opacity="0.10"/>
+    <stop offset="100%" stop-color="#000000" stop-opacity="0.26"/>
+  </linearGradient>
+  <radialGradient id="v-ulos-batak-ragidup-drape" cx="50%" cy="42%" r="78%">
+    <stop offset="55%" stop-color="#000000" stop-opacity="0"/>
+    <stop offset="100%" stop-color="#000000" stop-opacity="0.42"/>
+  </radialGradient>
+  <linearGradient id="s-ulos-batak-ragidup-drape" x1="0" y1="0" x2="0.7" y2="1">
+    <stop offset="0%" stop-color="#ffffff" stop-opacity="0.22"/>
+    <stop offset="40%" stop-color="#ffffff" stop-opacity="0"/>
+  </linearGradient></defs>
+  <rect width="900" height="1200" fill="#1a1614"/>
+  <g transform="scale(1.6)">
+    <rect width="562.5" height="750" fill="url(#p-ulos-batak-ragidup-drape)"/>
+  </g>
+  <rect width="900" height="1200" fill="url(#w-ulos-batak-ragidup-drape)"/>
+  <rect width="900" height="1200" fill="url(#d-ulos-batak-ragidup-drape)"/>
+  <rect width="900" height="1200" fill="url(#s-ulos-batak-ragidup-drape)"/>
+  <rect width="900" height="1200" fill="url(#v-ulos-batak-ragidup-drape)"/>
+  <g opacity="0.5">
+    <path d="M0 0 V1200" stroke="#000" stroke-width="26" opacity="0.18"/>
+    <path d="M900 0 V1200" stroke="#000" stroke-width="26" opacity="0.18"/>
+  </g>
+</svg>

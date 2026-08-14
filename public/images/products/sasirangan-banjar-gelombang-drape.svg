@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" width="900" height="1200" role="img">
+  <defs>
+  
+  <linearGradient id="f-sasirangan-banjar-gelombang-drape" x1="0" y1="0" x2="1" y2="0.4">
+    <stop offset="0%" stop-color="#7d5f12"/>
+    <stop offset="30%" stop-color="#f6e3a1"/>
+    <stop offset="55%" stop-color="#c9a227"/>
+    <stop offset="78%" stop-color="#f6e3a1"/>
+    <stop offset="100%" stop-color="#7d5f12"/>
+  </linearGradient>
+  
+  <pattern id="p-sasirangan-banjar-gelombang-drape" width="160" height="160" patternUnits="userSpaceOnUse">
+    <rect width="160" height="160" fill="#3d1445"/>
+    <path d="M0 12 q 20 -14 40 0 q 20 14 40 0 q 20 -14 40 0 q 20 14 40 0" fill="none" stroke="#c4247a" stroke-width="9" stroke-linecap="round" opacity="0.85"/><path d="M0 34 q 20 -14 40 0 q 20 14 40 0 q 20 -14 40 0 q 20 14 40 0" fill="none" stroke="#f0a020" stroke-width="5" stroke-linecap="round" opacity="0.85"/><path d="M0 56 q 20 -14 40 0 q 20 14 40 0 q 20 -14 40 0 q 20 14 40 0" fill="none" stroke="#f2b3d4" stroke-width="9" stroke-linecap="round" opacity="0.85"/><path d="M0 78 q 20 -14 40 0 q 20 14 40 0 q 20 -14 40 0 q 20 14 40 0" fill="none" stroke="#c4247a" stroke-width="5" stroke-linecap="round" opacity="0.85"/><path d="M0 100 q 20 -14 40 0 q 20 14 40 0 q 20 -14 40 0 q 20 14 40 0" fill="none" stroke="#f0a020" stroke-width="9" stroke-linecap="round" opacity="0.85"/><path d="M0 122 q 20 -14 40 0 q 20 14 40 0 q 20 -14 40 0 q 20 14 40 0" fill="none" stroke="#f2b3d4" stroke-width="5" stroke-linecap="round" opacity="0.85"/><path d="M0 144 q 20 -14 40 0 q 20 14 40 0 q 20 -14 40 0 q 20 14 40 0" fill="none" stroke="#c4247a" stroke-width="9" stroke-linecap="round" opacity="0.85"/>
+    <path d="M0 0V160M53 0V160M107 0V160" stroke="#f2b3d4" stroke-width="1.5" stroke-dasharray="4 8" opacity="0.5"/>
+  </pattern>
+  
+  <pattern id="w-sasirangan-banjar-gelombang-drape" width="6" height="6" patternUnits="userSpaceOnUse">
+    <rect width="6" height="6" fill="none"/>
+    <path d="M0 0.5H6M0 3.5H6" stroke="#ffffff" stroke-width="0.6" opacity="0.16"/>
+    <path d="M0.5 0V6M3.5 0V6" stroke="#000000" stroke-width="0.6" opacity="0.12"/>
+  </pattern>
+  
+  <linearGradient id="d-sasirangan-banjar-gelombang-drape" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#ffffff" stop-opacity="0.20"/>
+    <stop offset="22%" stop-color="#000000" stop-opacity="0.16"/>
+    <stop offset="44%" stop-color="#ffffff" stop-opacity="0.14"/>
+    <stop offset="63%" stop-color="#000000" stop-opacity="0.20"/>
+    <stop offset="82%" stop-color="#ffffff" stop-opacity="0.10"/>
+    <stop offset="100%" stop-color="#000000" stop-opacity="0.26"/>
+  </linearGradient>
+  <radialGradient id="v-sasirangan-banjar-gelombang-drape" cx="50%" cy="42%" r="78%">
+    <stop offset="55%" stop-color="#000000" stop-opacity="0"/>
+    <stop offset="100%" stop-color="#000000" stop-opacity="0.42"/>
+  </radialGradient>
+  <linearGradient id="s-sasirangan-banjar-gelombang-drape" x1="0" y1="0" x2="0.7" y2="1">
+    <stop offset="0%" stop-color="#ffffff" stop-opacity="0.22"/>
+    <stop offset="40%" stop-color="#ffffff" stop-opacity="0"/>
+  </linearGradient></defs>
+  <rect width="900" height="1200" fill="#3d1445"/>
+  <g transform="scale(1.6)">
+    <rect width="562.5" height="750" fill="url(#p-sasirangan-banjar-gelombang-drape)"/>
+  </g>
+  <rect width="900" height="1200" fill="url(#w-sasirangan-banjar-gelombang-drape)"/>
+  <rect width="900" height="1200" fill="url(#d-sasirangan-banjar-gelombang-drape)"/>
+  <rect width="900" height="1200" fill="url(#s-sasirangan-banjar-gelombang-drape)"/>
+  <rect width="900" height="1200" fill="url(#v-sasirangan-banjar-gelombang-drape)"/>
+  <g opacity="0.5">
+    <path d="M0 0 V1200" stroke="#000" stroke-width="26" opacity="0.18"/>
+    <path d="M900 0 V1200" stroke="#000" stroke-width="26" opacity="0.18"/>
+  </g>
+</svg>

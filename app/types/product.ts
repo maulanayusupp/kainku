@@ -1,0 +1,110 @@
+/**
+ * Product domain types.
+ *
+ * Every field here is language-neutral. Human-readable copy (name, tagline,
+ * description, story, care notes) is resolved from `i18n/locales/*.json` under
+ * the `products.<slug>.*` namespace — see `useProductContent()`.
+ */
+
+/** Weaving / decorating technique the piece belongs to. */
+export type ProductCategory = 'batik' | 'tenun' | 'songket' | 'jumputan'
+
+/** Fibre content, used by the material filter. A product may have several. */
+export type MaterialKey = 'katun' | 'sutra' | 'rayon' | 'metalik'
+
+/** Broad colour family, used by the colour filter. */
+export type ColorFamily =
+  | 'indigo'
+  | 'merah'
+  | 'emas'
+  | 'tanah'
+  | 'hijau'
+  | 'ungu'
+  | 'netral'
+  | 'biru'
+
+/** Optional merchandising flag rendered as a small ribbon on the card. */
+export type ProductBadge = 'baru' | 'terbatas' | 'favorit'
+
+export interface ProductImage {
+  /** Path under /public. */
+  src: string
+  /** i18n key for the alt text variant, e.g. `product.view.drape`. */
+  viewKey: 'drape' | 'macro' | 'fold'
+  width: number
+  height: number
+}
+
+export interface Product {
+  id: string
+  slug: string
+  category: ProductCategory
+  /** Region of origin (proper noun — rendered as-is in both locales). */
+  region: string
+  materials: MaterialKey[]
+  colors: ColorFamily[]
+  /** Palette token; must match a `.swatch--<palette>` class in _swatch.scss. */
+  palette: string
+  /** Usable width of the cloth in centimetres. */
+  widthCm: number
+  /** Fabric weight in grams per square metre. */
+  weightGsm: number
+  /** Price for one metre, in the smallest currency unit is NOT used — plain IDR. */
+  pricePerMeter: number
+  /** Optional strike-through reference price. Must be greater than the price. */
+  compareAtPrice?: number
+  /** Smallest quantity that can be ordered, in metres. */
+  minOrderMeters: number
+  /** Increment the quantity stepper moves by, in metres. */
+  stepMeters: number
+  /** Remaining stock in metres. `0` renders as sold out. */
+  stockMeters: number
+  images: ProductImage[]
+  badge?: ProductBadge
+  /** Drives the "featured" rail on the homepage. */
+  featured: boolean
+  /** ISO date the item was added — used for the "newest" sort. */
+  addedAt: string
+}
+
+/** A product plus the copy resolved for the active locale. */
+export interface LocalizedProduct extends Product {
+  name: string
+  tagline: string
+  description: string
+  story: string
+  care: string[]
+  bestFor: string[]
+}
+
+/* -------------------------------------------------------------------------- */
+/* Filtering & sorting                                                        */
+/* -------------------------------------------------------------------------- */
+
+export type ProductSort = 'featured' | 'newest' | 'price-asc' | 'price-desc' | 'name-asc'
+
+export interface ProductFilters {
+  categories: ProductCategory[]
+  materials: MaterialKey[]
+  colors: ColorFamily[]
+  /** Inclusive price bounds in IDR per metre. */
+  minPrice?: number
+  maxPrice?: number
+  /** Free-text search across name, region and tagline. */
+  query: string
+  inStockOnly: boolean
+}
+
+export const EMPTY_FILTERS: ProductFilters = {
+  categories: [],
+  materials: [],
+  colors: [],
+  query: '',
+  inStockOnly: false,
+}
+
+/** A facet value plus how many products currently match it. */
+export interface FacetCount<T extends string = string> {
+  value: T
+  count: number
+}

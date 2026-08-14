@@ -1,0 +1,274 @@
+@use '../abstracts' as *;
+
+// The catalogue card. Two things make it feel unlike a stock template:
+//  1. On hover the image cross-fades from the draped view to the macro weave —
+//     you get to "look closer at the cloth" rather than watch a photo zoom.
+//  2. A hairline foil frame traces the card, tinted by the product's own palette.
+
+.product-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: $radius-lg;
+  background: var(--c-surface);
+  border: 1px solid var(--c-border);
+  overflow: hidden;
+  transition:
+    transform $dur-base $ease-out,
+    box-shadow $dur-base $ease-out,
+    border-color $dur-base $ease-out;
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    border: 1px solid transparent;
+    background: linear-gradient(140deg, var(--swatch-b), transparent 40%, var(--swatch-a)) border-box;
+    -webkit-mask:
+      linear-gradient(#000 0 0) padding-box,
+      linear-gradient(#000 0 0);
+    mask:
+      linear-gradient(#000 0 0) padding-box,
+      linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity $dur-base $ease-out;
+    pointer-events: none;
+    z-index: 2;
+  }
+
+  @include hover {
+    transform: translateY(-6px);
+    box-shadow: var(--c-shadow);
+
+    &::after {
+      opacity: 1;
+    }
+
+    .product-card__img--macro {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    .product-card__img--drape {
+      transform: scale(1.04);
+    }
+
+    .product-card__peek {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  &:focus-within {
+    border-color: var(--c-accent);
+  }
+}
+
+.product-card--sold-out {
+  .product-card__media {
+    filter: grayscale(0.55);
+  }
+}
+
+.product-card__media {
+  position: relative;
+  @include ratio(3, 4);
+  overflow: hidden;
+  background: var(--swatch-a);
+}
+
+.product-card__img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition:
+    opacity $dur-slow $ease-out,
+    transform $dur-slower $ease-out;
+}
+
+.product-card__img--macro {
+  opacity: 0;
+  transform: scale(1.08);
+}
+
+.product-card__badges {
+  position: absolute;
+  top: $space-3;
+  left: $space-3;
+  z-index: 3;
+  display: flex;
+  flex-wrap: wrap;
+  gap: $space-2;
+  max-width: calc(100% - #{$space-6});
+}
+
+// "Lihat serat" hint that slides up on hover.
+.product-card__peek {
+  position: absolute;
+  right: $space-3;
+  bottom: $space-3;
+  z-index: 3;
+  display: inline-flex;
+  align-items: center;
+  gap: $space-2;
+  padding: 0.35rem 0.7rem;
+  border-radius: $radius-pill;
+  background: rgba($color-ink-900, 0.72);
+  color: $color-cream-200;
+  font-size: $fs-xxs;
+  font-weight: $fw-semibold;
+  letter-spacing: $ls-wide;
+  text-transform: uppercase;
+  backdrop-filter: blur(6px);
+  opacity: 0;
+  transform: translateY(8px);
+  transition:
+    opacity $dur-base $ease-out,
+    transform $dur-base $ease-out;
+  pointer-events: none;
+
+  svg {
+    width: 0.8rem;
+    height: 0.8rem;
+  }
+}
+
+.product-card__body {
+  display: grid;
+  gap: $space-2;
+  padding: $space-5;
+  flex: 1;
+}
+
+.product-card__region {
+  display: flex;
+  align-items: center;
+  gap: $space-2;
+  font-size: $fs-xxs;
+  font-weight: $fw-semibold;
+  letter-spacing: $ls-wide;
+  text-transform: uppercase;
+  color: var(--c-text-subtle);
+}
+
+.product-card__title {
+  font-family: $font-display;
+  font-size: $fs-h4;
+  font-weight: $fw-semibold;
+  line-height: $lh-snug;
+  color: var(--c-text);
+
+  a {
+    // Stretched link — the whole card is clickable, but only the title text is
+    // the accessible link name.
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+    }
+
+    @include focus-ring;
+  }
+}
+
+.product-card__tagline {
+  @include line-clamp(2);
+  font-size: $fs-sm;
+  color: var(--c-text-muted);
+  min-height: 2.8em;
+}
+
+.product-card__footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: $space-3;
+  margin-top: auto;
+  padding-top: $space-3;
+}
+
+.product-card__price {
+  display: grid;
+  gap: 0.1rem;
+}
+
+.product-card__price-value {
+  font-size: $fs-h4;
+  font-weight: $fw-semibold;
+  font-family: $font-display;
+  color: var(--c-text);
+  font-variant-numeric: tabular-nums;
+}
+
+.product-card__price-unit {
+  font-size: $fs-xxs;
+  color: var(--c-text-subtle);
+  letter-spacing: $ls-wide;
+  text-transform: uppercase;
+}
+
+.product-card__compare {
+  font-size: $fs-xs;
+  color: var(--c-text-subtle);
+  text-decoration: line-through;
+}
+
+// Quick-add sits above the stretched link so it stays clickable.
+.product-card__add {
+  position: relative;
+  z-index: 2;
+  flex: none;
+}
+
+/* -- Grid ------------------------------------------------------------------- */
+
+.product-grid {
+  display: grid;
+  gap: $space-5;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  @include mq-down('sm') {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  @include mq('lg') {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: $space-6;
+  }
+
+  @include mq('xl') {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.product-grid--rail {
+  grid-template-columns: none;
+  grid-auto-flow: column;
+  grid-auto-columns: 76%;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: $space-4;
+  @include slim-scrollbar;
+
+  > * {
+    scroll-snap-align: start;
+  }
+
+  @include mq('sm') {
+    grid-auto-columns: 46%;
+  }
+
+  @include mq('lg') {
+    grid-auto-columns: 30%;
+  }
+
+  @include mq('xl') {
+    grid-auto-columns: 23%;
+  }
+}

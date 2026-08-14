@@ -1,0 +1,208 @@
+@use '../abstracts' as *;
+
+.cart-layout {
+  display: grid;
+  gap: $space-6;
+  align-items: start;
+
+  @include mq('lg') {
+    grid-template-columns: minmax(0, 1fr) 22rem;
+    gap: $space-8;
+  }
+}
+
+.cart-panel {
+  @include surface;
+  padding: clamp(#{$space-4}, 2.5vw, #{$space-6});
+}
+
+.cart-panel__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: $space-3;
+  padding-bottom: $space-4;
+  border-bottom: 1px solid var(--c-border);
+}
+
+.cart-panel__title {
+  font-family: $font-display;
+  font-size: $fs-h3;
+  font-weight: $fw-semibold;
+}
+
+/* -- Checkout steps --------------------------------------------------------- */
+
+.steps {
+  display: flex;
+  align-items: center;
+  gap: $space-2;
+  margin-bottom: $space-7;
+  font-size: $fs-xs;
+  overflow-x: auto;
+  @include slim-scrollbar;
+}
+
+.steps__item {
+  display: inline-flex;
+  align-items: center;
+  gap: $space-2;
+  color: var(--c-text-subtle);
+  white-space: nowrap;
+
+  &:not(:last-child)::after {
+    content: '';
+    width: 1.75rem;
+    height: 1px;
+    background: var(--c-border-strong);
+    margin-left: $space-2;
+  }
+}
+
+.steps__num {
+  width: 1.6rem;
+  height: 1.6rem;
+  display: grid;
+  place-items: center;
+  border-radius: $radius-pill;
+  border: 1px solid var(--c-border-strong);
+  font-weight: $fw-bold;
+  font-size: $fs-xxs;
+  font-variant-numeric: tabular-nums;
+}
+
+.steps__item--active {
+  color: var(--c-text);
+  font-weight: $fw-semibold;
+
+  .steps__num {
+    background: var(--c-accent);
+    border-color: var(--c-accent);
+    color: var(--c-on-accent);
+  }
+}
+
+.steps__item--done {
+  color: var(--c-text-muted);
+
+  .steps__num {
+    background: var(--c-accent-soft);
+    border-color: var(--c-accent);
+    color: var(--c-accent);
+  }
+}
+
+/* -- Checkout form ---------------------------------------------------------- */
+
+.checkout-layout {
+  display: grid;
+  gap: $space-6;
+  align-items: start;
+
+  @include mq('lg') {
+    grid-template-columns: minmax(0, 1fr) 23rem;
+    gap: $space-8;
+  }
+}
+
+.checkout-section {
+  @include surface;
+  padding: clamp(#{$space-5}, 2.5vw, #{$space-6});
+  display: grid;
+  gap: $space-5;
+  margin-bottom: $space-5;
+}
+
+.checkout-section__head {
+  display: flex;
+  align-items: center;
+  gap: $space-3;
+}
+
+.checkout-section__num {
+  width: 1.85rem;
+  height: 1.85rem;
+  flex: none;
+  display: grid;
+  place-items: center;
+  border-radius: $radius-pill;
+  background: var(--c-accent-soft);
+  color: var(--c-accent);
+  font-family: $font-display;
+  font-weight: $fw-bold;
+  font-size: $fs-xs;
+}
+
+.checkout-section__title {
+  font-family: $font-display;
+  font-size: $fs-h4;
+  font-weight: $fw-semibold;
+}
+
+.checkout-grid {
+  display: grid;
+  gap: $space-5;
+
+  @include mq('sm') {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.checkout-grid__full {
+  @include mq('sm') {
+    grid-column: 1 / -1;
+  }
+}
+
+.option-list {
+  display: grid;
+  gap: $space-3;
+}
+
+/* -- Mini line list in the summary ------------------------------------------ */
+
+.summary-lines {
+  display: grid;
+  gap: $space-3;
+  max-height: 18rem;
+  overflow-y: auto;
+  padding-right: $space-1;
+  @include slim-scrollbar;
+}
+
+.summary-line {
+  display: grid;
+  grid-template-columns: 2.75rem minmax(0, 1fr) auto;
+  gap: $space-3;
+  align-items: center;
+  font-size: $fs-xs;
+}
+
+.summary-line__media {
+  border-radius: $radius-xs;
+  overflow: hidden;
+  background: var(--swatch-a);
+
+  img {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+  }
+}
+
+.summary-line__name {
+  font-weight: $fw-semibold;
+  color: var(--c-text);
+  @include line-clamp(1);
+}
+
+.summary-line__qty {
+  color: var(--c-text-subtle);
+}
+
+.summary-line__price {
+  font-variant-numeric: tabular-nums;
+  font-weight: $fw-semibold;
+  white-space: nowrap;
+}

@@ -1,0 +1,105 @@
+@use '../abstracts' as *;
+
+// Utility classes. Prefixed `u-` so they are visibly distinct from component
+// classes in markup. Keep this list SHORT — anything used more than a few times
+// belongs in a component partial instead.
+
+.u-container {
+  @include container;
+}
+
+.u-container--narrow {
+  @include container($container-narrow);
+}
+
+.u-container--prose {
+  @include container($container-prose);
+}
+
+.u-section {
+  padding-block: $section-y;
+}
+
+.u-section--tight {
+  padding-block: clamp(2.5rem, 1.5rem + 4vw, 5rem);
+}
+
+.u-sr-only {
+  @include visually-hidden;
+}
+
+.u-rule {
+  @include fade-rule;
+}
+
+.u-center {
+  text-align: center;
+}
+
+.u-stack {
+  display: grid;
+  gap: $space-4;
+}
+
+.u-stack--sm {
+  gap: $space-2;
+}
+
+.u-stack--lg {
+  gap: $space-6;
+}
+
+.u-cluster {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: $space-3;
+}
+
+.u-cluster--center {
+  justify-content: center;
+}
+
+.u-hide-mobile {
+  @include mq-down('md') {
+    display: none !important;
+  }
+}
+
+.u-hide-desktop {
+  @include mq('md') {
+    display: none !important;
+  }
+}
+
+// Locks page scroll while an overlay is open. `scrollbar-gutter` reserves the
+// scrollbar's width up front so removing the scrollbar does not shift layout —
+// this is why no JS ever writes padding to the body.
+html {
+  scrollbar-gutter: stable;
+}
+
+.is-scroll-locked,
+.is-scroll-locked body {
+  overflow: hidden;
+}
+
+// "Skip to content" — first tab stop on every page.
+.u-skip-link {
+  position: fixed;
+  top: $space-3;
+  left: $space-3;
+  z-index: $z-toast;
+  padding: $space-3 $space-5;
+  border-radius: $radius-pill;
+  background: var(--c-invert-bg);
+  color: var(--c-invert-text);
+  font-size: $fs-sm;
+  font-weight: $fw-semibold;
+  transform: translateY(-200%);
+  transition: transform $dur-fast $ease-out;
+
+  &:focus-visible {
+    transform: none;
+  }
+}

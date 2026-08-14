@@ -1,0 +1,330 @@
+{
+  "common": {
+    "brand": "Kainku",
+    "brandAlt": "Kainku — kain Nusantara",
+    "tagline": "Kain Nusantara",
+    "mainNav": "Navigasi utama",
+    "breadcrumb": "Remah roti",
+    "language": "Pilihan bahasa",
+    "search": "Cari kain",
+    "close": "Tutup",
+    "closeMenu": "Tutup menu",
+    "openMenu": "Buka menu",
+    "dismiss": "Tutup pemberitahuan",
+    "skipToContent": "Lompat ke konten utama",
+    "optional": "opsional",
+    "increase": "Tambah panjang",
+    "decrease": "Kurangi panjang"
+  },
+
+  "announce": {
+    "cutToOrder": "Dipotong per 0,5 meter",
+    "freeShipping": "Gratis ongkir reguler mulai 10 meter",
+    "swatches": "Contoh kain tersedia atas permintaan",
+    "support": "Tanya kami sebelum memesan"
+  },
+
+  "nav": {
+    "home": "Beranda",
+    "catalogue": "Katalog",
+    "collections": "Koleksi",
+    "about": "Tentang",
+    "faq": "Tanya Jawab",
+    "contact": "Kontak",
+    "cart": "Keranjang",
+    "sizeGuide": "Panduan Ukuran",
+    "compliance": "Kepatuhan",
+    "legal": {
+      "overview": "Ringkasan",
+      "privacy": "Kebijakan Privasi",
+      "terms": "Syarat & Ketentuan",
+      "shipping": "Kebijakan Pengiriman",
+      "returns": "Pengembalian & Penukaran",
+      "cookies": "Kebijakan Cookie",
+      "accessibility": "Pernyataan Aksesibilitas",
+      "disclaimer": "Disclaimer"
+    }
+  },
+
+  "cta": {
+    "browseCatalogue": "Lihat katalog",
+    "ourStory": "Cerita kami",
+    "seeAll": "Lihat semua",
+    "talkToUs": "Hubungi kami",
+    "checkout": "Lanjut ke pembayaran",
+    "viewCart": "Lihat keranjang",
+    "addToCart": "Masukkan keranjang",
+    "askAboutFabric": "Tanya tentang kain ini",
+    "continueShopping": "Lanjut belanja",
+    "exploreCollection": "Jelajahi koleksi",
+    "placeOrder": "Buat pesanan",
+    "backToCart": "Kembali ke keranjang",
+    "sendMessage": "Kirim pesan",
+    "readDocument": "Baca dokumen"
+  },
+
+  "search": {
+    "title": "Cari kain",
+    "placeholder": "Cari motif, daerah, atau bahan…",
+    "submit": "Cari",
+    "noResults": "Tidak ada kain yang cocok dengan “{term}”.",
+    "hint": "Ketik minimal dua huruf. Coba “batik”, “sutra”, atau “Cirebon”."
+  },
+
+  "notice": {
+    "sampleData": {
+      "title": "Data contoh.",
+      "body": "Katalog ini dibangun sebagai demonstrasi. Harga, stok, dan estimasi waktu di situs adalah angka ilustrasi, bukan daftar harga yang berlaku. Tidak ada pembayaran yang diproses."
+    }
+  },
+
+  "validation": {
+    "required": "Kolom ini wajib diisi.",
+    "minLength": "Isian terlalu pendek.",
+    "maxLength": "Isian terlalu panjang.",
+    "email": "Masukkan alamat email yang valid.",
+    "phone": "Masukkan nomor ponsel Indonesia yang valid, contoh 0812xxxxxxx.",
+    "postalCode": "Kode pos terdiri dari 5 angka.",
+    "mustAccept": "Anda perlu menyetujui ketentuan ini untuk melanjutkan."
+  },
+
+  "error": {
+    "backHome": "Kembali ke beranda",
+    "404": {
+      "title": "Halaman tidak ditemukan",
+      "text": "Tautan yang Anda buka mungkin sudah berubah atau tidak pernah ada. Silakan kembali ke beranda atau telusuri katalog."
+    },
+    "generic": {
+      "title": "Terjadi kesalahan",
+      "text": "Ada gangguan saat memuat halaman ini. Coba muat ulang beberapa saat lagi."
+    }
+  },
+
+  "footer": {
+    "blurb": "Kainku mengumpulkan kain Nusantara — batik, tenun, songket, dan jumputan — lalu menjualnya per meter dengan keterangan lebar, gramasi, dan asal daerah yang jelas.",
+    "shop": "Belanja",
+    "company": "Perusahaan",
+    "contact": "Kontak",
+    "whatsapp": "Chat via WhatsApp",
+    "hours": "Senin–Jumat, 09.00–17.00 WIB",
+    "location": "Melayani pengiriman ke seluruh Indonesia",
+    "copyright": "© {year} Kainku. Seluruh hak cipta dilindungi.",
+    "instagram": "Instagram Kainku",
+    "emailUs": "Kirim email ke Kainku"
+  },
+
+  "about": {
+    "eyebrow": "Tentang Kainku",
+    "title": "Kain yang dijelaskan apa adanya",
+    "lead": "Kami membuat Kainku karena membeli kain daring sering terasa seperti menebak. Foto terlihat bagus, tetapi lebar, gramasi, dan asal kain jarang disebutkan.",
+    "mission": {
+      "title": "Yang kami kerjakan",
+      "body": "Kainku adalah katalog kain Nusantara yang dijual per meter. Setiap lembar dicantumkan lebar kainnya dalam sentimeter, gramasinya dalam gsm, komposisi seratnya, dan daerah asal motifnya.",
+      "body2": "Kami menampilkan tiga tampilan untuk setiap kain: jatuhnya kain, perbesaran anyaman, dan lipatan. Tujuannya sederhana — Anda bisa menilai skala motif dan tekstur sebelum memesan, bukan setelah paket dibuka."
+    },
+    "values": {
+      "eyebrow": "Prinsip kerja",
+      "title": "Empat hal yang kami pegang",
+      "lead": "Bukan janji besar, hanya cara kerja yang bisa Anda periksa sendiri di setiap halaman produk.",
+      "origin": {
+        "title": "Asal yang disebutkan",
+        "text": "Setiap kain mencantumkan kota dan provinsi asal motifnya. Kalau kami tidak tahu asalnya, kami tidak mengarangnya."
+      },
+      "measure": {
+        "title": "Ukuran yang jelas",
+        "text": "Lebar dalam sentimeter, gramasi dalam gsm, dan kelipatan potong dalam meter. Semua tertulis sebelum Anda menambah ke keranjang."
+      },
+      "transparency": {
+        "title": "Harga per meter",
+        "text": "Harga selalu ditampilkan per meter, tanpa biaya tersembunyi di akhir. Ongkos kirim baru muncul setelah metode dipilih."
+      },
+      "care": {
+        "title": "Petunjuk perawatan",
+        "text": "Setiap kain punya catatan pencucian dan penyimpanan yang sesuai dengan jenis serat dan pewarnaannya."
+      }
+    },
+    "timeline": {
+      "eyebrow": "Perjalanan",
+      "title": "Bagaimana Kainku disusun",
+      "items": [
+        {
+          "year": "Tahap 1",
+          "title": "Mengumpulkan katalog",
+          "text": "Menyusun daftar motif dari berbagai daerah beserta karakteristik teknis masing-masing: lebar, gramasi, dan komposisi serat."
+        },
+        {
+          "year": "Tahap 2",
+          "title": "Membangun sistem tampilan",
+          "text": "Membuat tiga tampilan standar untuk setiap kain agar pembeli bisa membandingkan skala motif antar produk secara adil."
+        },
+        {
+          "year": "Tahap 3",
+          "title": "Menyiapkan alur pemesanan",
+          "text": "Merancang alur keranjang dan checkout dengan satuan meter, termasuk kelipatan potong dan minimum pemesanan per produk."
+        },
+        {
+          "year": "Berikutnya",
+          "title": "Integrasi pembayaran dan stok",
+          "text": "Menghubungkan gerbang pembayaran, manajemen stok, dan pengiriman nyata. Rencana ini tercatat di TODO.md pada repositori."
+        }
+      ]
+    },
+    "honesty": {
+      "title": "Sejauh mana situs ini sudah berjalan?",
+      "body": "Situs ini adalah build demonstrasi. Alur katalog, keranjang, dan checkout berfungsi penuh di sisi antarmuka, tetapi belum terhubung ke gerbang pembayaran, sistem stok, atau kurir. Tidak ada pembayaran yang diproses dan tidak ada pesanan yang benar-benar dikirim."
+    }
+  },
+
+  "contact": {
+    "eyebrow": "Kontak",
+    "title": "Ada yang ingin ditanyakan?",
+    "lead": "Kirim pertanyaan tentang kain tertentu, kebutuhan jumlah besar, atau permintaan contoh kain. Kami balas pada jam kerja.",
+    "emailLabel": "Email",
+    "emailNote": "Cara tercepat untuk pertanyaan yang perlu lampiran gambar atau daftar kebutuhan.",
+    "whatsappLabel": "WhatsApp",
+    "hoursLabel": "Jam kerja",
+    "responseNote": "Pesan yang masuk di luar jam kerja dibalas pada hari kerja berikutnya.",
+    "ownerLabel": "Penanggung jawab",
+    "ownerNote": "Pengelola katalog dan pengembangan situs Kainku.",
+    "field": {
+      "name": "Nama",
+      "email": "Email",
+      "phone": "Nomor ponsel",
+      "topic": "Topik",
+      "message": "Pesan"
+    },
+    "hint": {
+      "message": "Sebutkan nama kain, perkiraan panjang yang dibutuhkan, dan kota tujuan bila ada."
+    },
+    "topic": {
+      "pemesanan": "Pemesanan",
+      "grosir": "Pembelian jumlah besar",
+      "kustom": "Permintaan khusus",
+      "lainnya": "Lainnya"
+    },
+    "privacyNote": "Dengan mengirim pesan, Anda menyetujui pengolahan data sesuai {privacy}.",
+    "sending": "Mengirim…",
+    "success": "Terima kasih. Pesan Anda sudah kami terima dan akan dibalas pada jam kerja.",
+    "errors": {
+      "generic": "Pesan gagal terkirim. Coba lagi sebentar lagi, atau kirim email langsung.",
+      "rateLimited": "Terlalu banyak percobaan dari perangkat ini. Silakan tunggu beberapa menit."
+    }
+  },
+
+  "faq": {
+    "eyebrow": "Tanya Jawab",
+    "title": "Pertanyaan yang sering masuk",
+    "lead": "Ringkasan hal-hal yang paling sering ditanyakan sebelum memesan kain per meter.",
+    "stillStuck": "Belum terjawab?",
+    "stillStuckText": "Kirim pertanyaan Anda dan kami balas pada jam kerja.",
+    "items": [
+      {
+        "q": "Apakah kain dijual per meter atau per potong?",
+        "a": "Per meter. Setiap produk punya minimum pemesanan dan kelipatan potong yang tertulis di halaman produknya — sebagian besar bisa dipotong per 0,5 meter."
+      },
+      {
+        "q": "Bagaimana cara tahu berapa meter yang saya butuhkan?",
+        "a": "Halaman Panduan Ukuran memuat perkiraan kebutuhan untuk beberapa jenis pakaian pada lebar kain 115 cm. Angka itu perkiraan awal; untuk motif dengan arah tertentu biasanya perlu tambahan."
+      },
+      {
+        "q": "Apa arti gramasi (gsm) pada keterangan produk?",
+        "a": "Gsm adalah gram per meter persegi, ukuran berat kain. Semakin tinggi angkanya, semakin berat dan tebal kainnya. Kain 120–140 gsm cenderung ringan dan jatuh, sedangkan 200 gsm ke atas terasa lebih berstruktur."
+      },
+      {
+        "q": "Apakah warna di layar sama persis dengan aslinya?",
+        "a": "Tidak selalu. Setiap layar menampilkan warna berbeda, dan pewarnaan kain juga bisa bervariasi antar batch. Kami menyediakan tampilan perbesaran anyaman untuk membantu, dan contoh kain bisa diminta lewat halaman kontak."
+      },
+      {
+        "q": "Apakah kain bisa menyusut setelah dicuci?",
+        "a": "Kain serat alami seperti katun umumnya menyusut pada pencucian pertama. Kami menyarankan mencuci kain sebelum dipotong bila akan dijahit menjadi pakaian."
+      },
+      {
+        "q": "Metode pembayaran apa yang tersedia?",
+        "a": "Halaman checkout menampilkan pilihan transfer bank, virtual account, dompet digital, dan bayar di tempat. Pada versi demonstrasi ini pilihan tersebut belum terhubung ke gerbang pembayaran, sehingga tidak ada dana yang ditarik."
+      },
+      {
+        "q": "Berapa lama pengiriman?",
+        "a": "Estimasi transit untuk tiap layanan ditampilkan saat checkout. Angka tersebut adalah perkiraan hari kerja, di luar waktu penyiapan pesanan."
+      },
+      {
+        "q": "Bisakah saya mengembalikan kain yang sudah dipotong?",
+        "a": "Kain yang dipotong sesuai pesanan pada dasarnya tidak dapat dikembalikan, kecuali terdapat cacat bahan atau kesalahan pengiriman. Rinciannya ada di halaman Pengembalian & Penukaran."
+      }
+    ]
+  },
+
+  "sizeGuide": {
+    "eyebrow": "Panduan",
+    "title": "Berapa meter yang perlu dibeli?",
+    "lead": "Perkiraan kebutuhan kain untuk beberapa proyek jahit yang umum, dihitung pada lebar kain 115 cm.",
+    "colItem": "Proyek",
+    "colMeters": "Perkiraan",
+    "colNote": "Catatan",
+    "disclaimer": {
+      "title": "Ini perkiraan, bukan jaminan.",
+      "body": "Kebutuhan sebenarnya bergantung pada ukuran badan, model pola, lebar kain, dan arah motif. Untuk motif berarah atau bermotif besar, tambahkan cadangan 15–25%."
+    },
+    "rows": [
+      { "item": "Kemeja lengan panjang", "meters": "2 – 2,5 m", "note": "Tambah 0,5 m untuk motif berarah." },
+      { "item": "Kemeja lengan pendek", "meters": "1,5 – 2 m", "note": "Cukup untuk ukuran M–L." },
+      { "item": "Blus", "meters": "1,5 – 2 m", "note": "Bergantung panjang dan model lengan." },
+      { "item": "Rok panjang", "meters": "2 – 2,5 m", "note": "Model lipit perlu lebih banyak." },
+      { "item": "Gamis / dress panjang", "meters": "3 – 3,5 m", "note": "Tambah untuk lengan lebar." },
+      { "item": "Celana panjang", "meters": "2 – 2,5 m", "note": "Kain berat lebih disarankan." },
+      { "item": "Outer / kimono", "meters": "2,5 – 3 m", "note": "Termasuk lapisan tepi." },
+      { "item": "Taplak meja 6 kursi", "meters": "2,5 m", "note": "Termasuk jatuhan tepi 25 cm." },
+      { "item": "Sarung bantal 45 cm", "meters": "0,5 m", "note": "Untuk sepasang sisi." }
+    ],
+    "howToMeasure": {
+      "title": "Cara menghitung kebutuhan",
+      "body": "Ukur panjang potongan terpanjang pada pola Anda, kalikan dengan jumlah potongan yang tidak muat berdampingan pada lebar kain, lalu tambahkan 10% untuk kampuh dan penyesuaian. Bila motif harus disambung sejajar, tambahkan satu kali tinggi pengulangan motif untuk tiap sambungan."
+    },
+    "shrinkage": {
+      "title": "Penyusutan",
+      "body": "Kain katun dan serat alami lain umumnya menyusut 3–5% pada pencucian pertama. Cuci dan keringkan kain sebelum dipotong agar ukuran jadi tidak berubah setelah pakaian selesai dijahit."
+    }
+  },
+
+  "seo": {
+    "defaultTitle": "Kainku — Kain Nusantara per meter",
+    "home": {
+      "title": "Kain Nusantara, dijual per meter",
+      "description": "Katalog batik, tenun, songket, dan jumputan dari berbagai daerah di Indonesia. Lebar, gramasi, dan asal motif tercantum jelas. Dipotong mulai 0,5 meter."
+    },
+    "catalogue": {
+      "title": "Katalog kain",
+      "description": "Telusuri seluruh koleksi kain Kainku. Saring berdasarkan teknik, bahan, warna, dan rentang harga per meter."
+    },
+    "collections": {
+      "title": "Koleksi",
+      "description": "Empat kelompok kain Nusantara: batik, tenun, songket, dan jumputan — masing-masing dengan karakter dan cara pembuatannya sendiri."
+    },
+    "collection": { "title": "Koleksi {name}" },
+    "about": {
+      "title": "Tentang kami",
+      "description": "Kainku menjual kain Nusantara per meter dengan keterangan lebar, gramasi, dan asal daerah yang jelas. Kenali cara kerja dan prinsip kami."
+    },
+    "contact": {
+      "title": "Kontak",
+      "description": "Hubungi Kainku untuk pertanyaan produk, pembelian jumlah besar, atau permintaan contoh kain."
+    },
+    "faq": {
+      "title": "Tanya Jawab",
+      "description": "Jawaban atas pertanyaan yang sering masuk seputar pembelian kain per meter, gramasi, penyusutan, dan pengiriman."
+    },
+    "sizeGuide": {
+      "title": "Panduan ukuran",
+      "description": "Perkiraan kebutuhan kain untuk kemeja, rok, gamis, dan proyek jahit lain pada lebar 115 cm."
+    },
+    "cart": { "title": "Keranjang", "description": "Isi keranjang belanja Anda di Kainku." },
+    "checkout": { "title": "Pembayaran", "description": "Selesaikan pesanan kain Anda." },
+    "confirmation": {
+      "title": "Pesanan diterima",
+      "description": "Ringkasan pesanan Anda di Kainku."
+    },
+    "legal": {
+      "title": "Kepatuhan & kebijakan",
+      "description": "Kebijakan privasi, syarat dan ketentuan, pengiriman, pengembalian, cookie, aksesibilitas, dan disclaimer Kainku."
+    }
+  }
+}

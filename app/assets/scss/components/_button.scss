@@ -1,0 +1,225 @@
+@use '../abstracts' as *;
+
+// The button is theme-agnostic: it reads --c-* variables, so the same markup
+// works on cream and ink backgrounds without a variant.
+
+.btn {
+  --btn-bg: transparent;
+  --btn-fg: var(--c-text);
+  --btn-border: var(--c-border-strong);
+  --btn-pad-y: 0.8rem;
+  --btn-pad-x: 1.6rem;
+
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: $space-2;
+  padding: var(--btn-pad-y) var(--btn-pad-x);
+  min-height: 2.875rem;
+  border: 1px solid var(--btn-border);
+  border-radius: $radius-pill;
+  background: var(--btn-bg);
+  color: var(--btn-fg);
+  font-family: $font-body;
+  font-size: $fs-sm;
+  font-weight: $fw-semibold;
+  line-height: 1.1;
+  letter-spacing: 0.01em;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+  isolation: isolate;
+  transition:
+    background-color $dur-base $ease-out,
+    color $dur-base $ease-out,
+    border-color $dur-base $ease-out,
+    transform $dur-fast $ease-out,
+    box-shadow $dur-base $ease-out;
+
+  @include focus-ring;
+
+  // Signature interaction: a foil wipe sweeps across on hover.
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(
+      100deg,
+      transparent 0%,
+      rgba(255, 255, 255, 0.28) 45%,
+      transparent 90%
+    );
+    transform: translateX(-120%);
+    transition: transform $dur-slow $ease-out;
+  }
+
+  @include hover {
+    transform: translateY(-2px);
+
+    &::before {
+      transform: translateX(120%);
+    }
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+
+  &:disabled,
+  &[aria-disabled='true'] {
+    opacity: 0.45;
+    cursor: not-allowed;
+    transform: none;
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
+/* -- Variants --------------------------------------------------------------- */
+
+.btn--primary {
+  --btn-bg: var(--c-invert-bg);
+  --btn-fg: var(--c-invert-text);
+  --btn-border: var(--c-invert-bg);
+
+  @include hover {
+    box-shadow: var(--c-shadow);
+  }
+}
+
+.btn--accent {
+  --btn-bg: linear-gradient(100deg, #{$color-gold-600}, #{$color-gold-400} 55%, #{$color-gold-600});
+  --btn-fg: #{$color-ink-900};
+  --btn-border: transparent;
+
+  @include hover {
+    box-shadow: $shadow-glow;
+  }
+}
+
+.btn--outline {
+  --btn-bg: transparent;
+  --btn-fg: var(--c-text);
+  --btn-border: var(--c-border-strong);
+
+  @include hover {
+    --btn-border: var(--c-accent);
+    --btn-fg: var(--c-accent);
+  }
+}
+
+.btn--ghost {
+  --btn-border: transparent;
+  --btn-bg: transparent;
+
+  @include hover {
+    --btn-bg: var(--c-accent-soft);
+  }
+}
+
+.btn--danger {
+  --btn-fg: #{$color-danger};
+  --btn-border: #{rgba($color-danger, 0.4)};
+
+  @include hover {
+    --btn-bg: #{rgba($color-danger, 0.1)};
+  }
+}
+
+/* -- Sizes ------------------------------------------------------------------ */
+
+.btn--sm {
+  --btn-pad-y: 0.5rem;
+  --btn-pad-x: 1rem;
+  min-height: 2.25rem;
+  font-size: $fs-xs;
+}
+
+.btn--lg {
+  --btn-pad-y: 1.05rem;
+  --btn-pad-x: 2.25rem;
+  min-height: 3.375rem;
+  font-size: $fs-body;
+}
+
+.btn--block {
+  display: flex;
+  width: 100%;
+}
+
+/* -- Icon-only -------------------------------------------------------------- */
+
+.btn--icon {
+  --btn-pad-x: 0;
+  --btn-pad-y: 0;
+  width: 2.75rem;
+  height: 2.75rem;
+  min-height: 0;
+  flex: none;
+}
+
+.btn__icon {
+  width: 1.15em;
+  height: 1.15em;
+  flex: none;
+}
+
+/* -- Text link with an animated underline ----------------------------------- */
+
+.link-underline {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: $space-2;
+  font-weight: $fw-semibold;
+  font-size: $fs-sm;
+  color: var(--c-text);
+  padding-bottom: 2px;
+
+  @include focus-ring;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: currentcolor;
+    transform-origin: right;
+    transform: scaleX(1);
+    transition: transform $dur-base $ease-out;
+  }
+
+  @include hover {
+    color: var(--c-accent);
+
+    &::after {
+      transform-origin: left;
+      animation: link-wipe $dur-slow $ease-out;
+    }
+  }
+}
+
+@keyframes link-wipe {
+  0% {
+    transform: scaleX(1);
+    transform-origin: right;
+  }
+  49% {
+    transform: scaleX(0);
+    transform-origin: right;
+  }
+  50% {
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  100% {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}

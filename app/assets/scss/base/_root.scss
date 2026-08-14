@@ -1,0 +1,84 @@
+@use '../abstracts' as *;
+
+// =============================================================================
+// Runtime theme tokens
+// -----------------------------------------------------------------------------
+// The site's art direction is "cream paper with ink panels": the default
+// surface is warm cream, and dramatic bands (hero, footer, feature strips) opt
+// into the ink theme by adding `.theme-ink`. Because both themes expose the
+// SAME variable names, every component is written once and simply inherits
+// whichever theme it happens to sit inside — no per-theme component overrides,
+// and no inline styles.
+// =============================================================================
+
+:root {
+  color-scheme: light;
+
+  // Surfaces
+  --c-bg: #{$color-cream-200};
+  --c-bg-alt: #{$color-cream-300};
+  --c-surface: #{$color-cream-100};
+  --c-surface-alt: #{$color-cream-200};
+
+  // Text
+  --c-text: #{$color-ink-800};
+  --c-text-muted: #{rgba($color-ink-800, 0.72)};
+  --c-text-subtle: #{rgba($color-ink-800, 0.52)};
+
+  // Lines
+  --c-border: #{rgba($color-ink-800, 0.12)};
+  --c-border-strong: #{rgba($color-ink-800, 0.26)};
+
+  // Accent
+  --c-accent: #{$color-gold-600};
+  --c-accent-strong: #{$color-soga-600};
+  --c-accent-soft: #{rgba($color-gold-500, 0.16)};
+  --c-on-accent: #{$color-cream-100};
+
+  // Inverted pair (used by buttons that must contrast with the theme)
+  --c-invert-bg: #{$color-ink-800};
+  --c-invert-text: #{$color-cream-100};
+
+  --c-shadow: #{$shadow-md};
+
+  // Product-detail accents are set per palette in `components/_swatch.scss`.
+  --swatch-a: #{$color-ink-700};
+  --swatch-b: #{$color-gold-500};
+
+  // Layout helpers consumed by JS-free sticky offsets.
+  --header-h: #{$header-height};
+  scroll-padding-top: calc(var(--header-h) + #{$space-5});
+
+  @include mq('lg') {
+    --header-h: #{$header-height-lg};
+  }
+}
+
+.theme-ink {
+  color-scheme: dark;
+
+  --c-bg: #{$color-ink-800};
+  --c-bg-alt: #{$color-ink-900};
+  --c-surface: #{rgba($color-cream-100, 0.05)};
+  --c-surface-alt: #{rgba($color-cream-100, 0.08)};
+
+  --c-text: #{$color-cream-200};
+  --c-text-muted: #{rgba($color-cream-200, 0.74)};
+  --c-text-subtle: #{rgba($color-cream-200, 0.52)};
+
+  --c-border: #{rgba($color-cream-200, 0.14)};
+  --c-border-strong: #{rgba($color-cream-200, 0.32)};
+
+  --c-accent: #{$color-gold-400};
+  --c-accent-strong: #{$color-gold-300};
+  --c-accent-soft: #{rgba($color-gold-400, 0.18)};
+  --c-on-accent: #{$color-ink-900};
+
+  --c-invert-bg: #{$color-cream-200};
+  --c-invert-text: #{$color-ink-800};
+
+  --c-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+
+  background-color: var(--c-bg);
+  color: var(--c-text);
+}

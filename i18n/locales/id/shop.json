@@ -1,0 +1,286 @@
+{
+  "home": {
+    "hero": {
+      "eyebrow": "Batik · Tenun · Songket · Jumputan",
+      "titleLead": "Kain yang",
+      "titleAccent": "bercerita",
+      "titleTail": "sebelum dijahit.",
+      "lead": "Dua belas motif dari berbagai daerah di Indonesia, dijual per meter. Lebar, gramasi, dan asal motif tercantum di setiap halaman — jadi Anda tahu persis apa yang dipotong.",
+      "scroll": "Gulir",
+      "statMotifs": "motif dalam katalog",
+      "statCut": "kelipatan potong",
+      "statRegions": "daerah asal"
+    },
+    "featured": {
+      "eyebrow": "Pilihan",
+      "title": "Yang paling sering ditanyakan",
+      "lead": "Motif-motif yang paling banyak dilihat pengunjung, lengkap dengan perbesaran anyamannya."
+    },
+    "collections": {
+      "eyebrow": "Koleksi",
+      "title": "Empat cara kain dibuat",
+      "lead": "Batik dibuat dengan perintang lilin, tenun dengan menyusun benang, songket dengan benang tambahan, jumputan dengan ikatan dan jahitan perintang."
+    },
+    "anatomy": {
+      "eyebrow": "Anatomi kain",
+      "title": "Membaca keterangan produk",
+      "lead": "Empat angka yang menentukan apakah sebuah kain cocok untuk proyek Anda.",
+      "width": {
+        "term": "Lebar kain",
+        "desc": "Diukur dalam sentimeter dari tepi ke tepi. Menentukan berapa potongan pola yang muat berdampingan, sehingga langsung memengaruhi total meter yang perlu dibeli."
+      },
+      "weight": {
+        "term": "Gramasi (gsm)",
+        "desc": "Gram per meter persegi. Angka rendah berarti kain ringan dan jatuh; angka tinggi berarti lebih tebal dan berstruktur. Kemeja umumnya nyaman di 120–160 gsm."
+      },
+      "material": {
+        "term": "Komposisi serat",
+        "desc": "Katun menyerap keringat dan mudah dirawat. Sutra lebih ringan dengan kilau alami. Rayon jatuh lembut. Benang metalik menambah kilau tetapi perlu perawatan lebih hati-hati."
+      },
+      "technique": {
+        "term": "Teknik pembuatan",
+        "desc": "Menentukan tampilan permukaan kain: perintang lilin menghasilkan garis motif yang tegas, sedangkan tenun ikat memberi tepi motif yang sedikit berbayang."
+      }
+    },
+    "process": {
+      "eyebrow": "Alur pemesanan",
+      "title": "Dari memilih sampai dikirim",
+      "lead": "Empat langkah, tanpa kejutan di akhir.",
+      "choose": {
+        "title": "Pilih kainnya",
+        "text": "Bandingkan motif lewat tiga tampilan: jatuhnya kain, perbesaran anyaman, dan lipatan."
+      },
+      "measure": {
+        "title": "Tentukan panjangnya",
+        "text": "Atur panjang dalam kelipatan 0,5 meter. Total harga terlihat langsung saat Anda mengubah panjang."
+      },
+      "confirm": {
+        "title": "Konfirmasi pesanan",
+        "text": "Isi alamat, pilih layanan pengiriman, dan periksa ringkasan sebelum menekan tombol pesan."
+      },
+      "ship": {
+        "title": "Kain dipotong dan dikirim",
+        "text": "Kain dipotong sesuai panjang pesanan, lalu dikirim dengan layanan yang Anda pilih."
+      }
+    },
+    "newest": {
+      "eyebrow": "Terbaru",
+      "title": "Baru masuk katalog"
+    },
+    "cta": {
+      "eyebrow": "Mulai dari sini",
+      "title": "Temukan kain yang tepat untuk proyek Anda",
+      "lead": "Telusuri katalog lengkap, atau kirim pertanyaan bila Anda butuh bantuan memilih bahan dan panjangnya."
+    }
+  },
+
+  "catalogue": {
+    "eyebrow": "Katalog",
+    "title": "Semua kain",
+    "lead": "Saring berdasarkan teknik, bahan, warna, dan harga per meter. Semua filter tersimpan di alamat halaman, jadi tautannya bisa dibagikan.",
+    "filters": "Filter",
+    "filtersLabel": "Filter produk",
+    "resetFilters": "Atur ulang",
+    "byCategory": "Teknik",
+    "byMaterial": "Bahan",
+    "byColor": "Warna",
+    "byPrice": "Harga maksimum per meter",
+    "availability": "Ketersediaan",
+    "inStockOnly": "Hanya yang tersedia",
+    "showResults": "Tampilkan hasil",
+    "maxPriceLabel": "Harga maksimum per meter",
+    "searchPlaceholder": "Cari motif, daerah, atau bahan…",
+    "searchLabel": "Cari dalam katalog",
+    "sortLabel": "Urutkan",
+    "resultCount": "Menampilkan {count} kain | Menampilkan {count} kain",
+    "activeFilters": "Filter aktif:",
+    "clearAll": "Hapus semua filter",
+    "emptyTitle": "Tidak ada kain yang cocok",
+    "emptyText": "Coba longgarkan filternya — misalnya naikkan batas harga atau hapus salah satu pilihan warna.",
+    "itemCount": "{n} kain | {n} kain",
+    "category": {
+      "batik": "Batik",
+      "tenun": "Tenun",
+      "songket": "Songket",
+      "jumputan": "Jumputan"
+    },
+    "material": {
+      "katun": "Katun",
+      "sutra": "Sutra",
+      "rayon": "Rayon",
+      "metalik": "Benang metalik"
+    },
+    "color": {
+      "indigo": "Indigo",
+      "biru": "Biru",
+      "merah": "Merah",
+      "emas": "Emas",
+      "tanah": "Cokelat tanah",
+      "hijau": "Hijau",
+      "ungu": "Ungu",
+      "netral": "Netral"
+    },
+    "sort": {
+      "featured": "Pilihan kami",
+      "newest": "Terbaru",
+      "price-asc": "Harga terendah",
+      "price-desc": "Harga tertinggi",
+      "name-asc": "Nama A–Z"
+    }
+  },
+
+  "collections": {
+    "eyebrow": "Koleksi",
+    "title": "Empat teknik, empat karakter",
+    "lead": "Cara sebuah kain dibuat menentukan tampilannya, jatuhnya, dan cara merawatnya.",
+    "ctaTitle": "Belum menemukan yang dicari?",
+    "ctaLead": "Katalog lengkap berisi seluruh motif dengan filter bahan, warna, dan harga.",
+    "blurb": {
+      "batik": "Motif dibentuk dengan perintang lilin sebelum kain diwarnai, sehingga garis motifnya tegas dan warnanya berlapis. Umumnya di atas katun, ringan dan nyaman untuk pakaian harian.",
+      "tenun": "Motif tersusun langsung dari benang saat ditenun, bukan dicetak di permukaan. Hasilnya kain dua sisi dengan tekstur yang terasa dan tepi motif yang khas.",
+      "songket": "Benang tambahan — sering berwarna emas atau perak — disisipkan saat menenun sehingga motifnya seolah mengambang di atas dasar kain. Kain paling berat dan paling formal di katalog ini.",
+      "jumputan": "Kain diikat atau dijahit di titik-titik tertentu sebelum dicelup, sehingga bagian yang terikat menolak warna dan meninggalkan pola bergelombang yang tidak pernah persis sama."
+    }
+  },
+
+  "product": {
+    "perMeter": "per meter",
+    "perMeterShort": "/m",
+    "soldOut": "Stok habis",
+    "peek": "Lihat serat",
+    "badge": {
+      "baru": "Baru",
+      "terbatas": "Terbatas",
+      "favorit": "Favorit"
+    },
+    "imageAlt": {
+      "drape": "Kain {name} tergantung memperlihatkan jatuhnya bahan",
+      "macro": "Perbesaran anyaman kain {name}",
+      "fold": "Lipatan kain {name} tersusun bertumpuk"
+    },
+    "view": {
+      "drape": "Jatuh kain",
+      "macro": "Perbesaran",
+      "fold": "Lipatan"
+    },
+    "galleryLabel": "Tampilan kain",
+    "stockIn": "Tersedia {meters}",
+    "stockLow": "Tersisa {meters}",
+    "stockOut": "Sedang tidak tersedia",
+    "length": "Panjang",
+    "lengthLabel": "Panjang kain dalam meter",
+    "minOrder": "Minimum {meters}",
+    "aboutTitle": "Tentang kain ini",
+    "bestForTitle": "Cocok untuk",
+    "careTitle": "Perawatan",
+    "specTitle": "Spesifikasi",
+    "storyTitle": "Latar motif",
+    "spec": {
+      "origin": "Daerah asal",
+      "technique": "Teknik",
+      "width": "Lebar",
+      "weight": "Gramasi",
+      "material": "Bahan",
+      "cut": "Kelipatan potong",
+      "sku": "Kode produk"
+    },
+    "relatedEyebrow": "Serupa",
+    "relatedTitle": "Kain lain yang mungkin cocok"
+  },
+
+  "cart": {
+    "title": "Keranjang",
+    "openLabel": "Buka keranjang, {count} kain",
+    "pageTitle": "Keranjang belanja",
+    "pageLead": "Periksa panjang tiap kain sebelum melanjutkan ke pembayaran.",
+    "itemsTitle": "Kain dalam keranjang",
+    "summary": "Ringkasan",
+    "subtotal": "Subtotal",
+    "totalMeters": "Total panjang",
+    "shipping": "Pengiriman",
+    "shippingPending": "Dihitung di langkah berikutnya",
+    "free": "Gratis",
+    "total": "Total",
+    "shippingAtCheckout": "Ongkos kirim dihitung setelah Anda memilih layanan pengiriman.",
+    "emptyTitle": "Keranjang masih kosong",
+    "emptyText": "Telusuri katalog dan tambahkan kain yang Anda perlukan.",
+    "clear": "Kosongkan keranjang",
+    "removeNamed": "Hapus {name} dari keranjang",
+    "quantityLabel": "Panjang {name} dalam meter",
+    "maxStock": "Ini seluruh stok yang tersedia ({meters}).",
+    "addNamed": "Tambahkan {name} ke keranjang",
+    "freeShippingReached": "Pesanan Anda memenuhi syarat gratis ongkir reguler.",
+    "freeShippingRemaining": "Tambah lagi untuk gratis ongkir reguler:",
+    "freeShippingLabel": "Progres menuju gratis ongkir",
+    "toast": {
+      "added": "{name} ditambahkan — {meters}",
+      "removed": "{name} dihapus dari keranjang",
+      "soldOut": "{name} sedang tidak tersedia",
+      "failed": "Gagal menambahkan ke keranjang",
+      "viewCart": "Lihat keranjang"
+    }
+  },
+
+  "checkout": {
+    "title": "Pembayaran",
+    "lead": "Lengkapi data pengiriman dan pilih metode pembayaran.",
+    "step": {
+      "cart": "Keranjang",
+      "details": "Data pengiriman",
+      "confirm": "Konfirmasi"
+    },
+    "contactTitle": "Data pemesan",
+    "addressTitle": "Alamat pengiriman",
+    "shippingTitle": "Layanan pengiriman",
+    "paymentTitle": "Metode pembayaran",
+    "summaryTitle": "Ringkasan pesanan",
+    "emptyText": "Tambahkan kain ke keranjang sebelum melanjutkan ke pembayaran.",
+    "eta": "estimasi {min}–{max} hari kerja",
+    "agreeTerms": "Saya telah membaca dan menyetujui {terms} serta {privacy}.",
+    "field": {
+      "fullName": "Nama lengkap",
+      "email": "Email",
+      "phone": "Nomor ponsel",
+      "address": "Alamat lengkap",
+      "city": "Kota / Kabupaten",
+      "province": "Provinsi",
+      "postalCode": "Kode pos",
+      "notes": "Catatan untuk kami"
+    },
+    "hint": {
+      "phone": "Digunakan kurir untuk menghubungi Anda saat pengiriman.",
+      "notes": "Misalnya patokan alamat atau permintaan pemotongan khusus."
+    },
+    "shipping": {
+      "regular": { "name": "Reguler", "desc": "Kurir standar antar kota" },
+      "kargo": { "name": "Kargo", "desc": "Lebih ekonomis untuk pesanan besar" },
+      "pickup": { "name": "Ambil sendiri", "desc": "Diambil di lokasi setelah dikonfirmasi" }
+    },
+    "payment": {
+      "transfer": { "name": "Transfer bank", "desc": "Konfirmasi manual setelah transfer" },
+      "va": { "name": "Virtual account", "desc": "Nomor VA khusus untuk pesanan ini" },
+      "ewallet": { "name": "Dompet digital", "desc": "Pembayaran lewat aplikasi dompet digital" },
+      "cod": { "name": "Bayar di tempat", "desc": "Tersedia untuk wilayah tertentu" }
+    },
+    "demoNotice": {
+      "title": "Belum ada pembayaran nyata.",
+      "body": "Pada build demonstrasi ini, metode pembayaran belum terhubung ke gerbang pembayaran mana pun. Menekan tombol pesan hanya menyimpan ringkasan pesanan di peramban Anda dan tidak menarik dana apa pun."
+    }
+  },
+
+  "confirmation": {
+    "title": "Pesanan tercatat",
+    "lead": "Ringkasan pesanan disimpan dengan nomor referensi di bawah ini. Salinan akan dikirim ke {email} setelah pengiriman email diaktifkan.",
+    "reference": "Nomor referensi",
+    "placedAt": "Tanggal",
+    "total": "Total",
+    "shipping": "Pengiriman",
+    "payment": "Pembayaran",
+    "demoNotice": {
+      "title": "Ini pesanan demonstrasi.",
+      "body": "Tidak ada pembayaran yang diproses, stok tidak berkurang, dan tidak ada kain yang akan dikirim. Ringkasan ini hanya tersimpan di peramban Anda."
+    },
+    "missingTitle": "Data pesanan tidak ditemukan",
+    "missingText": "Ringkasan pesanan disimpan secara lokal di peramban. Data itu hilang bila Anda membersihkan penyimpanan situs atau membuka tautan ini di perangkat lain."
+  }
+}

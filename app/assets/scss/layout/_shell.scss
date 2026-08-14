@@ -1,0 +1,84 @@
+@use '../abstracts' as *;
+
+// The page shell. Header is fixed, so the main region carries the offset —
+// except on pages whose hero is designed to sit underneath it.
+
+.shell {
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+}
+
+.shell__main {
+  flex: 1;
+  padding-top: var(--header-h);
+}
+
+.shell__main--flush {
+  padding-top: 0;
+}
+
+// Bands that flip to the ink theme. `.theme-ink` supplies the variables; these
+// classes just paint the background and clip the decorative edges.
+.band {
+  position: relative;
+  overflow: hidden;
+  background: var(--c-bg);
+}
+
+.band--ink {
+  color: var(--c-text);
+}
+
+// A soft top edge so ink bands do not butt hard against cream ones.
+.band--feathered::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto;
+  height: 6rem;
+  background: linear-gradient(180deg, rgba($color-ink-900, 0.55), transparent);
+  pointer-events: none;
+}
+
+// Two-column editorial split used by About and the process section.
+.split {
+  display: grid;
+  gap: $space-6;
+  align-items: center;
+
+  @include mq('md') {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: $space-8;
+  }
+}
+
+.split--wide-left {
+  @include mq('md') {
+    grid-template-columns: 1.25fr 1fr;
+  }
+}
+
+.split--wide-right {
+  @include mq('md') {
+    grid-template-columns: 1fr 1.25fr;
+  }
+}
+
+.split__media {
+  border-radius: $radius-lg;
+  overflow: hidden;
+  border: 1px solid var(--c-border);
+  background: var(--c-surface-alt);
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.split__body {
+  display: grid;
+  gap: $space-4;
+  align-content: center;
+}

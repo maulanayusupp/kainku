@@ -1,0 +1,343 @@
+{
+  "legal": {
+    "lastUpdated": "Terakhir diperbarui",
+    "appliesTo": "Berlaku untuk",
+    "appliesToValue": "kainku.id dan seluruh subhalamannya",
+    "questions": "Ada pertanyaan tentang dokumen ini? Silakan hubungi kami melalui halaman {contact}.",
+
+    "overview": {
+      "title": "Kepatuhan & kebijakan",
+      "lead": "Seluruh dokumen kebijakan Kainku dikumpulkan di satu tempat agar mudah diperiksa.",
+      "noticeTitle": "Status situs ini.",
+      "noticeBody": "Kainku saat ini berjalan sebagai build demonstrasi. Dokumen di bawah ini menjelaskan bagaimana situs bekerja sekarang — termasuk bagian yang belum aktif, seperti pemrosesan pembayaran dan pengiriman barang. Dokumen akan diperbarui ketika fungsi tersebut mulai berjalan.",
+      "summary": {
+        "privasi": "Data apa yang dikumpulkan situs ini, ke mana perginya, dan berapa lama disimpan.",
+        "ketentuan": "Ketentuan penggunaan situs, pemesanan, harga, dan batasan tanggung jawab.",
+        "pengiriman": "Cara pesanan disiapkan, layanan pengiriman, dan estimasi waktu tiba.",
+        "pengembalian": "Kapan kain dapat dikembalikan atau ditukar, dan kapan tidak bisa.",
+        "cookie": "Cookie dan penyimpanan peramban yang digunakan, beserta fungsinya.",
+        "aksesibilitas": "Standar aksesibilitas yang diikuti dan bagian yang masih dikerjakan.",
+        "disclaimer": "Batasan atas isi katalog, gambar produk, dan informasi budaya di situs ini."
+      }
+    },
+
+    "privacy": {
+      "title": "Kebijakan Privasi",
+      "lead": "Penjelasan tentang data pribadi yang diproses situs ini dan alasannya.",
+      "updated": "14 Agustus 2026",
+      "sections": [
+        {
+          "heading": "Ringkasan singkat",
+          "body": "Situs ini mengumpulkan data pribadi hanya pada dua tempat: formulir kontak dan formulir checkout. Tidak ada layanan analitik pihak ketiga, tidak ada piksel iklan, dan tidak ada data yang dijual atau dipertukarkan dengan pihak lain."
+        },
+        {
+          "heading": "Data yang dikumpulkan melalui formulir kontak",
+          "body": "Ketika Anda mengirim pesan lewat halaman Kontak, data berikut dikirim ke server situs ini:",
+          "list": [
+            "Nama yang Anda isikan",
+            "Alamat email",
+            "Nomor ponsel, bila Anda mengisinya (kolom ini opsional)",
+            "Topik yang dipilih dan isi pesan",
+            "Alamat IP Anda, digunakan sebatas untuk membatasi jumlah pengiriman per periode"
+          ]
+        },
+        {
+          "heading": "Data checkout",
+          "body": "Data yang Anda isikan pada halaman checkout — nama, email, nomor ponsel, alamat, dan catatan — disimpan di penyimpanan lokal peramban Anda sendiri agar isian tidak hilang saat halaman dimuat ulang.\n\nPada build demonstrasi ini data tersebut tidak dikirim ke server mana pun dan tidak diteruskan ke penyedia pembayaran atau kurir. Data hilang ketika Anda membersihkan penyimpanan situs melalui pengaturan peramban."
+        },
+        {
+          "heading": "Dasar dan tujuan pemrosesan",
+          "body": "Data kontak diproses untuk satu tujuan: menjawab pertanyaan yang Anda kirimkan. Data checkout diproses untuk menyiapkan pesanan Anda. Kami tidak menggunakan data ini untuk membuat profil, menargetkan iklan, atau mengambil keputusan otomatis."
+        },
+        {
+          "heading": "Penyimpanan dan retensi",
+          "body": "Pesan kontak yang masuk dicatat pada log server situs. Log tersebut disimpan selama masih diperlukan untuk menindaklanjuti pertanyaan Anda, dan dihapus setelahnya. Data yang tersimpan di peramban Anda sepenuhnya berada dalam kendali Anda dan dapat dihapus kapan saja."
+        },
+        {
+          "heading": "Pembagian data kepada pihak ketiga",
+          "body": "Saat ini tidak ada data pribadi yang dibagikan kepada pihak ketiga. Bila di kemudian hari kami mengaktifkan penyedia pembayaran, layanan kurir, atau layanan pengiriman email, dokumen ini akan diperbarui untuk menyebutkan penyedia tersebut sebelum layanannya digunakan."
+        },
+        {
+          "heading": "Hak Anda",
+          "body": "Anda dapat meminta salinan data yang kami simpan tentang Anda, meminta koreksi bila ada yang keliru, atau meminta penghapusan data tersebut. Permintaan dapat dikirim melalui halaman Kontak dan akan kami tanggapi dalam hari kerja."
+        },
+        {
+          "heading": "Keamanan",
+          "body": "Pengiriman formulir menggunakan koneksi terenkripsi. Formulir kontak dilengkapi pembatasan jumlah pengiriman dan penyaring otomatis untuk mengurangi penyalahgunaan. Perlu dicatat bahwa tidak ada sistem yang sepenuhnya kebal, sehingga kami menyarankan Anda tidak mengirimkan informasi sensitif melalui formulir."
+        },
+        {
+          "heading": "Anak di bawah umur",
+          "body": "Situs ini ditujukan untuk pembeli dewasa dan tidak dirancang untuk mengumpulkan data dari anak-anak."
+        },
+        {
+          "heading": "Perubahan kebijakan",
+          "body": "Bila kebijakan ini berubah, tanggal pembaruan di bagian atas halaman akan disesuaikan. Perubahan yang berdampak besar akan disebutkan pada halaman Kepatuhan."
+        }
+      ]
+    },
+
+    "terms": {
+      "title": "Syarat & Ketentuan",
+      "lead": "Ketentuan yang berlaku saat Anda menggunakan situs ini dan memesan kain melaluinya.",
+      "updated": "14 Agustus 2026",
+      "sections": [
+        {
+          "heading": "Status layanan",
+          "body": "Kainku saat ini beroperasi sebagai build demonstrasi. Katalog, keranjang, dan alur checkout dapat digunakan sepenuhnya di sisi antarmuka, tetapi belum terhubung ke gerbang pembayaran, sistem persediaan, maupun layanan kurir.\n\nArtinya: menekan tombol pesan tidak menarik dana, tidak mengurangi stok, dan tidak memicu pengiriman barang. Ketentuan di bawah ini disusun untuk berlaku ketika layanan mulai berjalan penuh."
+        },
+        {
+          "heading": "Penggunaan situs",
+          "body": "Anda dipersilakan menelusuri katalog, menyimpan tautan hasil filter, dan menghubungi kami. Anda tidak diperkenankan mengambil isi situs secara otomatis dalam jumlah besar, mengganggu ketersediaan layanan, atau menggunakan formulir untuk mengirim pesan massal."
+        },
+        {
+          "heading": "Harga",
+          "body": "Seluruh harga ditampilkan dalam Rupiah dan berlaku per meter kain, kecuali dinyatakan lain. Harga yang tercantum pada build demonstrasi ini adalah angka ilustrasi dan bukan penawaran yang mengikat.\n\nKetika layanan berjalan penuh, harga yang berlaku adalah harga yang tertera saat pesanan dikonfirmasi. Ongkos kirim dihitung terpisah dan ditampilkan sebelum pesanan diselesaikan."
+        },
+        {
+          "heading": "Pemesanan dan pemotongan kain",
+          "body": "Kain dijual per meter dengan minimum pemesanan dan kelipatan potong yang tercantum pada setiap halaman produk. Karena kain dipotong sesuai panjang yang Anda pesan, pesanan yang sudah masuk tahap pemotongan tidak dapat diubah panjangnya.",
+          "list": [
+            "Panjang aktual dapat berbeda hingga 2 cm dari yang dipesan akibat proses pemotongan",
+            "Lebar kain yang dicantumkan adalah lebar rata-rata dan dapat bervariasi beberapa sentimeter antar gulungan",
+            "Untuk pesanan yang membutuhkan potongan menerus, sebutkan pada kolom catatan saat checkout"
+          ]
+        },
+        {
+          "heading": "Ketersediaan",
+          "body": "Angka stok pada situs bersifat indikatif. Bila kain yang Anda pesan ternyata tidak tersedia dalam panjang yang diminta, kami akan menghubungi Anda untuk menawarkan panjang yang tersedia, motif pengganti, atau pembatalan disertai pengembalian dana penuh."
+        },
+        {
+          "heading": "Perbedaan warna dan motif",
+          "body": "Warna yang tampil di layar Anda bergantung pada perangkat dan pengaturannya, sehingga dapat berbeda dari warna kain sebenarnya. Kain bermotif juga dapat memiliki perbedaan antar produksi. Perbedaan wajar semacam ini tidak dianggap sebagai cacat produk."
+        },
+        {
+          "heading": "Hak kekayaan intelektual",
+          "body": "Kode, tata letak, teks, dan gambar motif yang dihasilkan untuk situs ini adalah karya Kainku. Nama-nama motif tradisional yang disebutkan merupakan warisan budaya bersama dan bukan merek dagang kami."
+        },
+        {
+          "heading": "Batasan tanggung jawab",
+          "body": "Tanggung jawab kami atas suatu pesanan terbatas pada nilai pesanan tersebut. Kami tidak bertanggung jawab atas kerugian tidak langsung, termasuk kehilangan waktu atau kegagalan proyek jahit yang diakibatkan oleh perbedaan warna, penyusutan, atau kesalahan perhitungan kebutuhan kain."
+        },
+        {
+          "heading": "Hukum yang berlaku",
+          "body": "Ketentuan ini tunduk pada hukum Republik Indonesia. Bila terjadi perselisihan, kami mengutamakan penyelesaian secara musyawarah melalui saluran kontak yang tersedia."
+        }
+      ]
+    },
+
+    "shipping": {
+      "title": "Kebijakan Pengiriman",
+      "lead": "Cara pesanan disiapkan, dikirim, dan diperkirakan waktu tibanya.",
+      "updated": "14 Agustus 2026",
+      "sections": [
+        {
+          "heading": "Status layanan",
+          "body": "Pada build demonstrasi ini belum ada integrasi kurir. Tarif dan estimasi waktu yang ditampilkan saat checkout adalah angka contoh untuk memperlihatkan alur pemesanan, bukan tarif yang berlaku."
+        },
+        {
+          "heading": "Waktu penyiapan",
+          "body": "Kain dipotong setelah pesanan dikonfirmasi. Waktu penyiapan direncanakan 1–2 hari kerja untuk pesanan di bawah 20 meter, dan hingga 4 hari kerja untuk pesanan lebih besar atau yang memerlukan potongan menerus. Waktu ini di luar waktu transit kurir."
+        },
+        {
+          "heading": "Layanan pengiriman",
+          "body": "Tiga pilihan direncanakan tersedia saat checkout:",
+          "list": [
+            "Reguler — kurir standar antar kota, estimasi 2–5 hari kerja",
+            "Kargo — lebih ekonomis untuk pesanan besar, estimasi 4–9 hari kerja",
+            "Ambil sendiri — diambil di lokasi setelah pesanan dikonfirmasi"
+          ]
+        },
+        {
+          "heading": "Gratis ongkos kirim",
+          "body": "Pesanan dengan total panjang 10 meter atau lebih mendapat gratis ongkos kirim untuk layanan Reguler. Ambang batas ini dihitung dari total panjang seluruh kain dalam satu pesanan, bukan per jenis kain."
+        },
+        {
+          "heading": "Estimasi waktu tiba",
+          "body": "Estimasi yang ditampilkan dihitung dalam hari kerja dan tidak mencakup hari libur nasional. Estimasi tersebut berasal dari kurir dan berada di luar kendali kami; keterlambatan akibat cuaca, kepadatan jalur, atau alamat yang kurang lengkap dapat terjadi."
+        },
+        {
+          "heading": "Alamat pengiriman",
+          "body": "Pastikan alamat dan nomor ponsel yang Anda isikan sudah benar sebelum menyelesaikan pesanan. Pesanan yang gagal terkirim karena alamat tidak lengkap dan harus dikirim ulang akan dikenakan ongkos kirim tambahan."
+        },
+        {
+          "heading": "Kemasan",
+          "body": "Kain digulung, dibungkus lapisan pelindung, lalu dikemas dalam kemasan tahan air. Untuk kain berbenang metalik seperti songket dan tapis, kami merencanakan penggunaan gulungan agar benang tidak patah pada garis lipatan."
+        },
+        {
+          "heading": "Kerusakan dalam pengiriman",
+          "body": "Bila paket tiba dalam keadaan rusak, dokumentasikan kondisi kemasan sebelum dibuka dan hubungi kami dalam 3 hari kerja sejak paket diterima. Lihat halaman Pengembalian & Penukaran untuk langkah selanjutnya."
+        }
+      ]
+    },
+
+    "returns": {
+      "title": "Pengembalian & Penukaran",
+      "lead": "Kapan kain dapat dikembalikan, kapan tidak, dan bagaimana prosesnya.",
+      "updated": "14 Agustus 2026",
+      "sections": [
+        {
+          "heading": "Prinsip dasar",
+          "body": "Kain dipotong sesuai panjang yang Anda pesan. Potongan tersebut tidak dapat dijual kembali sebagai gulungan utuh, sehingga kain yang sudah dipotong pada dasarnya tidak dapat dikembalikan karena berubah pikiran.\n\nKetentuan ini tidak mengurangi hak Anda bila barang yang diterima cacat atau tidak sesuai pesanan."
+        },
+        {
+          "heading": "Yang dapat dikembalikan",
+          "body": "Kami menerima pengembalian atau penukaran dalam kondisi berikut:",
+          "list": [
+            "Kain memiliki cacat bahan, misalnya benang putus, noda, atau lubang",
+            "Motif atau warna yang dikirim berbeda dari yang dipesan",
+            "Panjang yang diterima kurang dari yang dipesan di luar toleransi 2 cm",
+            "Paket rusak dalam pengiriman sehingga kain tidak dapat digunakan"
+          ]
+        },
+        {
+          "heading": "Yang tidak dapat dikembalikan",
+          "body": "Beberapa kondisi tidak termasuk dalam kebijakan pengembalian:",
+          "list": [
+            "Perubahan pikiran setelah kain dipotong",
+            "Perbedaan warna yang wajar antara tampilan layar dan kain sebenarnya",
+            "Kain yang sudah dicuci, dipotong lagi, atau dijahit",
+            "Penyusutan setelah pencucian pada kain serat alami",
+            "Kesalahan perhitungan kebutuhan panjang oleh pembeli"
+          ]
+        },
+        {
+          "heading": "Batas waktu",
+          "body": "Ajukan permintaan dalam 7 hari kalender sejak paket diterima. Sertakan nomor pesanan, foto kain yang menunjukkan masalahnya, dan foto kemasan bila terkait kerusakan pengiriman."
+        },
+        {
+          "heading": "Proses",
+          "body": "Setelah permintaan diterima, kami memeriksa foto dan menanggapi dalam 2 hari kerja. Bila permintaan disetujui, Anda dapat memilih penggantian kain dengan motif dan panjang yang sama, atau pengembalian dana.\n\nUntuk kasus cacat bahan, ongkos kirim pengembalian ditanggung Kainku."
+        },
+        {
+          "heading": "Pengembalian dana",
+          "body": "Pengembalian dana diproses ke metode pembayaran yang sama dengan pembayaran awal, dalam 7 hari kerja setelah kain diterima kembali dan diperiksa. Waktu dana masuk ke rekening Anda bergantung pada bank atau penyedia pembayaran masing-masing."
+        },
+        {
+          "heading": "Contoh kain",
+          "body": "Untuk mengurangi risiko salah pilih, contoh kain dapat diminta melalui halaman Kontak sebelum memesan dalam jumlah besar."
+        }
+      ]
+    },
+
+    "cookies": {
+      "title": "Kebijakan Cookie",
+      "lead": "Daftar lengkap cookie dan penyimpanan peramban yang digunakan situs ini.",
+      "updated": "14 Agustus 2026",
+      "sections": [
+        {
+          "heading": "Ringkasan",
+          "body": "Situs ini tidak menggunakan cookie analitik, cookie iklan, maupun cookie pelacakan pihak ketiga. Seluruh penyimpanan yang digunakan bersifat fungsional — tanpanya, fitur dasar situs tidak dapat bekerja."
+        },
+        {
+          "heading": "Cookie yang digunakan",
+          "body": "Hanya satu cookie yang ditulis situs ini:",
+          "list": [
+            "kainku_locale — menyimpan pilihan bahasa Anda (Indonesia atau Inggris) agar tidak perlu dipilih ulang pada kunjungan berikutnya"
+          ]
+        },
+        {
+          "heading": "Penyimpanan lokal peramban",
+          "body": "Selain cookie, situs ini menggunakan localStorage peramban Anda. Data ini tersimpan di perangkat Anda dan tidak dikirim ke server:",
+          "list": [
+            "kainku:cart:v1 — isi keranjang belanja, pilihan layanan pengiriman, dan metode pembayaran",
+            "kainku:checkout:v1 — isian formulir checkout, agar tidak hilang saat halaman dimuat ulang",
+            "kainku:last-order:v1 — ringkasan pesanan terakhir, untuk ditampilkan pada halaman konfirmasi"
+          ]
+        },
+        {
+          "heading": "Cara menghapusnya",
+          "body": "Semua data di atas dapat dihapus melalui pengaturan peramban Anda pada bagian data situs. Menghapusnya akan mengosongkan keranjang dan mengembalikan pilihan bahasa ke pengaturan awal, tetapi tidak memengaruhi apa pun di luar peramban Anda."
+        },
+        {
+          "heading": "Font dan sumber daya eksternal",
+          "body": "Font yang digunakan situs ini diunduh saat proses build dan disajikan dari domain Kainku sendiri, sehingga peramban Anda tidak menghubungi server font pihak ketiga saat halaman dibuka."
+        },
+        {
+          "heading": "Perubahan di masa depan",
+          "body": "Bila kami kelak menambahkan layanan analitik atau penyedia pembayaran yang menulis cookie, dokumen ini akan diperbarui dan mekanisme persetujuan akan ditambahkan sebelum cookie tersebut aktif."
+        }
+      ]
+    },
+
+    "accessibility": {
+      "title": "Pernyataan Aksesibilitas",
+      "lead": "Standar yang kami ikuti, cara pengujiannya, dan bagian yang masih dalam perbaikan.",
+      "updated": "14 Agustus 2026",
+      "sections": [
+        {
+          "heading": "Komitmen",
+          "body": "Kami berusaha membuat situs ini dapat digunakan oleh sebanyak mungkin orang, termasuk pengguna pembaca layar, pengguna papan ketik, dan pengunjung yang membutuhkan pembesaran teks."
+        },
+        {
+          "heading": "Standar acuan",
+          "body": "Pengembangan situs ini mengacu pada Web Content Accessibility Guidelines (WCAG) 2.2 tingkat AA sebagai target. Kami menyatakan target, bukan sertifikasi — situs ini belum melalui audit aksesibilitas oleh pihak ketiga."
+        },
+        {
+          "heading": "Yang sudah diterapkan",
+          "body": "Beberapa hal yang sudah menjadi bagian dari situs saat ini:",
+          "list": [
+            "Tautan lewati ke konten utama sebagai perhentian tab pertama di setiap halaman",
+            "Indikator fokus yang terlihat pada semua elemen interaktif dan tidak pernah dihilangkan",
+            "Struktur judul yang berurutan serta penanda area seperti navigasi, konten utama, dan footer",
+            "Teks alternatif deskriptif pada setiap gambar produk yang menjelaskan tampilan mana yang ditampilkan",
+            "Formulir dengan label yang tertaut, pesan galat yang diumumkan, serta penanda kolom bermasalah",
+            "Dukungan penuh untuk preferensi pengurangan animasi pada sistem operasi",
+            "Overlay yang dapat ditutup dengan tombol Escape dan mengembalikan fokus"
+          ]
+        },
+        {
+          "heading": "Yang masih dikerjakan",
+          "body": "Kami mencatat keterbatasan yang diketahui secara terbuka:",
+          "list": [
+            "Penjebakan fokus di dalam overlay masih sederhana dan belum sepenuhnya melingkar",
+            "Rasio kontras teks sekunder pada latar terang belum diverifikasi menyeluruh untuk semua kombinasi",
+            "Belum ada pengujian menggunakan pembaca layar sungguhan pada berbagai kombinasi peramban",
+            "Panel geser rentang harga belum memiliki alternatif isian angka bagi pengguna papan ketik"
+          ]
+        },
+        {
+          "heading": "Melaporkan hambatan",
+          "body": "Bila Anda menemukan bagian situs yang sulit digunakan, kirimkan keterangannya melalui halaman Kontak. Sebutkan halaman yang bermasalah dan alat bantu yang Anda gunakan bila memungkinkan. Laporan semacam ini sangat membantu dan akan kami tindak lanjuti."
+        }
+      ]
+    },
+
+    "disclaimer": {
+      "title": "Disclaimer",
+      "lead": "Batasan atas isi katalog, gambar produk, dan keterangan budaya di situs ini.",
+      "updated": "14 Agustus 2026",
+      "sections": [
+        {
+          "heading": "Status situs",
+          "body": "Kainku adalah build demonstrasi. Situs ini memperlihatkan alur belanja kain yang lengkap, tetapi tidak menjalankan operasi toko sungguhan.",
+          "list": [
+            "Harga, angka stok, dan estimasi waktu adalah angka ilustrasi",
+            "Tidak ada pembayaran yang diproses melalui situs ini",
+            "Tidak ada pesanan yang dipotong maupun dikirim",
+            "Data pesanan hanya tersimpan di peramban pengunjung"
+          ]
+        },
+        {
+          "heading": "Gambar produk",
+          "body": "Seluruh gambar kain di situs ini dihasilkan secara terprogram sebagai gambar vektor. Gambar tersebut adalah tafsir geometris atas ragam hias tradisional Indonesia — bukan foto kain sungguhan, dan bukan reproduksi karya perajin tertentu.\n\nKarena itu, gambar di situs ini tidak dapat dijadikan acuan untuk menilai warna, tekstur, atau kualitas kain yang sebenarnya."
+        },
+        {
+          "heading": "Keterangan budaya",
+          "body": "Keterangan mengenai asal motif, teknik pembuatan, dan latar belakang budaya disusun sebagai penjelasan umum untuk pembeli. Penjelasan tersebut diringkas dan tidak menggantikan sumber akademis maupun keterangan dari komunitas perajin yang memiliki tradisi tersebut.\n\nBila Anda menemukan keterangan yang keliru, kami akan berterima kasih atas koreksinya melalui halaman Kontak."
+        },
+        {
+          "heading": "Nama motif dan daerah",
+          "body": "Nama motif dan daerah asal disebutkan sebagai keterangan deskriptif. Kainku tidak mengklaim kepemilikan, keterwakilan, maupun afiliasi resmi dengan sentra kerajinan, komunitas adat, atau lembaga mana pun yang disebutkan."
+        },
+        {
+          "heading": "Bukan nasihat profesional",
+          "body": "Panduan ukuran dan petunjuk perawatan bersifat umum. Untuk proyek dengan nilai tinggi atau kain yang sudah berumur, sebaiknya berkonsultasi dengan penjahit atau konservator tekstil."
+        },
+        {
+          "heading": "Tautan keluar",
+          "body": "Situs ini dapat memuat tautan ke situs lain. Kami tidak mengendalikan isi situs tujuan dan tidak bertanggung jawab atas materi maupun kebijakan privasinya."
+        }
+      ]
+    }
+  }
+}

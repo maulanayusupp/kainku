@@ -1,0 +1,330 @@
+{
+  "common": {
+    "brand": "Kainku",
+    "brandAlt": "Kainku — Indonesian textiles",
+    "tagline": "Indonesian Textiles",
+    "mainNav": "Main navigation",
+    "breadcrumb": "Breadcrumb",
+    "language": "Language selection",
+    "search": "Search fabrics",
+    "close": "Close",
+    "closeMenu": "Close menu",
+    "openMenu": "Open menu",
+    "dismiss": "Dismiss notification",
+    "skipToContent": "Skip to main content",
+    "optional": "optional",
+    "increase": "Increase length",
+    "decrease": "Decrease length"
+  },
+
+  "announce": {
+    "cutToOrder": "Cut in 0.5 metre increments",
+    "freeShipping": "Free standard shipping from 10 metres",
+    "swatches": "Swatches available on request",
+    "support": "Ask us before you order"
+  },
+
+  "nav": {
+    "home": "Home",
+    "catalogue": "Catalogue",
+    "collections": "Collections",
+    "about": "About",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "cart": "Cart",
+    "sizeGuide": "Size Guide",
+    "compliance": "Compliance",
+    "legal": {
+      "overview": "Overview",
+      "privacy": "Privacy Policy",
+      "terms": "Terms & Conditions",
+      "shipping": "Shipping Policy",
+      "returns": "Returns & Exchanges",
+      "cookies": "Cookie Policy",
+      "accessibility": "Accessibility Statement",
+      "disclaimer": "Disclaimer"
+    }
+  },
+
+  "cta": {
+    "browseCatalogue": "Browse the catalogue",
+    "ourStory": "Our story",
+    "seeAll": "See all",
+    "talkToUs": "Talk to us",
+    "checkout": "Proceed to checkout",
+    "viewCart": "View cart",
+    "addToCart": "Add to cart",
+    "askAboutFabric": "Ask about this fabric",
+    "continueShopping": "Continue shopping",
+    "exploreCollection": "Explore collection",
+    "placeOrder": "Place order",
+    "backToCart": "Back to cart",
+    "sendMessage": "Send message",
+    "readDocument": "Read document"
+  },
+
+  "search": {
+    "title": "Search fabrics",
+    "placeholder": "Search a motif, region, or fibre…",
+    "submit": "Search",
+    "noResults": "No fabric matches “{term}”.",
+    "hint": "Type at least two characters. Try “batik”, “silk”, or “Cirebon”."
+  },
+
+  "notice": {
+    "sampleData": {
+      "title": "Sample data.",
+      "body": "This catalogue is a demonstration build. Prices, stock levels, and lead times shown on the site are illustrative figures, not a live price list. No payment is processed."
+    }
+  },
+
+  "validation": {
+    "required": "This field is required.",
+    "minLength": "This entry is too short.",
+    "maxLength": "This entry is too long.",
+    "email": "Enter a valid email address.",
+    "phone": "Enter a valid Indonesian mobile number, e.g. 0812xxxxxxx.",
+    "postalCode": "A postal code is 5 digits.",
+    "mustAccept": "You need to accept these terms to continue."
+  },
+
+  "error": {
+    "backHome": "Back to home",
+    "404": {
+      "title": "Page not found",
+      "text": "The link you opened may have changed, or it never existed. Head back to the homepage or browse the catalogue."
+    },
+    "generic": {
+      "title": "Something went wrong",
+      "text": "This page failed to load. Please try again in a moment."
+    }
+  },
+
+  "footer": {
+    "blurb": "Kainku gathers Indonesian textiles — batik, tenun, songket, and jumputan — and sells them by the metre, with the width, weight, and region of origin stated plainly.",
+    "shop": "Shop",
+    "company": "Company",
+    "contact": "Contact",
+    "whatsapp": "Chat on WhatsApp",
+    "hours": "Monday–Friday, 09:00–17:00 WIB",
+    "location": "Shipping across Indonesia",
+    "copyright": "© {year} Kainku. All rights reserved.",
+    "instagram": "Kainku on Instagram",
+    "emailUs": "Email Kainku"
+  },
+
+  "about": {
+    "eyebrow": "About Kainku",
+    "title": "Fabric, described as it is",
+    "lead": "We built Kainku because buying cloth online so often feels like guesswork. The photograph looks good, but the width, the weight, and the origin are rarely stated.",
+    "mission": {
+      "title": "What we do",
+      "body": "Kainku is a catalogue of Indonesian textiles sold by the metre. Every listing states the usable width in centimetres, the weight in gsm, the fibre content, and the region the motif comes from.",
+      "body2": "Each fabric is shown in three views: how it drapes, a macro crop of the weave, and a folded stack. The point is simple — you should be able to judge both the scale of the motif and the texture before you order, not after the parcel arrives."
+    },
+    "values": {
+      "eyebrow": "How we work",
+      "title": "Four things we hold to",
+      "lead": "No grand promises — just working habits you can check for yourself on any product page.",
+      "origin": {
+        "title": "Origin, stated",
+        "text": "Every fabric names the city and province its motif comes from. Where we do not know the origin, we do not invent one."
+      },
+      "measure": {
+        "title": "Measurements, given",
+        "text": "Width in centimetres, weight in gsm, and the cutting increment in metres. All of it is written down before you add anything to the cart."
+      },
+      "transparency": {
+        "title": "Priced by the metre",
+        "text": "Prices are always shown per metre, with no charges appearing at the last step. Shipping only appears once you have chosen a service."
+      },
+      "care": {
+        "title": "Care instructions",
+        "text": "Each fabric carries washing and storage notes matched to its fibre content and the way it was dyed."
+      }
+    },
+    "timeline": {
+      "eyebrow": "Progress",
+      "title": "How Kainku came together",
+      "items": [
+        {
+          "year": "Stage 1",
+          "title": "Assembling the catalogue",
+          "text": "Compiling motifs from across the archipelago together with their technical characteristics: width, weight, and fibre content."
+        },
+        {
+          "year": "Stage 2",
+          "title": "Building the viewing system",
+          "text": "Creating three standard views for every fabric so buyers can compare motif scale fairly from one product to the next."
+        },
+        {
+          "year": "Stage 3",
+          "title": "Preparing the ordering flow",
+          "text": "Designing a cart and checkout that work in metres, including per-product cutting increments and minimum order lengths."
+        },
+        {
+          "year": "Next",
+          "title": "Payment and inventory integration",
+          "text": "Connecting a real payment gateway, stock management, and couriers. This work is tracked in TODO.md in the repository."
+        }
+      ]
+    },
+    "honesty": {
+      "title": "How far along is this site?",
+      "body": "This is a demonstration build. The catalogue, cart, and checkout flows work fully on the interface side, but they are not yet connected to a payment gateway, an inventory system, or a courier. No payment is processed and no order is actually dispatched."
+    }
+  },
+
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Something you want to ask?",
+    "lead": "Send us a question about a particular fabric, a bulk requirement, or a swatch request. We reply during working hours.",
+    "emailLabel": "Email",
+    "emailNote": "The quickest route for anything that needs an attached image or a list of requirements.",
+    "whatsappLabel": "WhatsApp",
+    "hoursLabel": "Working hours",
+    "responseNote": "Messages that arrive outside working hours are answered on the next working day.",
+    "ownerLabel": "Responsible person",
+    "ownerNote": "Maintains the Kainku catalogue and builds the site.",
+    "field": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Mobile number",
+      "topic": "Topic",
+      "message": "Message"
+    },
+    "hint": {
+      "message": "Mention the fabric name, roughly how many metres you need, and the destination city if relevant."
+    },
+    "topic": {
+      "pemesanan": "Ordering",
+      "grosir": "Bulk purchase",
+      "kustom": "Special request",
+      "lainnya": "Something else"
+    },
+    "privacyNote": "By sending this message you agree to your data being handled as described in our {privacy}.",
+    "sending": "Sending…",
+    "success": "Thank you. Your message has reached us and we will reply during working hours.",
+    "errors": {
+      "generic": "The message could not be sent. Try again shortly, or email us directly.",
+      "rateLimited": "Too many attempts from this device. Please wait a few minutes."
+    }
+  },
+
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Questions we get most often",
+    "lead": "The things people usually want settled before ordering cloth by the metre.",
+    "stillStuck": "Still stuck?",
+    "stillStuckText": "Send us your question and we will reply during working hours.",
+    "items": [
+      {
+        "q": "Is the fabric sold by the metre or by the piece?",
+        "a": "By the metre. Each product states its minimum order and its cutting increment on the product page — most can be cut in half-metre steps."
+      },
+      {
+        "q": "How do I work out how many metres I need?",
+        "a": "The Size Guide lists estimates for several garment types on a 115 cm width. Treat those as starting points; directional motifs usually need extra."
+      },
+      {
+        "q": "What does gsm mean in the product details?",
+        "a": "Gsm is grams per square metre, a measure of fabric weight. The higher the number, the heavier and thicker the cloth. Fabrics between 120 and 140 gsm tend to be light and fluid, while 200 gsm and above feels noticeably more structured."
+      },
+      {
+        "q": "Will the colour on screen match the real fabric?",
+        "a": "Not exactly. Every screen renders colour differently, and dye lots vary between production runs. We include a macro view of the weave to help, and swatches can be requested through the contact page."
+      },
+      {
+        "q": "Will the fabric shrink after washing?",
+        "a": "Natural fibres such as cotton generally shrink on the first wash. We recommend washing the cloth before cutting if you are sewing a garment."
+      },
+      {
+        "q": "Which payment methods are available?",
+        "a": "The checkout page offers bank transfer, virtual account, e-wallet, and cash on delivery. In this demonstration build none of them is connected to a payment gateway, so no money is taken."
+      },
+      {
+        "q": "How long does delivery take?",
+        "a": "Transit estimates for each service are shown at checkout. Those figures are working-day estimates and exclude the time needed to prepare the order."
+      },
+      {
+        "q": "Can I return fabric that has already been cut?",
+        "a": "Cut-to-order fabric cannot normally be returned, unless there is a material defect or the wrong item was sent. The details are on the Returns & Exchanges page."
+      }
+    ]
+  },
+
+  "sizeGuide": {
+    "eyebrow": "Guide",
+    "title": "How many metres do you need?",
+    "lead": "Fabric estimates for common sewing projects, calculated on a 115 cm width.",
+    "colItem": "Project",
+    "colMeters": "Estimate",
+    "colNote": "Note",
+    "disclaimer": {
+      "title": "These are estimates, not guarantees.",
+      "body": "Actual requirements depend on body measurements, the pattern you use, the fabric width, and the direction of the motif. For directional or large-scale motifs, add 15–25% to be safe."
+    },
+    "rows": [
+      { "item": "Long-sleeved shirt", "meters": "2 – 2.5 m", "note": "Add 0.5 m for directional motifs." },
+      { "item": "Short-sleeved shirt", "meters": "1.5 – 2 m", "note": "Enough for sizes M–L." },
+      { "item": "Blouse", "meters": "1.5 – 2 m", "note": "Depends on length and sleeve style." },
+      { "item": "Long skirt", "meters": "2 – 2.5 m", "note": "Pleated styles need more." },
+      { "item": "Full-length dress", "meters": "3 – 3.5 m", "note": "Add extra for wide sleeves." },
+      { "item": "Trousers", "meters": "2 – 2.5 m", "note": "Heavier cloth works better." },
+      { "item": "Outer layer / kimono", "meters": "2.5 – 3 m", "note": "Includes edge facings." },
+      { "item": "Tablecloth for six", "meters": "2.5 m", "note": "Includes a 25 cm drop." },
+      { "item": "45 cm cushion cover", "meters": "0.5 m", "note": "Covers both faces." }
+    ],
+    "howToMeasure": {
+      "title": "Working out your requirement",
+      "body": "Measure the longest piece on your pattern, multiply it by the number of pieces that will not fit side by side across the fabric width, then add 10% for seam allowances and adjustments. If the motif has to line up across a seam, add one full pattern repeat for each join."
+    },
+    "shrinkage": {
+      "title": "Shrinkage",
+      "body": "Cotton and other natural fibres typically shrink 3–5% on the first wash. Wash and dry the cloth before cutting so the finished garment does not change size later."
+    }
+  },
+
+  "seo": {
+    "defaultTitle": "Kainku — Indonesian textiles by the metre",
+    "home": {
+      "title": "Indonesian textiles, sold by the metre",
+      "description": "A catalogue of batik, tenun, songket, and jumputan from across Indonesia. Width, weight, and region of origin stated plainly. Cut from 0.5 metres."
+    },
+    "catalogue": {
+      "title": "Fabric catalogue",
+      "description": "Browse the full Kainku collection. Filter by technique, fibre, colour, and price per metre."
+    },
+    "collections": {
+      "title": "Collections",
+      "description": "Four families of Indonesian cloth: batik, tenun, songket, and jumputan — each with its own character and method of making."
+    },
+    "collection": { "title": "{name} collection" },
+    "about": {
+      "title": "About us",
+      "description": "Kainku sells Indonesian textiles by the metre with the width, weight, and region of origin stated plainly. Read how we work."
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Get in touch with Kainku about products, bulk orders, or swatch requests."
+    },
+    "faq": {
+      "title": "FAQ",
+      "description": "Answers to common questions about buying fabric by the metre, fabric weight, shrinkage, and delivery."
+    },
+    "sizeGuide": {
+      "title": "Size guide",
+      "description": "Fabric estimates for shirts, skirts, dresses, and other sewing projects on a 115 cm width."
+    },
+    "cart": { "title": "Cart", "description": "Your Kainku shopping cart." },
+    "checkout": { "title": "Checkout", "description": "Complete your fabric order." },
+    "confirmation": {
+      "title": "Order received",
+      "description": "A summary of your Kainku order."
+    },
+    "legal": {
+      "title": "Compliance & policies",
+      "description": "Kainku's privacy policy, terms and conditions, shipping, returns, cookies, accessibility, and disclaimer."
+    }
+  }
+}

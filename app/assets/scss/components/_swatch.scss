@@ -1,0 +1,120 @@
+@use 'sass:list';
+@use 'sass:map';
+@use '../abstracts' as *;
+
+// =============================================================================
+// Product palettes
+// -----------------------------------------------------------------------------
+// Each catalogue item carries a `palette` token (see app/data/products.ts). The
+// class below sets `--swatch-a` / `--swatch-b`, which cards, galleries and the
+// product page then read for tints, glows and colour dots.
+//
+// This is the mechanism that lets a product carry its own colour WITHOUT an
+// inline style attribute: the template writes `:class="`swatch--${palette}`"`
+// and every colour decision stays here in the stylesheet.
+//
+// Palette names MUST match `palette` in app/data/products.ts and the entry in
+// scripts/catalog.mjs. `npm run check` enforces this.
+// =============================================================================
+
+$palettes: (
+  'indigo-kapas': (
+    #16233f,
+    #c9a227,
+  ),
+  'tanah-sumba': (
+    #6b2f22,
+    #d9a441,
+  ),
+  'merah-emas': (
+    #6d1226,
+    #d9b23c,
+  ),
+  'biru-mendung': (
+    #0b2c53,
+    #8fd0ee,
+  ),
+  'lurik-natural': (
+    #3a3226,
+    #a8452e,
+  ),
+  'ulos-ragi': (
+    #1a1614,
+    #9c1f22,
+  ),
+  'giri-jade': (
+    #0d4f4a,
+    #e8c766,
+  ),
+  'banjar-senja': (
+    #3d1445,
+    #c4247a,
+  ),
+  'sogan-klasik': (
+    #5d3722,
+    #a8794a,
+  ),
+  'tapis-malam': (
+    #101b33,
+    #d4ac30,
+  ),
+  'sabbe-delima': (
+    #8c1220,
+    #e8b923,
+  ),
+  'troso-tembaga': (
+    #0e3b3e,
+    #b87333,
+  ),
+);
+
+@each $name, $pair in $palettes {
+  .swatch--#{$name} {
+    --swatch-a: #{list.nth($pair, 1)};
+    --swatch-b: #{list.nth($pair, 2)};
+  }
+}
+
+// A small round chip showing the two palette colours — used in cards and lists.
+.swatch-dot {
+  display: inline-block;
+  width: 1.15rem;
+  height: 1.15rem;
+  border-radius: $radius-pill;
+  border: 1px solid var(--c-border-strong);
+  background: linear-gradient(135deg, var(--swatch-a) 0 50%, var(--swatch-b) 50% 100%);
+  flex: none;
+}
+
+.swatch-dot--lg {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+// Colour-family dots for the filter panel.
+$families: (
+  'indigo': #1b2e52,
+  'biru': #1f6bb0,
+  'merah': #9c1f22,
+  'emas': #c9a227,
+  'tanah': #7a4b2e,
+  'hijau': #0d4f4a,
+  'ungu': #5b2166,
+  'netral': #ddd2bd,
+);
+
+@each $name, $color in $families {
+  .family-dot--#{$name} {
+    --family-color: #{$color};
+  }
+}
+
+.family-dot {
+  display: inline-block;
+  width: 0.85rem;
+  height: 0.85rem;
+  border-radius: $radius-pill;
+  background: var(--family-color, var(--c-border-strong));
+  border: 1px solid var(--c-border-strong);
+  flex: none;
+}

@@ -1,0 +1,286 @@
+{
+  "home": {
+    "hero": {
+      "eyebrow": "Batik · Tenun · Songket · Jumputan",
+      "titleLead": "Cloth that",
+      "titleAccent": "tells you",
+      "titleTail": "what it is.",
+      "lead": "Twelve motifs from across Indonesia, sold by the metre. Width, weight, and region of origin are on every page — so you know exactly what is being cut.",
+      "scroll": "Scroll",
+      "statMotifs": "motifs in the catalogue",
+      "statCut": "cutting increment",
+      "statRegions": "regions of origin"
+    },
+    "featured": {
+      "eyebrow": "Selected",
+      "title": "The ones people ask about most",
+      "lead": "The motifs visitors open most often, each with a macro view of the weave."
+    },
+    "collections": {
+      "eyebrow": "Collections",
+      "title": "Four ways cloth is made",
+      "lead": "Batik resists dye with wax, tenun builds the pattern from the threads themselves, songket floats a supplementary thread across the surface, and jumputan binds and stitches the cloth before dyeing."
+    },
+    "anatomy": {
+      "eyebrow": "Fabric anatomy",
+      "title": "Reading the product details",
+      "lead": "Four numbers that decide whether a fabric suits your project.",
+      "width": {
+        "term": "Usable width",
+        "desc": "Measured in centimetres from selvedge to selvedge. It determines how many pattern pieces fit side by side, which directly changes the total metres you need to buy."
+      },
+      "weight": {
+        "term": "Weight (gsm)",
+        "desc": "Grams per square metre. A low number means light and fluid; a high number means thicker and more structured. Shirts are usually comfortable between 120 and 160 gsm."
+      },
+      "material": {
+        "term": "Fibre content",
+        "desc": "Cotton breathes and is easy to care for. Silk is lighter with a natural sheen. Rayon drapes softly. Metallic thread adds shine but needs gentler handling."
+      },
+      "technique": {
+        "term": "Making technique",
+        "desc": "This decides how the surface reads: wax resist produces crisp motif outlines, while ikat weaving gives the motif edges their characteristic feathering."
+      }
+    },
+    "process": {
+      "eyebrow": "How ordering works",
+      "title": "From choosing to dispatch",
+      "lead": "Four steps, with nothing appearing at the last minute.",
+      "choose": {
+        "title": "Choose the cloth",
+        "text": "Compare motifs across three views: how it drapes, a macro crop of the weave, and a folded stack."
+      },
+      "measure": {
+        "title": "Set the length",
+        "text": "Adjust the length in half-metre steps. The total updates as you change it."
+      },
+      "confirm": {
+        "title": "Confirm the order",
+        "text": "Fill in the address, pick a shipping service, and review the summary before you commit."
+      },
+      "ship": {
+        "title": "Cut and dispatched",
+        "text": "The cloth is cut to your ordered length and sent with the service you selected."
+      }
+    },
+    "newest": {
+      "eyebrow": "New",
+      "title": "Recently added"
+    },
+    "cta": {
+      "eyebrow": "Start here",
+      "title": "Find the right cloth for your project",
+      "lead": "Browse the full catalogue, or send us a question if you would like help choosing the fibre and the length."
+    }
+  },
+
+  "catalogue": {
+    "eyebrow": "Catalogue",
+    "title": "Every fabric",
+    "lead": "Filter by technique, fibre, colour, and price per metre. Filters live in the page address, so any view can be shared as a link.",
+    "filters": "Filters",
+    "filtersLabel": "Product filters",
+    "resetFilters": "Reset",
+    "byCategory": "Technique",
+    "byMaterial": "Fibre",
+    "byColor": "Colour",
+    "byPrice": "Maximum price per metre",
+    "availability": "Availability",
+    "inStockOnly": "In stock only",
+    "showResults": "Show results",
+    "maxPriceLabel": "Maximum price per metre",
+    "searchPlaceholder": "Search a motif, region, or fibre…",
+    "searchLabel": "Search the catalogue",
+    "sortLabel": "Sort by",
+    "resultCount": "Showing {count} fabric | Showing {count} fabrics",
+    "activeFilters": "Active filters:",
+    "clearAll": "Clear all filters",
+    "emptyTitle": "No fabric matches",
+    "emptyText": "Try loosening the filters — raise the price ceiling, or remove one of the colour selections.",
+    "itemCount": "{n} fabric | {n} fabrics",
+    "category": {
+      "batik": "Batik",
+      "tenun": "Tenun",
+      "songket": "Songket",
+      "jumputan": "Jumputan"
+    },
+    "material": {
+      "katun": "Cotton",
+      "sutra": "Silk",
+      "rayon": "Rayon",
+      "metalik": "Metallic thread"
+    },
+    "color": {
+      "indigo": "Indigo",
+      "biru": "Blue",
+      "merah": "Red",
+      "emas": "Gold",
+      "tanah": "Earth brown",
+      "hijau": "Green",
+      "ungu": "Purple",
+      "netral": "Neutral"
+    },
+    "sort": {
+      "featured": "Our selection",
+      "newest": "Newest",
+      "price-asc": "Price, low to high",
+      "price-desc": "Price, high to low",
+      "name-asc": "Name A–Z"
+    }
+  },
+
+  "collections": {
+    "eyebrow": "Collections",
+    "title": "Four techniques, four characters",
+    "lead": "How a cloth is made decides how it looks, how it hangs, and how it has to be cared for.",
+    "ctaTitle": "Not found what you are after?",
+    "ctaLead": "The full catalogue holds every motif, with filters for fibre, colour, and price.",
+    "blurb": {
+      "batik": "The motif is drawn in wax before the cloth is dyed, which gives batik its crisp outlines and layered colour. Usually on cotton — light and comfortable for everyday clothing.",
+      "tenun": "The pattern is built from the threads during weaving rather than printed on the surface. The result is a reversible cloth with texture you can feel and motif edges you can recognise.",
+      "songket": "A supplementary thread — often gold or silver — is laid in during weaving so the motif appears to float above the ground. These are the heaviest and most formal fabrics in the catalogue.",
+      "jumputan": "The cloth is bound or stitched at chosen points before dyeing, so the gathered areas resist the colour and leave rippled patterns that are never quite identical twice."
+    }
+  },
+
+  "product": {
+    "perMeter": "per metre",
+    "perMeterShort": "/m",
+    "soldOut": "Out of stock",
+    "peek": "See the weave",
+    "badge": {
+      "baru": "New",
+      "terbatas": "Limited",
+      "favorit": "Popular"
+    },
+    "imageAlt": {
+      "drape": "{name} fabric hanging, showing how it drapes",
+      "macro": "Close-up of the weave of {name} fabric",
+      "fold": "Folded lengths of {name} fabric stacked"
+    },
+    "view": {
+      "drape": "Drape",
+      "macro": "Close-up",
+      "fold": "Folded"
+    },
+    "galleryLabel": "Fabric views",
+    "stockIn": "{meters} available",
+    "stockLow": "Only {meters} left",
+    "stockOut": "Currently unavailable",
+    "length": "Length",
+    "lengthLabel": "Fabric length in metres",
+    "minOrder": "Minimum {meters}",
+    "aboutTitle": "About this fabric",
+    "bestForTitle": "Well suited to",
+    "careTitle": "Care",
+    "specTitle": "Specifications",
+    "storyTitle": "About the motif",
+    "spec": {
+      "origin": "Region of origin",
+      "technique": "Technique",
+      "width": "Width",
+      "weight": "Weight",
+      "material": "Fibre",
+      "cut": "Cutting increment",
+      "sku": "Product code"
+    },
+    "relatedEyebrow": "Similar",
+    "relatedTitle": "Other fabrics you might consider"
+  },
+
+  "cart": {
+    "title": "Cart",
+    "openLabel": "Open cart, {count} fabrics",
+    "pageTitle": "Shopping cart",
+    "pageLead": "Check the length of each fabric before continuing to checkout.",
+    "itemsTitle": "Fabrics in your cart",
+    "summary": "Summary",
+    "subtotal": "Subtotal",
+    "totalMeters": "Total length",
+    "shipping": "Shipping",
+    "shippingPending": "Calculated at the next step",
+    "free": "Free",
+    "total": "Total",
+    "shippingAtCheckout": "Shipping is calculated once you choose a service.",
+    "emptyTitle": "Your cart is empty",
+    "emptyText": "Browse the catalogue and add the fabric you need.",
+    "clear": "Empty the cart",
+    "removeNamed": "Remove {name} from the cart",
+    "quantityLabel": "Length of {name} in metres",
+    "maxStock": "That is all the stock available ({meters}).",
+    "addNamed": "Add {name} to the cart",
+    "freeShippingReached": "Your order qualifies for free standard shipping.",
+    "freeShippingRemaining": "Add this much more for free standard shipping:",
+    "freeShippingLabel": "Progress toward free shipping",
+    "toast": {
+      "added": "{name} added — {meters}",
+      "removed": "{name} removed from the cart",
+      "soldOut": "{name} is currently unavailable",
+      "failed": "Could not add to the cart",
+      "viewCart": "View cart"
+    }
+  },
+
+  "checkout": {
+    "title": "Checkout",
+    "lead": "Complete your delivery details and choose a payment method.",
+    "step": {
+      "cart": "Cart",
+      "details": "Delivery details",
+      "confirm": "Confirmation"
+    },
+    "contactTitle": "Your details",
+    "addressTitle": "Delivery address",
+    "shippingTitle": "Shipping service",
+    "paymentTitle": "Payment method",
+    "summaryTitle": "Order summary",
+    "emptyText": "Add fabric to your cart before continuing to checkout.",
+    "eta": "estimated {min}–{max} working days",
+    "agreeTerms": "I have read and accept the {terms} and the {privacy}.",
+    "field": {
+      "fullName": "Full name",
+      "email": "Email",
+      "phone": "Mobile number",
+      "address": "Full address",
+      "city": "City / regency",
+      "province": "Province",
+      "postalCode": "Postal code",
+      "notes": "Notes for us"
+    },
+    "hint": {
+      "phone": "Used by the courier to reach you during delivery.",
+      "notes": "For example a landmark near your address, or a special cutting request."
+    },
+    "shipping": {
+      "regular": { "name": "Standard", "desc": "Regular intercity courier" },
+      "kargo": { "name": "Freight", "desc": "More economical for large orders" },
+      "pickup": { "name": "Collect in person", "desc": "Collected on site once confirmed" }
+    },
+    "payment": {
+      "transfer": { "name": "Bank transfer", "desc": "Confirmed manually after transfer" },
+      "va": { "name": "Virtual account", "desc": "A dedicated VA number for this order" },
+      "ewallet": { "name": "E-wallet", "desc": "Paid through a digital wallet app" },
+      "cod": { "name": "Cash on delivery", "desc": "Available in selected areas" }
+    },
+    "demoNotice": {
+      "title": "No real payment is taken.",
+      "body": "In this demonstration build, none of the payment methods is connected to a payment gateway. Placing an order only records a summary in your own browser and moves no money at all."
+    }
+  },
+
+  "confirmation": {
+    "title": "Order recorded",
+    "lead": "A summary of your order has been saved under the reference below. A copy will be emailed to {email} once email delivery is switched on.",
+    "reference": "Reference number",
+    "placedAt": "Date",
+    "total": "Total",
+    "shipping": "Shipping",
+    "payment": "Payment",
+    "demoNotice": {
+      "title": "This is a demonstration order.",
+      "body": "No payment was processed, no stock was reduced, and no fabric will be dispatched. This summary exists only in your browser."
+    },
+    "missingTitle": "No order data found",
+    "missingText": "Order summaries are stored locally in your browser. That data is lost if you clear the site's storage, or if you open this link on another device."
+  }
+}

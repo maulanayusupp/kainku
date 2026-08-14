@@ -1,0 +1,340 @@
+@use '../abstracts' as *;
+
+/* -- About: values grid ----------------------------------------------------- */
+
+.value-grid {
+  @include auto-grid(17rem, $space-5);
+}
+
+.value-card {
+  @include surface;
+  padding: $space-5;
+  display: grid;
+  gap: $space-3;
+  align-content: start;
+  transition:
+    transform $dur-base $ease-out,
+    border-color $dur-base $ease-out;
+
+  @include hover {
+    transform: translateY(-4px);
+    border-color: var(--c-accent);
+  }
+}
+
+.value-card__icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: grid;
+  place-items: center;
+  border-radius: $radius-sm;
+  background: var(--c-accent-soft);
+  color: var(--c-accent);
+
+  svg {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+}
+
+.value-card__title {
+  font-family: $font-display;
+  font-size: $fs-h4;
+  font-weight: $fw-semibold;
+}
+
+.value-card__text {
+  font-size: $fs-sm;
+  line-height: $lh-relaxed;
+  color: var(--c-text-muted);
+}
+
+/* -- Timeline --------------------------------------------------------------- */
+
+.timeline {
+  display: grid;
+  gap: $space-6;
+  position: relative;
+  padding-left: $space-7;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0.45rem;
+    top: 0.6rem;
+    bottom: 0.6rem;
+    width: 1px;
+    background: linear-gradient(180deg, var(--c-accent), var(--c-border));
+  }
+}
+
+.timeline__item {
+  position: relative;
+  display: grid;
+  gap: $space-2;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: -#{$space-7};
+    top: 0.5rem;
+    width: 0.95rem;
+    height: 0.95rem;
+    border-radius: $radius-pill;
+    background: var(--c-bg);
+    border: 2px solid var(--c-accent);
+  }
+}
+
+.timeline__year {
+  @include eyebrow;
+  color: var(--c-accent);
+}
+
+.timeline__title {
+  font-family: $font-display;
+  font-size: $fs-h4;
+  font-weight: $fw-semibold;
+}
+
+.timeline__text {
+  font-size: $fs-sm;
+  line-height: $lh-relaxed;
+  color: var(--c-text-muted);
+}
+
+/* -- Contact ---------------------------------------------------------------- */
+
+.contact-layout {
+  display: grid;
+  gap: $space-7;
+  align-items: start;
+
+  @include mq('lg') {
+    grid-template-columns: 1fr 1.15fr;
+    gap: $space-9;
+  }
+}
+
+.contact-aside {
+  display: grid;
+  gap: $space-5;
+  align-content: start;
+}
+
+.contact-card {
+  @include surface;
+  padding: $space-5;
+  display: grid;
+  gap: $space-3;
+}
+
+.contact-card__label {
+  @include eyebrow;
+  color: var(--c-text-subtle);
+}
+
+.contact-card__value {
+  font-size: $fs-h4;
+  font-family: $font-display;
+  font-weight: $fw-semibold;
+  word-break: break-word;
+
+  a {
+    transition: color $dur-fast $ease-out;
+
+    @include focus-ring;
+
+    @include hover {
+      color: var(--c-accent);
+    }
+  }
+}
+
+.contact-card__note {
+  font-size: $fs-sm;
+  color: var(--c-text-muted);
+  line-height: $lh-relaxed;
+}
+
+.contact-form {
+  @include surface;
+  padding: clamp(#{$space-5}, 3vw, #{$space-7});
+  display: grid;
+  gap: $space-5;
+}
+
+.contact-form__row {
+  display: grid;
+  gap: $space-5;
+
+  @include mq('sm') {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+// Honeypot: kept in the DOM for bots but removed from the layout and the
+// accessibility tree. Off-screen rather than `display:none`, since some bots
+// skip hidden inputs.
+.contact-form__trap {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.contact-form__status {
+  display: flex;
+  align-items: flex-start;
+  gap: $space-3;
+  padding: $space-4;
+  border-radius: $radius-md;
+  font-size: $fs-sm;
+  line-height: $lh-normal;
+}
+
+.contact-form__status--success {
+  background: rgba($color-success, 0.1);
+  border: 1px solid rgba($color-success, 0.35);
+  color: $color-success;
+}
+
+.contact-form__status--error {
+  background: rgba($color-danger, 0.09);
+  border: 1px solid rgba($color-danger, 0.35);
+  color: $color-danger;
+}
+
+/* -- FAQ -------------------------------------------------------------------- */
+
+.faq-layout {
+  display: grid;
+  gap: $space-7;
+  align-items: start;
+
+  @include mq('lg') {
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: $space-9;
+  }
+}
+
+.faq-aside {
+  display: grid;
+  gap: $space-4;
+  align-content: start;
+
+  @include mq('lg') {
+    position: sticky;
+    top: calc(var(--header-h) + #{$space-5});
+  }
+}
+
+/* -- Legal / compliance ----------------------------------------------------- */
+
+.legal-layout {
+  display: grid;
+  gap: $space-7;
+  align-items: start;
+
+  @include mq('lg') {
+    grid-template-columns: 15rem minmax(0, 1fr);
+    gap: $space-8;
+  }
+}
+
+.legal-nav {
+  display: grid;
+  gap: $space-1;
+  align-content: start;
+
+  @include mq('lg') {
+    position: sticky;
+    top: calc(var(--header-h) + #{$space-5});
+  }
+}
+
+.legal-nav__link {
+  padding: $space-3 $space-4;
+  border-radius: $radius-sm;
+  font-size: $fs-sm;
+  color: var(--c-text-muted);
+  border-left: 2px solid transparent;
+  transition:
+    background-color $dur-fast $ease-out,
+    color $dur-fast $ease-out,
+    border-color $dur-fast $ease-out;
+
+  @include focus-ring;
+
+  @include hover {
+    background: var(--c-surface-alt);
+    color: var(--c-text);
+  }
+
+  &.router-link-active {
+    border-left-color: var(--c-accent);
+    background: var(--c-surface-alt);
+    color: var(--c-text);
+    font-weight: $fw-semibold;
+  }
+}
+
+.legal-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $space-4;
+  padding: $space-4;
+  margin-bottom: $space-6;
+  border-radius: $radius-md;
+  background: var(--c-surface-alt);
+  border: 1px solid var(--c-border);
+  font-size: $fs-xs;
+  color: var(--c-text-subtle);
+
+  strong {
+    color: var(--c-text);
+    font-weight: $fw-semibold;
+  }
+}
+
+/* -- Order confirmation ----------------------------------------------------- */
+
+.confirmation {
+  display: grid;
+  justify-items: center;
+  gap: $space-5;
+  text-align: center;
+  max-width: 40rem;
+  margin-inline: auto;
+}
+
+.confirmation__mark {
+  width: 4.5rem;
+  height: 4.5rem;
+  display: grid;
+  place-items: center;
+  border-radius: $radius-pill;
+  background: rgba($color-success, 0.12);
+  color: $color-success;
+  border: 1px solid rgba($color-success, 0.35);
+
+  svg {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+.confirmation__ref {
+  display: inline-flex;
+  align-items: center;
+  gap: $space-3;
+  padding: $space-3 $space-5;
+  border-radius: $radius-md;
+  background: var(--c-surface-alt);
+  border: 1px dashed var(--c-border-strong);
+  font-family: $font-mono;
+  font-size: $fs-sm;
+  font-weight: $fw-semibold;
+  letter-spacing: 0.05em;
+}

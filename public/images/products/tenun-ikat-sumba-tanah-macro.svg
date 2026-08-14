@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000" role="img">
+  <defs>
+    
+  
+  <linearGradient id="f-tenun-ikat-sumba-tanah-macro" x1="0" y1="0" x2="1" y2="0.4">
+    <stop offset="0%" stop-color="#7d5f12"/>
+    <stop offset="30%" stop-color="#f6e3a1"/>
+    <stop offset="55%" stop-color="#c9a227"/>
+    <stop offset="78%" stop-color="#f6e3a1"/>
+    <stop offset="100%" stop-color="#7d5f12"/>
+  </linearGradient>
+  
+  <pattern id="p-tenun-ikat-sumba-tanah-macro" width="150" height="150" patternUnits="userSpaceOnUse">
+    <rect width="150" height="150" fill="#6b2f22"/>
+    <rect y="0" width="150" height="8" fill="#2f4739" opacity="0.55"/>
+    <rect y="142" width="150" height="8" fill="#2f4739" opacity="0.55"/>
+    <path d="M75 14 L123 66 L75 118 L27 66 Z" fill="#e5d3b3" opacity="0.17"/><path d="M75 17 L123 69 L75 121 L27 69 Z" fill="#e5d3b3" opacity="0.28"/><path d="M75 20 L123 72 L75 124 L27 72 Z" fill="#e5d3b3" opacity="0.39"/><path d="M75 23 L123 75 L75 127 L27 75 Z" fill="#e5d3b3" opacity="0.5"/><path d="M75 26 L123 78 L75 130 L27 78 Z" fill="#e5d3b3" opacity="0.39"/><path d="M75 29 L123 81 L75 133 L27 81 Z" fill="#e5d3b3" opacity="0.28"/><path d="M75 32 L123 84 L75 136 L27 84 Z" fill="#e5d3b3" opacity="0.17"/>
+    <path d="M0 31 L30 66 L0 101 L-30 66 Z" fill="#d9a441" opacity="0.17"/><path d="M0 34 L30 69 L0 104 L-30 69 Z" fill="#d9a441" opacity="0.28"/><path d="M0 37 L30 72 L0 107 L-30 72 Z" fill="#d9a441" opacity="0.39"/><path d="M0 40 L30 75 L0 110 L-30 75 Z" fill="#d9a441" opacity="0.5"/><path d="M0 43 L30 78 L0 113 L-30 78 Z" fill="#d9a441" opacity="0.39"/><path d="M0 46 L30 81 L0 116 L-30 81 Z" fill="#d9a441" opacity="0.28"/><path d="M0 49 L30 84 L0 119 L-30 84 Z" fill="#d9a441" opacity="0.17"/>
+    <path d="M150 31 L180 66 L150 101 L120 66 Z" fill="#d9a441" opacity="0.17"/><path d="M150 34 L180 69 L150 104 L120 69 Z" fill="#d9a441" opacity="0.28"/><path d="M150 37 L180 72 L150 107 L120 72 Z" fill="#d9a441" opacity="0.39"/><path d="M150 40 L180 75 L150 110 L120 75 Z" fill="#d9a441" opacity="0.5"/><path d="M150 43 L180 78 L150 113 L120 78 Z" fill="#d9a441" opacity="0.39"/><path d="M150 46 L180 81 L150 116 L120 81 Z" fill="#d9a441" opacity="0.28"/><path d="M150 49 L180 84 L150 119 L120 84 Z" fill="#d9a441" opacity="0.17"/>
+    <path d="M0 36H150M0 114H150" stroke="#d9a441" stroke-width="2" opacity="0.35"/>
+  </pattern>
+  
+  <pattern id="w-tenun-ikat-sumba-tanah-macro" width="6" height="6" patternUnits="userSpaceOnUse">
+    <rect width="6" height="6" fill="none"/>
+    <path d="M0 0.5H6M0 3.5H6" stroke="#ffffff" stroke-width="0.6" opacity="0.16"/>
+    <path d="M0.5 0V6M3.5 0V6" stroke="#000000" stroke-width="0.6" opacity="0.12"/>
+  </pattern>
+  
+  <linearGradient id="d-tenun-ikat-sumba-tanah-macro" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#ffffff" stop-opacity="0.20"/>
+    <stop offset="22%" stop-color="#000000" stop-opacity="0.16"/>
+    <stop offset="44%" stop-color="#ffffff" stop-opacity="0.14"/>
+    <stop offset="63%" stop-color="#000000" stop-opacity="0.20"/>
+    <stop offset="82%" stop-color="#ffffff" stop-opacity="0.10"/>
+    <stop offset="100%" stop-color="#000000" stop-opacity="0.26"/>
+  </linearGradient>
+  <radialGradient id="v-tenun-ikat-sumba-tanah-macro" cx="50%" cy="42%" r="78%">
+    <stop offset="55%" stop-color="#000000" stop-opacity="0"/>
+    <stop offset="100%" stop-color="#000000" stop-opacity="0.42"/>
+  </radialGradient>
+  <linearGradient id="s-tenun-ikat-sumba-tanah-macro" x1="0" y1="0" x2="0.7" y2="1">
+    <stop offset="0%" stop-color="#ffffff" stop-opacity="0.22"/>
+    <stop offset="40%" stop-color="#ffffff" stop-opacity="0"/>
+  </linearGradient>
+    
+  <pattern id="w-tenun-ikat-sumba-tanah-macro-hi" width="6" height="6" patternUnits="userSpaceOnUse">
+    <rect width="6" height="6" fill="none"/>
+    <path d="M0 0.5H6M0 3.5H6" stroke="#ffffff" stroke-width="0.6" opacity="0.3"/>
+    <path d="M0.5 0V6M3.5 0V6" stroke="#000000" stroke-width="0.6" opacity="0.22499999999999998"/>
+  </pattern>
+  </defs>
+  <rect width="1000" height="1000" fill="#6b2f22"/>
+  <g transform="rotate(8 500 500) scale(3.4)">
+    <rect x="-60" y="-60" width="414.11764705882354" height="414.11764705882354" fill="url(#p-tenun-ikat-sumba-tanah-macro)"/>
+  </g>
+  <rect width="1000" height="1000" fill="url(#w-tenun-ikat-sumba-tanah-macro-hi)"/>
+  <rect width="1000" height="1000" fill="url(#v-tenun-ikat-sumba-tanah-macro)"/>
+  <rect width="1000" height="1000" fill="url(#s-tenun-ikat-sumba-tanah-macro)" opacity="0.6"/>
+</svg>

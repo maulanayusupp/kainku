@@ -1,0 +1,343 @@
+{
+  "legal": {
+    "lastUpdated": "Last updated",
+    "appliesTo": "Applies to",
+    "appliesToValue": "kainku.id and all of its pages",
+    "questions": "Questions about this document? Get in touch through our {contact} page.",
+
+    "overview": {
+      "title": "Compliance & policies",
+      "lead": "Every Kainku policy document, collected in one place so it is easy to check.",
+      "noticeTitle": "The status of this site.",
+      "noticeBody": "Kainku currently runs as a demonstration build. The documents below describe how the site behaves today — including the parts that are not live yet, such as payment processing and dispatch. They will be updated as those functions come into service.",
+      "summary": {
+        "privasi": "What data this site collects, where it goes, and how long it is kept.",
+        "ketentuan": "Terms covering site use, ordering, pricing, and limits of liability.",
+        "pengiriman": "How orders are prepared, the shipping services, and delivery estimates.",
+        "pengembalian": "When fabric can be returned or exchanged, and when it cannot.",
+        "cookie": "The cookies and browser storage in use, and what each one does.",
+        "aksesibilitas": "The accessibility standard we work to and what is still outstanding.",
+        "disclaimer": "Limits on the catalogue content, product imagery, and cultural information."
+      }
+    },
+
+    "privacy": {
+      "title": "Privacy Policy",
+      "lead": "What personal data this site processes, and why.",
+      "updated": "14 August 2026",
+      "sections": [
+        {
+          "heading": "The short version",
+          "body": "This site collects personal data in exactly two places: the contact form and the checkout form. There is no third-party analytics, no advertising pixel, and no data is sold or exchanged with anyone."
+        },
+        {
+          "heading": "Data collected through the contact form",
+          "body": "When you send a message from the Contact page, the following is transmitted to this site's server:",
+          "list": [
+            "The name you enter",
+            "Your email address",
+            "Your mobile number, if you provide one (the field is optional)",
+            "The topic you select and the body of your message",
+            "Your IP address, used solely to limit how many submissions arrive in a given period"
+          ]
+        },
+        {
+          "heading": "Checkout data",
+          "body": "What you type into the checkout form — name, email, mobile number, address, and notes — is saved in your own browser's local storage so the form is not lost if the page reloads.\n\nIn this demonstration build that data is not sent to any server and is not passed to a payment provider or a courier. It disappears when you clear the site's storage through your browser settings."
+        },
+        {
+          "heading": "Purpose and basis for processing",
+          "body": "Contact data is processed for one purpose: replying to the question you sent. Checkout data is processed to prepare your order. We do not use either to build profiles, target advertising, or make automated decisions."
+        },
+        {
+          "heading": "Storage and retention",
+          "body": "Incoming contact messages are recorded in the site's server log. Those logs are kept only as long as they are needed to follow up your enquiry, and are deleted afterwards. Data held in your browser is entirely under your control and can be removed at any time."
+        },
+        {
+          "heading": "Sharing with third parties",
+          "body": "No personal data is currently shared with any third party. If we later enable a payment provider, a courier service, or an email delivery service, this document will be updated to name that provider before the service is put into use."
+        },
+        {
+          "heading": "Your rights",
+          "body": "You may request a copy of the data we hold about you, ask for corrections where something is wrong, or ask for it to be deleted. Send the request through the Contact page and we will respond within working days."
+        },
+        {
+          "heading": "Security",
+          "body": "Form submissions travel over an encrypted connection. The contact form is rate-limited and filtered to reduce abuse. That said, no system is entirely immune, so we recommend not sending sensitive information through the form."
+        },
+        {
+          "heading": "Minors",
+          "body": "This site is intended for adult buyers and is not designed to collect data from children."
+        },
+        {
+          "heading": "Changes to this policy",
+          "body": "If this policy changes, the date at the top of the page will be updated. Changes with significant impact will also be flagged on the Compliance page."
+        }
+      ]
+    },
+
+    "terms": {
+      "title": "Terms & Conditions",
+      "lead": "The terms that apply when you use this site and order fabric through it.",
+      "updated": "14 August 2026",
+      "sections": [
+        {
+          "heading": "Service status",
+          "body": "Kainku currently operates as a demonstration build. The catalogue, cart, and checkout flow are fully usable on the interface side, but they are not connected to a payment gateway, an inventory system, or a courier.\n\nIn practice: placing an order takes no money, reduces no stock, and dispatches nothing. The terms below are written to apply once the service runs in full."
+        },
+        {
+          "heading": "Using the site",
+          "body": "You are welcome to browse the catalogue, save filtered links, and contact us. You may not scrape the site's content in bulk, disrupt its availability, or use the forms to send unsolicited messages."
+        },
+        {
+          "heading": "Pricing",
+          "body": "All prices are shown in Indonesian Rupiah and apply per metre of fabric unless stated otherwise. The prices in this demonstration build are illustrative figures and do not constitute a binding offer.\n\nOnce the service runs in full, the price that applies is the one shown when the order is confirmed. Shipping is calculated separately and displayed before the order is completed."
+        },
+        {
+          "heading": "Ordering and cutting",
+          "body": "Fabric is sold by the metre, with the minimum order and cutting increment stated on every product page. Because cloth is cut to your ordered length, an order that has reached the cutting stage cannot have its length changed.",
+          "list": [
+            "The delivered length may differ by up to 2 cm from the ordered length as a result of cutting",
+            "The stated width is an average and may vary by a few centimetres between rolls",
+            "If your order requires one continuous length, say so in the notes field at checkout"
+          ]
+        },
+        {
+          "heading": "Availability",
+          "body": "Stock figures on the site are indicative. If the fabric you ordered turns out not to be available in the length requested, we will contact you to offer the available length, an alternative motif, or cancellation with a full refund."
+        },
+        {
+          "heading": "Colour and pattern variation",
+          "body": "The colour on your screen depends on your device and its settings, so it may differ from the actual cloth. Patterned fabric can also vary between production runs. Reasonable variation of this kind is not treated as a defect."
+        },
+        {
+          "heading": "Intellectual property",
+          "body": "The code, layout, text, and generated motif imagery on this site are Kainku's own work. The traditional motif names referenced are shared cultural heritage and are not our trade marks."
+        },
+        {
+          "heading": "Limits of liability",
+          "body": "Our liability for any order is limited to the value of that order. We are not liable for indirect losses, including lost time or a failed sewing project resulting from colour variation, shrinkage, or a miscalculated fabric requirement."
+        },
+        {
+          "heading": "Governing law",
+          "body": "These terms are governed by the laws of the Republic of Indonesia. In the event of a dispute, we would rather settle it by discussion through the contact channels available."
+        }
+      ]
+    },
+
+    "shipping": {
+      "title": "Shipping Policy",
+      "lead": "How orders are prepared, dispatched, and estimated for delivery.",
+      "updated": "14 August 2026",
+      "sections": [
+        {
+          "heading": "Service status",
+          "body": "This demonstration build has no courier integration. The rates and estimates shown at checkout are example figures used to demonstrate the ordering flow, not rates that apply."
+        },
+        {
+          "heading": "Preparation time",
+          "body": "Fabric is cut once the order is confirmed. Preparation is planned at 1–2 working days for orders under 20 metres, and up to 4 working days for larger orders or those needing a single continuous length. This is separate from courier transit time."
+        },
+        {
+          "heading": "Shipping services",
+          "body": "Three options are planned at checkout:",
+          "list": [
+            "Standard — regular intercity courier, estimated 2–5 working days",
+            "Freight — more economical for large orders, estimated 4–9 working days",
+            "Collect in person — picked up on site once the order is confirmed"
+          ]
+        },
+        {
+          "heading": "Free shipping",
+          "body": "Orders totalling 10 metres or more qualify for free shipping on the Standard service. The threshold is calculated from the combined length of all fabric in one order, not per fabric type."
+        },
+        {
+          "heading": "Delivery estimates",
+          "body": "Estimates are given in working days and exclude public holidays. They come from the courier and are outside our control; delays from weather, network congestion, or an incomplete address can occur."
+        },
+        {
+          "heading": "Delivery address",
+          "body": "Please make sure your address and mobile number are correct before completing the order. Orders that fail to deliver because of an incomplete address and have to be resent will incur an additional shipping charge."
+        },
+        {
+          "heading": "Packaging",
+          "body": "Fabric is rolled, wrapped in a protective layer, and packed in water-resistant packaging. For fabrics with metallic thread such as songket and tapis, we plan to ship rolled so the thread does not break along fold lines."
+        },
+        {
+          "heading": "Damage in transit",
+          "body": "If a parcel arrives damaged, photograph the packaging before opening it and contact us within 3 working days of delivery. See the Returns & Exchanges page for what happens next."
+        }
+      ]
+    },
+
+    "returns": {
+      "title": "Returns & Exchanges",
+      "lead": "When fabric can be returned, when it cannot, and how the process works.",
+      "updated": "14 August 2026",
+      "sections": [
+        {
+          "heading": "The principle",
+          "body": "Fabric is cut to the length you order. That cut length cannot be sold on as a whole roll, so cut fabric generally cannot be returned simply because you changed your mind.\n\nThis does not affect your rights where the goods you received are defective or not what you ordered."
+        },
+        {
+          "heading": "What can be returned",
+          "body": "We accept returns or exchanges in the following cases:",
+          "list": [
+            "The fabric has a material defect, such as a broken thread, a stain, or a hole",
+            "The motif or colour delivered differs from what was ordered",
+            "The length received is short of the ordered length beyond the 2 cm tolerance",
+            "The parcel was damaged in transit so that the fabric is unusable"
+          ]
+        },
+        {
+          "heading": "What cannot be returned",
+          "body": "Some situations fall outside the returns policy:",
+          "list": [
+            "A change of mind after the fabric has been cut",
+            "Reasonable colour variation between the screen and the actual cloth",
+            "Fabric that has been washed, cut further, or sewn",
+            "Shrinkage after washing on natural-fibre fabrics",
+            "A miscalculation of the required length by the buyer"
+          ]
+        },
+        {
+          "heading": "Time limit",
+          "body": "Raise a request within 7 calendar days of receiving the parcel. Include the order number, photographs of the fabric showing the problem, and photographs of the packaging where transit damage is involved."
+        },
+        {
+          "heading": "The process",
+          "body": "Once a request arrives we review the photographs and respond within 2 working days. If the request is approved, you may choose a replacement in the same motif and length, or a refund.\n\nWhere a material defect is confirmed, Kainku covers the cost of return shipping."
+        },
+        {
+          "heading": "Refunds",
+          "body": "Refunds are processed back to the original payment method within 7 working days of the fabric being received and inspected. How quickly the money reaches your account depends on your bank or payment provider."
+        },
+        {
+          "heading": "Swatches",
+          "body": "To reduce the risk of an unsuitable choice, swatches can be requested through the Contact page before committing to a large order."
+        }
+      ]
+    },
+
+    "cookies": {
+      "title": "Cookie Policy",
+      "lead": "A complete list of the cookies and browser storage this site uses.",
+      "updated": "14 August 2026",
+      "sections": [
+        {
+          "heading": "Summary",
+          "body": "This site uses no analytics cookies, no advertising cookies, and no third-party tracking cookies. Everything stored is functional — without it, basic features of the site would not work."
+        },
+        {
+          "heading": "Cookies in use",
+          "body": "This site writes exactly one cookie:",
+          "list": [
+            "kainku_locale — remembers your language choice (Indonesian or English) so you do not have to select it again on a later visit"
+          ]
+        },
+        {
+          "heading": "Browser local storage",
+          "body": "Alongside that cookie, the site uses your browser's localStorage. This data stays on your device and is never sent to a server:",
+          "list": [
+            "kainku:cart:v1 — the contents of your cart, the chosen shipping service, and the payment method",
+            "kainku:checkout:v1 — your checkout form entries, so they survive a page reload",
+            "kainku:last-order:v1 — a summary of your most recent order, shown on the confirmation page"
+          ]
+        },
+        {
+          "heading": "How to remove it",
+          "body": "All of the above can be cleared through your browser's site data settings. Doing so empties your cart and resets the language choice, but affects nothing outside your own browser."
+        },
+        {
+          "heading": "Fonts and external resources",
+          "body": "The fonts this site uses are downloaded at build time and served from Kainku's own domain, so your browser does not contact a third-party font server when a page loads."
+        },
+        {
+          "heading": "Future changes",
+          "body": "If we later add analytics or a payment provider that writes cookies, this document will be updated and a consent mechanism will be added before any such cookie becomes active."
+        }
+      ]
+    },
+
+    "accessibility": {
+      "title": "Accessibility Statement",
+      "lead": "The standard we work to, how it is tested, and what is still outstanding.",
+      "updated": "14 August 2026",
+      "sections": [
+        {
+          "heading": "Commitment",
+          "body": "We want this site to be usable by as many people as possible, including screen reader users, keyboard users, and visitors who need to enlarge text."
+        },
+        {
+          "heading": "Reference standard",
+          "body": "This site is built with the Web Content Accessibility Guidelines (WCAG) 2.2 level AA as its target. That is a stated target, not a certification — the site has not been through a third-party accessibility audit."
+        },
+        {
+          "heading": "What is already in place",
+          "body": "Things that are part of the site as it stands:",
+          "list": [
+            "A skip link to the main content as the first tab stop on every page",
+            "Visible focus indicators on every interactive element, never removed",
+            "A sequential heading structure and landmark regions for navigation, main content, and footer",
+            "Descriptive alternative text on every product image, naming which view is shown",
+            "Forms with associated labels, announced error messages, and marked invalid fields",
+            "Full support for the operating system's reduced-motion preference",
+            "Overlays that close on Escape and return focus"
+          ]
+        },
+        {
+          "heading": "What is still outstanding",
+          "body": "We record known limitations openly:",
+          "list": [
+            "Focus trapping inside overlays is basic and does not yet cycle fully",
+            "Contrast ratios for secondary text on light backgrounds have not been verified across every combination",
+            "No testing has been carried out with real screen readers across a range of browsers",
+            "The price range slider has no numeric input alternative for keyboard users"
+          ]
+        },
+        {
+          "heading": "Reporting a barrier",
+          "body": "If you find part of the site hard to use, describe it through the Contact page. Where possible, mention the page and the assistive technology you were using. Reports like that are genuinely useful and we will act on them."
+        }
+      ]
+    },
+
+    "disclaimer": {
+      "title": "Disclaimer",
+      "lead": "Limits on the catalogue content, product imagery, and cultural information on this site.",
+      "updated": "14 August 2026",
+      "sections": [
+        {
+          "heading": "Site status",
+          "body": "Kainku is a demonstration build. It shows a complete fabric-shopping flow, but it does not run a real shop.",
+          "list": [
+            "Prices, stock figures, and time estimates are illustrative",
+            "No payment is processed through this site",
+            "No order is cut or dispatched",
+            "Order data exists only in the visitor's own browser"
+          ]
+        },
+        {
+          "heading": "Product imagery",
+          "body": "Every fabric image on this site is generated programmatically as vector artwork. These are geometric interpretations of traditional Indonesian ornament — not photographs of real cloth, and not reproductions of any particular artisan's work.\n\nBecause of this, the images cannot be used to judge the actual colour, texture, or quality of a fabric."
+        },
+        {
+          "heading": "Cultural information",
+          "body": "Notes about a motif's origin, the technique used, and its cultural background are written as general orientation for buyers. They are condensed summaries and do not replace academic sources or the accounts of the artisan communities who hold those traditions.\n\nIf you spot something inaccurate, we would be grateful for a correction through the Contact page."
+        },
+        {
+          "heading": "Motif and region names",
+          "body": "Motif names and regions of origin are given as descriptive information. Kainku claims no ownership of, representation of, or official affiliation with any craft centre, customary community, or institution named."
+        },
+        {
+          "heading": "Not professional advice",
+          "body": "The size guide and care instructions are general. For high-value projects or aged textiles, consult a tailor or a textile conservator."
+        },
+        {
+          "heading": "Outbound links",
+          "body": "This site may link to other websites. We do not control their content and are not responsible for their material or their privacy practices."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,6 @@
+// Barrel for the token layer. Every other partial starts with:
+//   @use '../abstracts' as *;
+// This emits no CSS on its own, so importing it repeatedly is free.
+@forward 'variables';
+@forward 'breakpoints';
+@forward 'mixins';

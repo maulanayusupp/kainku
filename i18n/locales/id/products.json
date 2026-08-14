@@ -1,0 +1,219 @@
+{
+  "products": {
+    "batik-tulis-parang-barong": {
+      "name": "Batik Parang Barong",
+      "tagline": "Barisan mata pedang diagonal di atas dasar indigo, dipisah garis emas bertitik.",
+      "description": "Parang adalah salah satu motif paling dikenal dari keraton Jawa: deretan bentuk melengkung yang berulang miring 45 derajat, dipisahkan pita bertitik yang disebut mlinjon. Versi barong memakai skala paling besar dalam keluarga parang, sehingga motifnya tetap terbaca meski kain dipotong pendek. Dicetak di atas katun halus 130 gsm dengan dasar indigo pekat dan garis motif warna kapas.",
+      "story": "Dalam tata busana keraton Surakarta, parang termasuk motif yang penggunaannya dahulu diatur menurut kedudukan pemakainya, dan ukuran barong adalah yang terbesar. Aturan itu kini tidak lagi mengikat, tetapi susunan diagonalnya tetap dipakai karena membuat siapa pun yang mengenakannya terlihat lebih jangkung.",
+      "bestFor": [
+        "Kemeja lengan panjang untuk acara formal",
+        "Outer panjang dan blazer tanpa lapisan",
+        "Panel dekorasi dan sarung bantal berukuran besar"
+      ],
+      "care": [
+        "Cuci tangan dengan air dingin dan sabun lerak atau deterjen tanpa pemutih",
+        "Jangan direndam lebih dari 15 menit agar warna indigo tidak luntur ke bagian terang",
+        "Jemur terbalik di tempat teduh, hindari sinar matahari langsung",
+        "Setrika suhu sedang dari sisi dalam kain"
+      ]
+    },
+
+    "tenun-ikat-sumba-tanah": {
+      "name": "Tenun Ikat Sumba Tanah",
+      "tagline": "Deretan mata panah bertepi berbayang dalam warna tanah merah dan krem gading.",
+      "description": "Ciri khas tenun ikat ada pada tepi motif yang sedikit kabur — hasil dari benang yang diikat dan dicelup sebelum ditenun, sehingga garisnya tidak pernah setajam kain cetak. Motif belah ketupat memanjang disusun berjajar di antara pita horizontal. Katun 210 gsm, cukup tebal untuk menahan bentuk namun masih bisa dijahit dengan mesin rumahan.",
+      "story": "Sumba Timur dikenal dengan tenun ikat berwarna tanah yang diperoleh dari pewarna akar dan kulit kayu. Proses mengikat benang sebelum pencelupan menuntut perhitungan sejak awal, karena motif sudah harus ditentukan ketika benang masih terurai di rangka.",
+      "bestFor": [
+        "Outer, rompi, dan jaket ringan",
+        "Pelapis bantal kursi dan sandaran",
+        "Tas jinjing dan aksesori berstruktur"
+      ],
+      "care": [
+        "Cuci tangan terpisah pada pencucian pertama karena warna dapat luruh",
+        "Gunakan air dingin dan hindari menyikat permukaan motif",
+        "Keringkan mendatar agar tenunan tidak melar",
+        "Setrika dengan kain pelapis di atasnya"
+      ]
+    },
+
+    "songket-palembang-lepus": {
+      "name": "Songket Palembang Lepus",
+      "tagline": "Jaring benang emas menutup hampir seluruh permukaan sutra merah delima.",
+      "description": "Lepus adalah ragam songket yang benang emasnya menutup nyaris seluruh bidang kain, bukan hanya bagian tepi. Motif belah ketupat bertumpuk dengan titik pusat dan silang kecil di antaranya. Ditenun di atas dasar sutra dengan benang metalik, menghasilkan kain 260 gsm yang berat, berkilau, dan jatuh dengan lipatan tegas.",
+      "story": "Songket dari Palembang secara tradisional dikerjakan dengan menyisipkan benang tambahan pada setiap baris tenunan — pekerjaan yang lambat dan menjadi alasan kain jenis ini selalu dihargai lebih tinggi daripada tenun polos. Kain ini termasuk yang paling berat di katalog kami.",
+      "bestFor": [
+        "Busana acara pernikahan dan perayaan",
+        "Selendang dan kain sarung formal",
+        "Panel aksen pada busana rancangan"
+      ],
+      "care": [
+        "Cuci kering (dry clean) sangat disarankan",
+        "Jangan diperas atau dipelintir karena dapat memutus benang metalik",
+        "Simpan digulung, bukan dilipat, agar benang emas tidak patah pada garis lipatan",
+        "Setrika suhu rendah dari sisi dalam dengan kain pelapis"
+      ]
+    },
+
+    "batik-mega-mendung-cirebon": {
+      "name": "Batik Mega Mendung",
+      "tagline": "Awan bergelombang bertingkat dari biru laut ke biru langit.",
+      "description": "Mega mendung disusun dari lengkung awan yang bertumpuk dalam beberapa gradasi warna, secara tradisional tujuh tingkat. Versi ini memakai empat tingkat biru pada katun ringan 125 gsm — jenis kain yang paling nyaman untuk cuaca panas dan paling mudah dijahit untuk pemula.",
+      "story": "Motif awan dari Cirebon ini lahir dari pertemuan pesisir Jawa dengan pedagang Tiongkok, terlihat dari bentuk awan bergulung yang lazim dalam seni Tiongkok namun diberi susunan warna bertingkat khas pesisir utara Jawa.",
+      "bestFor": [
+        "Kemeja dan blus harian",
+        "Dress musim panas dan rok lipit",
+        "Sarung bantal dan tirai ringan"
+      ],
+      "care": [
+        "Boleh dicuci mesin dengan program lembut di dalam kantong cuci",
+        "Gunakan air dingin dan deterjen tanpa pemutih",
+        "Jemur di tempat teduh agar gradasi biru tidak memudar",
+        "Setrika suhu sedang saat kain masih sedikit lembap"
+      ]
+    },
+
+    "lurik-yogya-klasik": {
+      "name": "Lurik Yogya Klasik",
+      "tagline": "Garis lungsi selebar berbeda-beda dalam warna krem, cokelat tua, dan bata.",
+      "description": "Lurik dibuat dari susunan garis vertikal yang lebarnya dihitung satu per satu saat menyusun benang lungsi. Tidak ada motif yang dicetak — seluruh polanya berasal dari urutan warna benang. Katun 210 gsm dengan lebar 90 cm, yaitu lebar khas alat tenun bukan mesin.",
+      "story": "Lurik pernah menjadi kain kerja sehari-hari di Jawa Tengah, dipakai justru karena sederhana dan tahan lama. Nama tiap ragam garisnya diambil dari benda sehari-hari, seperti telu-pat untuk susunan tiga dan empat garis.",
+      "bestFor": [
+        "Kemeja santai dan celana longgar",
+        "Celemek, sarung bantal, dan taplak",
+        "Pelapis buku dan kemasan kain"
+      ],
+      "care": [
+        "Cuci mesin dengan air dingin, program normal",
+        "Cuci sebelum dipotong karena katun tenun tangan menyusut 3–5%",
+        "Boleh dikeringkan dengan mesin pada suhu rendah",
+        "Setrika suhu sedang searah garis"
+      ]
+    },
+
+    "ulos-batak-ragidup": {
+      "name": "Ulos Ragidup",
+      "tagline": "Pita merah dan krem berselang dengan panel segitiga pada latar hitam.",
+      "description": "Susunan ulos dibaca dari pita-pita horizontalnya: bidang gelap yang lebar diselingi garis tipis merah dan emas, lalu ditutup panel bermotif segitiga di kedua ujung. Katun 230 gsm dengan tenunan padat sehingga kain terasa kokoh dan tidak transparan.",
+      "story": "Ragidup adalah salah satu ulos yang paling rumit susunannya karena panel ujungnya ditenun terpisah lalu disambungkan. Dalam adat Batak Toba, ulos memiliki peran pada berbagai upacara kehidupan, dan jenis yang diberikan disesuaikan dengan acaranya.",
+      "bestFor": [
+        "Selendang dan syal berstruktur",
+        "Pelapis kursi dan panel dinding",
+        "Aksen pada tas dan sepatu"
+      ],
+      "care": [
+        "Cuci tangan dengan air dingin, jangan direndam lama",
+        "Pisahkan dari kain berwarna terang pada pencucian pertama",
+        "Keringkan mendatar di tempat teduh",
+        "Setrika dengan kain pelapis, hindari bagian jumbai"
+      ]
+    },
+
+    "tenun-endek-bali-giri": {
+      "name": "Tenun Endek Bali Giri",
+      "tagline": "Belah ketupat emas berjajar rapat di atas dasar hijau jamrud.",
+      "description": "Endek memakai teknik ikat hanya pada benang pakan, sehingga motifnya lebih kecil dan lebih rapat dibanding ikat ganda. Belah ketupat disusun dalam kisi teratur dengan aksen terakota di antaranya. Campuran katun dan rayon 160 gsm membuat kain jatuh lembut namun tetap menahan bentuk lipatan.",
+      "story": "Endek dipakai luas di Bali untuk busana ke pura maupun seragam, dan pada 2021 pemerintah daerah mendorong pemakaiannya melalui surat edaran penggunaan endek pada hari tertentu. Hasilnya, motif endek kini banyak diproduksi dalam warna-warna baru.",
+      "bestFor": [
+        "Kemeja formal dan atasan berkerah",
+        "Rok dan celana kulot",
+        "Selendang dan aksen busana adat"
+      ],
+      "care": [
+        "Cuci tangan atau mesin program lembut dengan air dingin",
+        "Hindari pemutih dan pelembut berbahan asam",
+        "Jemur terbalik di tempat teduh",
+        "Setrika suhu rendah karena rayon peka terhadap panas"
+      ]
+    },
+
+    "sasirangan-banjar-gelombang": {
+      "name": "Sasirangan Gelombang",
+      "tagline": "Riak jahitan perintang dalam magenta, ungu, dan kuning kunyit.",
+      "description": "Sasirangan dibuat dengan menjelujur kain mengikuti pola, menarik benangnya rapat, lalu mencelupkannya — bagian yang terjepit jahitan menolak warna dan meninggalkan garis bergelombang. Karena tarikan benang tidak pernah persis sama, tiap potong kain memiliki riak yang sedikit berbeda. Katun 140 gsm.",
+      "story": "Nama sasirangan berasal dari kata menyirang, yang berarti menjelujur. Kain ini berasal dari Kalimantan Selatan dan secara tradisional dibuat dalam jumlah kecil sesuai pesanan, karena tiap pola harus dijelujur ulang dari awal.",
+      "bestFor": [
+        "Blus dan kemeja santai",
+        "Selendang dan kerudung",
+        "Sarung bantal dan taplak meja"
+      ],
+      "care": [
+        "Cuci tangan terpisah pada tiga pencucian pertama",
+        "Gunakan air dingin dan sabun ringan tanpa pemutih",
+        "Jangan disikat pada bagian bergelombang",
+        "Setrika suhu sedang dari sisi dalam"
+      ]
+    },
+
+    "batik-kawung-solo-sogan": {
+      "name": "Batik Kawung Sogan",
+      "tagline": "Empat elips bertaut membentuk kisi rapat dalam warna sogan cokelat.",
+      "description": "Kawung tersusun dari empat bentuk elips yang saling bertaut mengelilingi satu titik pusat, berulang membentuk kisi. Karena polanya kecil dan teratur, kawung termasuk motif yang paling mudah dipadukan. Diwarnai dalam nuansa sogan — cokelat kekuningan yang secara tradisional diperoleh dari kulit kayu soga. Katun 128 gsm.",
+      "story": "Kawung termasuk motif tertua yang tercatat di Jawa dan kerap dikaitkan dengan bentuk buah aren yang dibelah. Susunannya yang serba teratur membuat motif ini banyak dipakai sebagai kain dasar sebelum diberi ragam hias lain.",
+      "bestFor": [
+        "Kemeja kantor dan seragam",
+        "Rok, celana, dan dress potongan lurus",
+        "Pelapis buku dan kemasan"
+      ],
+      "care": [
+        "Cuci mesin program lembut dengan air dingin",
+        "Hindari pemutih agar warna sogan tidak berubah kemerahan",
+        "Jemur di tempat teduh",
+        "Setrika suhu sedang saat kain masih lembap"
+      ]
+    },
+
+    "tapis-lampung-pucuk-rebung": {
+      "name": "Tapis Lampung Pucuk Rebung",
+      "tagline": "Pita benang emas dan deretan segitiga tunas bambu di atas biru malam.",
+      "description": "Tapis disusun sebagai rangkaian pita horizontal: garis emas rapat, deretan segitiga pucuk rebung, lalu pita bergelombang di antaranya. Benang metalik dijahitkan di atas dasar tenun katun, menghasilkan kain 275 gsm yang paling berat kedua di katalog ini.",
+      "story": "Pucuk rebung — bentuk segitiga yang meniru tunas bambu muda — adalah salah satu ragam hias yang paling sering muncul di kain Sumatera, dari tapis Lampung sampai songket Minang. Bentuk segitiga berjajar ini biasanya ditempatkan di bagian tepi kain.",
+      "bestFor": [
+        "Busana upacara dan acara adat",
+        "Panel dekorasi dan bingkai kain",
+        "Aksen tepi pada busana rancangan"
+      ],
+      "care": [
+        "Cuci kering (dry clean) saja",
+        "Simpan digulung dengan kertas bebas asam di antaranya",
+        "Jangan disetrika langsung di atas bagian berbenang emas",
+        "Hindari penyimpanan di tempat lembap agar benang metalik tidak menghitam"
+      ]
+    },
+
+    "lipa-sabbe-bugis-sengkang": {
+      "name": "Lipa' Sabbe Sengkang",
+      "tagline": "Kotak-kotak sutra merah delima dipotong garis emas dan hijau tua.",
+      "description": "Lipa' sabbe berarti sarung sutra dalam bahasa Bugis. Motifnya berupa kotak besar yang dibentuk dari perbedaan warna benang lungsi dan pakan, lalu dipotong garis tipis dengan warna kontras. Sutra 120 gsm — kain paling ringan di katalog ini, dengan kilau yang berubah mengikuti arah cahaya.",
+      "story": "Sengkang di Kabupaten Wajo, Sulawesi Selatan, dikenal sebagai pusat pertenunan sutra, termasuk pemeliharaan ulat sutranya. Ukuran kotak pada lipa' sabbe secara tradisional membedakan pemakainya, meski kini pilihannya lebih bebas.",
+      "bestFor": [
+        "Sarung dan busana acara",
+        "Kemeja dan blus berbahan ringan",
+        "Selendang dan syal"
+      ],
+      "care": [
+        "Cuci kering, atau cuci tangan sangat hati-hati dengan sampo bayi",
+        "Jangan diperas — tekan perlahan di antara handuk",
+        "Jemur mendatar di tempat teduh, jauh dari sinar langsung",
+        "Setrika suhu paling rendah dari sisi dalam"
+      ]
+    },
+
+    "tenun-troso-jepara-ombak": {
+      "name": "Tenun Troso Ombak",
+      "tagline": "Zigzag tembaga dan hijau laut yang bergerak seperti riak air.",
+      "description": "Motif zigzag pada tenun Troso dibentuk dengan mengatur urutan benang pakan sehingga garisnya naik-turun beraturan. Aksen tembaga memberi kontras hangat di atas dasar hijau laut. Campuran katun dan rayon 175 gsm, cukup ringan untuk pakaian namun tetap terasa bertekstur.",
+      "story": "Desa Troso di Jepara mengembangkan tenun sebagai kerajinan utama desanya dan dikenal karena bersedia mengerjakan motif pesanan. Karena itu ragam motif dari Troso jauh lebih beragam dibanding sentra tenun yang mempertahankan pakem tunggal.",
+      "bestFor": [
+        "Outer ringan dan kemeja santai",
+        "Rok lebar dan celana kulot",
+        "Pelapis bantal dan hiasan meja"
+      ],
+      "care": [
+        "Cuci tangan dengan air dingin dan sabun ringan",
+        "Jangan direndam bersama kain berwarna terang",
+        "Keringkan mendatar agar tenunan tidak menarik ke satu sisi",
+        "Setrika suhu rendah karena mengandung rayon"
+      ]
+    }
+  }
+}

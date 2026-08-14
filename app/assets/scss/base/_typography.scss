@@ -1,0 +1,172 @@
+@use '../abstracts' as *;
+
+// Display type is Fraunces (a variable serif with real optical sizing); body
+// copy is Plus Jakarta Sans, drawn by the Jakarta-based Tokotype foundry — a
+// deliberate nod to where the fabrics come from.
+
+.t-display {
+  font-family: $font-display;
+  font-size: $fs-display;
+  font-weight: $fw-semibold;
+  line-height: $lh-tight;
+  letter-spacing: $ls-tight;
+  font-optical-sizing: auto;
+}
+
+.t-h1 {
+  font-family: $font-display;
+  font-size: $fs-h1;
+  font-weight: $fw-semibold;
+  line-height: $lh-snug;
+  letter-spacing: $ls-tight;
+}
+
+.t-h2 {
+  font-family: $font-display;
+  font-size: $fs-h2;
+  font-weight: $fw-semibold;
+  line-height: $lh-snug;
+  letter-spacing: $ls-tight;
+}
+
+.t-h3 {
+  font-family: $font-display;
+  font-size: $fs-h3;
+  font-weight: $fw-medium;
+  line-height: $lh-snug;
+}
+
+.t-h4 {
+  font-family: $font-body;
+  font-size: $fs-h4;
+  font-weight: $fw-semibold;
+  line-height: $lh-snug;
+}
+
+.t-lead {
+  font-size: $fs-lead;
+  line-height: $lh-relaxed;
+  color: var(--c-text-muted);
+}
+
+.t-body {
+  font-size: $fs-body;
+  line-height: $lh-normal;
+}
+
+.t-sm {
+  font-size: $fs-sm;
+}
+
+.t-xs {
+  font-size: $fs-xs;
+}
+
+.t-eyebrow {
+  @include eyebrow;
+  color: var(--c-accent);
+}
+
+.t-serif-italic {
+  font-family: $font-display;
+  font-style: italic;
+  font-weight: $fw-regular;
+}
+
+.t-foil {
+  @include foil-text;
+}
+
+.t-muted {
+  color: var(--c-text-muted);
+}
+
+.t-subtle {
+  color: var(--c-text-subtle);
+}
+
+// Long-form copy blocks (legal pages, about, FAQ answers).
+.prose {
+  max-width: $container-prose;
+  color: var(--c-text-muted);
+  font-size: $fs-body;
+  line-height: $lh-relaxed;
+
+  h2 {
+    font-family: $font-display;
+    font-size: $fs-h3;
+    font-weight: $fw-semibold;
+    line-height: $lh-snug;
+    color: var(--c-text);
+    margin-block: $space-8 $space-3;
+  }
+
+  h3 {
+    font-family: $font-body;
+    font-size: $fs-h4;
+    font-weight: $fw-semibold;
+    color: var(--c-text);
+    margin-block: $space-6 $space-2;
+  }
+
+  p + p,
+  p + ul,
+  p + ol {
+    margin-top: $space-4;
+  }
+
+  ul,
+  ol {
+    margin-top: $space-4;
+    padding-left: $space-5;
+    display: grid;
+    gap: $space-2;
+  }
+
+  ul li {
+    list-style: none;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: -#{$space-5};
+      top: 0.7em;
+      width: 6px;
+      height: 6px;
+      border-radius: $radius-pill;
+      background: var(--c-accent);
+    }
+  }
+
+  ol {
+    list-style: decimal;
+
+    li::marker {
+      color: var(--c-accent);
+      font-weight: $fw-semibold;
+    }
+  }
+
+  a {
+    color: var(--c-text);
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+    text-decoration-color: var(--c-accent);
+    transition: color $dur-fast $ease-out;
+
+    @include hover {
+      color: var(--c-accent);
+    }
+  }
+
+  strong {
+    color: var(--c-text);
+    font-weight: $fw-semibold;
+  }
+
+  hr {
+    @include fade-rule;
+    margin-block: $space-7;
+  }
+}
