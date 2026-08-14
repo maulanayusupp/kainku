@@ -14,7 +14,7 @@
   min-height: 100svh;
   display: flex;
   align-items: center;
-  padding-block: calc(var(--header-h) + #{$space-8}) $space-9;
+  padding-block: calc(var(--header-total) + #{$space-8}) $space-9;
   overflow: hidden;
 }
 

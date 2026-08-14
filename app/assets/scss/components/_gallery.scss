@@ -22,7 +22,7 @@
     flex-direction: column;
     overflow: visible;
     position: sticky;
-    top: calc(var(--header-h) + #{$space-5});
+    top: calc(var(--header-total) + #{$space-5});
   }
 }
 

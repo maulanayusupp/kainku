@@ -106,6 +106,20 @@ If you need a new dynamic value, add a generated class — do not reach for `:st
 `.theme-ink` to any section flips the same variable names to the dark palette.
 Components are written once and inherit whichever theme they sit inside.
 
+`.theme-ink` sets the variables and `color` but deliberately **paints no
+background**, so it can also be applied to a transparent element (the header
+uses it to borrow the dark palette while floating over the hero). Any *solid*
+dark section must therefore also carry `.band`, which paints `var(--c-bg)` —
+or state its own background, as `.footer` does. Forgetting this is how you get
+light text on a light ground.
+
+**Header offsets.** The announcement bar and the header row sit inside one
+fixed `.header-shell`. Anything that must clear the site furniture — sticky
+sidebars, `scroll-padding-top`, `.shell__main`, the hero's top padding —
+offsets by `var(--header-total)` (`--announce-h + --header-h`), never by
+`--header-h` alone. `--header-h` is only the height of the header row.
+`.announce` has a fixed height so `--header-total` stays truthful.
+
 ---
 
 ## 6. Components

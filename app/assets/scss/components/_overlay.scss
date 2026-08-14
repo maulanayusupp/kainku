@@ -28,7 +28,7 @@
   z-index: $z-drawer;
   display: flex;
   flex-direction: column;
-  padding: calc(var(--header-h) + #{$space-5}) $gutter calc(#{$space-6} + env(safe-area-inset-bottom));
+  padding: calc(var(--header-total) + #{$space-5}) $gutter calc(#{$space-6} + env(safe-area-inset-bottom));
   background: var(--c-bg);
   overflow-y: auto;
 }

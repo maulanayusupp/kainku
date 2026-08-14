@@ -1,9 +1,16 @@
 @use '../abstracts' as *;
 
-.header {
+// The announcement bar and the header are pinned together. Previously the
+// header alone was `fixed` while the bar sat in normal flow with a higher
+// z-index, so the bar covered the top of the header and clipped the logo.
+.header-shell {
   position: fixed;
   inset: 0 0 auto;
   z-index: $z-header;
+}
+
+.header {
+  position: relative;
   transition:
     background-color $dur-base $ease-out,
     border-color $dur-base $ease-out,
@@ -11,8 +18,10 @@
   border-bottom: 1px solid transparent;
 }
 
-// Over the hero the header is transparent and inherits the ink theme; once the
-// page scrolls it frosts over.
+// Over the dark homepage hero the header carries `.theme-ink` (applied in
+// AppHeader.vue), which flips --c-text and friends to the light palette so the
+// wordmark and nav stay legible. It is dropped as soon as the page scrolls,
+// because the content behind it is cream from that point on.
 .header--scrolled {
   background: color-mix(in srgb, var(--c-bg) 82%, transparent);
   backdrop-filter: blur(14px) saturate(1.4);
@@ -262,7 +271,11 @@
 
 .announce {
   position: relative;
-  z-index: calc(#{$z-header} + 1);
+  // Fixed height keeps `--announce-h` honest, which every sticky offset on the
+  // site depends on.
+  height: var(--announce-h);
+  display: flex;
+  align-items: center;
   background: $color-ink-900;
   color: rgba($color-cream-200, 0.86);
   font-size: $fs-xxs;
@@ -295,7 +308,7 @@
   display: inline-flex;
   align-items: center;
   gap: $space-3;
-  padding: $space-2 $space-5;
+  padding-inline: $space-5;
   white-space: nowrap;
 
   &::after {

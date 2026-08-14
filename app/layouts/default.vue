@@ -21,7 +21,7 @@ const isFlush = computed(() => route.path === localePath('/') || route.path === 
   <div class="shell">
     <a :href="`#main`" class="u-skip-link">{{ t('common.skipToContent') }}</a>
 
-    <AppHeader />
+    <AppHeader :over-hero="isFlush" />
 
     <main id="main" class="shell__main" :class="isFlush && 'shell__main--flush'">
       <slot />

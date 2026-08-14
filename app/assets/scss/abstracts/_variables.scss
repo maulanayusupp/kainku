@@ -97,6 +97,9 @@ $container-prose: 44rem;
 $gutter: clamp(1.25rem, 0.6rem + 2.6vw, 3rem);
 $header-height: 4.5rem;
 $header-height-lg: 5.5rem;
+// Fixed so the header offset is deterministic; `.announce` centres its content
+// inside this height rather than being sized by its own padding.
+$announce-height: 2.25rem;
 
 // -- Radii ---------------------------------------------------------------------
 $radius-xs: 0.25rem;

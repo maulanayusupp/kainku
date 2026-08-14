@@ -4,6 +4,9 @@
   position: relative;
   overflow: hidden;
   padding-top: clamp(4rem, 3rem + 5vw, 7rem);
+  // `.theme-ink` supplies the variables but paints no background, so the
+  // footer states its own ground explicitly.
+  background: var(--c-bg);
 }
 
 // A woven texture drawn in CSS — the same warp/weft idea as the product art.

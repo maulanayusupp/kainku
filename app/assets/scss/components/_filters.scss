@@ -19,8 +19,8 @@
 
   @include mq('lg') {
     position: sticky;
-    top: calc(var(--header-h) + #{$space-5});
-    max-height: calc(100svh - var(--header-h) - #{$space-8});
+    top: calc(var(--header-total) + #{$space-5});
+    max-height: calc(100svh - var(--header-total) - #{$space-8});
     overflow-y: auto;
     padding-right: $space-2;
     @include slim-scrollbar;

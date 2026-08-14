@@ -5,10 +5,18 @@ import { useUiStore } from '~/stores/ui'
 /**
  * Fixed site header.
  *
- * Sits transparent over the homepage hero (which supplies the ink theme) and
- * frosts over once the page scrolls. The scroll listener is passive and only
- * flips a boolean, so it never blocks scrolling.
+ * The announcement bar and the header row live in one fixed wrapper so the bar
+ * can never overlap the header (it used to, clipping the logo).
+ *
+ * `overHero` is passed by the layout for pages whose first section is the dark
+ * hero. While it is set AND the page has not scrolled, the header carries
+ * `.theme-ink` so its text uses the light palette — without it the header would
+ * inherit the cream theme and render near-black text on a near-black hero. As
+ * soon as the page scrolls, the class is dropped and the header frosts over the
+ * cream content behind it.
  */
+withDefaults(defineProps<{ overHero?: boolean }>(), { overHero: false })
+
 const { t } = useI18n()
 const localePath = useLocalePath()
 const cart = useCartStore()
@@ -38,7 +46,7 @@ const announcements = computed(() => [
 </script>
 
 <template>
-  <div>
+  <div class="header-shell" :class="overHero && !isScrolled && 'theme-ink'">
     <div class="announce">
       <div class="announce__track">
         <!-- Duplicated once so the marquee can loop seamlessly at -50%. -->
