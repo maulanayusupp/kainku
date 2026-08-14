@@ -105,7 +105,13 @@ Status: `[ ]` not started · `[~]` in progress · `[x]` done
       cite them. They are currently condensed general knowledge, flagged as such
       on `/legal/disclaimer`.
 - [ ] Real Instagram link (the footer currently points at instagram.com).
-- [ ] Set `NUXT_PUBLIC_WHATSAPP` — the WhatsApp CTA is hidden while empty.
+- [ ] Set `NUXT_PUBLIC_WHATSAPP` to the shop's number in international format
+      without `+` (e.g. `62812xxxxxxx`). The WhatsApp button in the footer and
+      on the contact page stays hidden until it is set. Note this is separate
+      from WhatsApp *link previews*, which already work.
+- [ ] Point the canonical origin at a custom domain when one is registered:
+      set `NUXT_PUBLIC_SITE_URL`, then update `SITE.url` in
+      `app/constants/site.ts` and `legal.appliesToValue` in both locale files.
 
 ---
 

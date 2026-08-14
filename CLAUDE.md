@@ -227,6 +227,21 @@ plus whatever the page passes). Every page must call it.
   points at per-locale sitemaps (31 URLs each).
 - Product and collection URLs come from `server/api/__sitemap__/urls.ts`.
 
+**`og:image` must be a raster.** WhatsApp, Instagram and Facebook do not render
+SVG, so handing them a `.svg` produces a preview with *no image at all* — and
+nothing else in the pipeline notices. Every product therefore ships a generated
+1200x630 PNG card per locale (`Product.ogImage`), produced by
+`npm run assets:generate`. Two further constraints:
+
+- The URL must be **absolute** — scrapers do not resolve relative paths.
+- The file must stay under **300 KB**, which is roughly where WhatsApp stops
+  fetching the image. The generator fails the build if a card exceeds it.
+
+`npm run check` validates all of this against the **built** output (`.output/`),
+not the page source — the image path is assembled in `app/data/products.ts`, so
+a source-level check cannot see it. Run `npm run build` before `npm run check`
+for that assertion to execute.
+
 ---
 
 ## 12. Cart & checkout

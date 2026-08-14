@@ -33,8 +33,22 @@ export function useSeo(input: MaybeRefOrGetter<SeoInput>) {
 
   const absoluteUrl = computed(() => `${siteUrl.replace(/\/$/, '')}${route.path}`)
 
+  /**
+   * Absolute URL of the preview image.
+   *
+   * Social scrapers (WhatsApp, Instagram, Facebook, Telegram) all require an
+   * ABSOLUTE url and a RASTER format — none of them render SVG, so a page that
+   * hands them a `.svg` gets a preview with no image at all. Anything passed in
+   * must therefore be a PNG/JPEG; `og-default.png` is the fallback.
+   */
   const imageUrl = computed(() => {
     const image = resolved.value.image ?? '/images/brand/og-default.png'
+    if (import.meta.dev && /\.svgz?($|\?)/i.test(image)) {
+      console.warn(
+        `[useSeo] og:image "${image}" is an SVG. WhatsApp, Instagram and Facebook ` +
+          'will show no preview image. Point this at a PNG instead.',
+      )
+    }
     return image.startsWith('http') ? image : `${siteUrl.replace(/\/$/, '')}${image}`
   })
 
@@ -57,11 +71,17 @@ export function useSeo(input: MaybeRefOrGetter<SeoInput>) {
     ogDescription: () => resolved.value.description,
     ogUrl: () => absoluteUrl.value,
     ogImage: () => imageUrl.value,
+    // WhatsApp reads `og:image:secure_url` in preference to `og:image`, and
+    // several scrapers skip an image whose type/dimensions are not declared.
+    ogImageSecureUrl: () => imageUrl.value,
+    ogImageType: 'image/png',
     ogImageWidth: 1200,
     ogImageHeight: 630,
     ogImageAlt: () => resolved.value.title,
     ogSiteName: SITE.name,
     ogLocale: () => (locale.value === 'id' ? 'id_ID' : 'en_US'),
+    // Lets Facebook/WhatsApp know the page exists in the other language too.
+    ogLocaleAlternate: () => (locale.value === 'id' ? 'en_US' : 'id_ID'),
 
     twitterCard: 'summary_large_image',
     twitterTitle: () => `${resolved.value.title} · ${SITE.name}`,

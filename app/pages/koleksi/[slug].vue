@@ -4,7 +4,7 @@ import { CATEGORIES, getProductsByCategory } from '~/services/product.service'
 import type { ProductCategory } from '~/types/product'
 
 const route = useRoute()
-const { t } = useI18n()
+const { t, locale } = useI18n()
 const config = useRuntimeConfig()
 const localePath = useLocalePath()
 const { altFor } = useProductContent()
@@ -27,7 +27,8 @@ const crumbs = computed(() => [
 useSeo(() => ({
   title: t('seo.collection.title', { name: t(`catalogue.category.${slug.value}`) }),
   description: t(`collections.blurb.${slug.value}`),
-  image: cover.value?.images[0]?.src,
+  // Raster, not the SVG swatch — see the PDP for why.
+  image: cover.value?.ogImage[locale.value === 'en' ? 'en' : 'id'],
   jsonLd: [
     breadcrumbJsonLd(
       [

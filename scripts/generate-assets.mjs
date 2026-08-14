@@ -14,7 +14,7 @@
  *
  * Usage: npm run assets:generate
  */
-import { mkdir, writeFile } from 'node:fs/promises'
+import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import sharp from 'sharp'
@@ -211,6 +211,97 @@ function ogImage() {
 }
 
 /* -------------------------------------------------------------------------- */
+/* Per-product social cards                                                   */
+/* -------------------------------------------------------------------------- */
+
+/** Escapes text destined for an SVG text node. */
+const xml = (value) =>
+  String(value).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+
+/** Greedy word wrap — SVG <text> does not wrap on its own. */
+function wrap(text, maxChars) {
+  const lines = []
+  let line = ''
+  for (const word of String(text).split(/\s+/)) {
+    const candidate = line ? `${line} ${word}` : word
+    if (candidate.length > maxChars && line) {
+      lines.push(line)
+      line = word
+    } else {
+      line = candidate
+    }
+  }
+  if (line) lines.push(line)
+  return lines
+}
+
+/**
+ * A 1200x630 card per product per locale.
+ *
+ * This exists because WhatsApp, Instagram and Facebook do NOT render SVG in
+ * `og:image` — pointing them at the product's vector swatch produces a preview
+ * with no image at all. Every `og:image` the site advertises must be a raster.
+ *
+ * Kept filter-free (no feTurbulence, no mask) so sharp rasterises it reliably,
+ * and deliberately simple so the PNG compresses well: WhatsApp silently drops
+ * preview images over roughly 300 KB.
+ */
+function productOgCard(item, name, kicker) {
+  const W = 1200
+  const H = 630
+  const ids = idsFor(item.slug, 'ogcard')
+  const foil = item.foil ?? ['#7d5f12', '#f6e3a1', '#c9a227']
+
+  const nameLines = wrap(name, 17)
+  // Shrink the display size when a name needs three lines so it always fits.
+  const size = nameLines.length > 2 ? 54 : 66
+  const startY = 300 - (nameLines.length - 1) * (size * 0.55)
+
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}">
+  <defs>
+    ${foilGradient(ids.foil, ...foil)}
+    ${buildPattern(item, ids.pattern, ids.foil).defs}
+    <!-- Holds ~0.95 opacity across the whole text column so a bright motif
+         (songket, lipa' sabbe) cannot swallow the end of the tagline, then
+         releases quickly so the fabric still reads on the right. -->
+    <linearGradient id="${ids.sheen}" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="${BRAND.inkDeep}" stop-opacity="0.97"/>
+      <stop offset="58%" stop-color="${BRAND.inkDeep}" stop-opacity="0.95"/>
+      <stop offset="80%" stop-color="${BRAND.inkDeep}" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="${BRAND.inkDeep}" stop-opacity="0.14"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="${W}" height="${H}" fill="${item.colors.base}"/>
+  <g transform="scale(2.1)">
+    <rect width="${W / 2.1}" height="${H / 2.1}" fill="url(#${ids.pattern})"/>
+  </g>
+  <rect width="${W}" height="${H}" fill="url(#${ids.sheen})"/>
+
+  <g transform="translate(72 68)">
+    <rect width="52" height="52" rx="12" fill="${BRAND.gold}"/>
+    <g fill="${BRAND.ink}" transform="scale(0.8125)">
+      <rect x="15" y="14" width="7" height="36" rx="2"/>
+      <path d="M28 31.5 L41.5 14 H50 L35.5 32.5 L50 50 H41.3 L28 33 Z"/>
+    </g>
+    <text x="70" y="24" font-family="Georgia, serif" font-size="27" font-weight="700" fill="${BRAND.cream}">Kainku</text>
+    <text x="70" y="45" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="${BRAND.gold}" letter-spacing="3">KAIN NUSANTARA</text>
+  </g>
+
+  <text font-family="Georgia, serif" font-size="${size}" font-weight="700" fill="${BRAND.cream}">
+    ${nameLines
+      .map((line, i) => `<tspan x="72" y="${startY + i * size * 1.16}">${xml(line)}</tspan>`)
+      .join('')}
+  </text>
+
+  <text x="72" y="${startY + nameLines.length * size * 1.16 + 22}" font-family="Helvetica, Arial, sans-serif" font-size="23" fill="#c8d0dd">${xml(kicker)}</text>
+
+  <rect x="72" y="${H - 96}" width="150" height="4" fill="${BRAND.goldDeep}"/>
+  <text x="72" y="${H - 56}" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="${BRAND.gold}" letter-spacing="2">${xml(item.region ?? '')}</text>
+</svg>`
+}
+
+/* -------------------------------------------------------------------------- */
 /* ICO container                                                              */
 /* -------------------------------------------------------------------------- */
 
@@ -253,6 +344,37 @@ async function write(relPath, contents) {
   return relPath
 }
 
+/**
+ * Social cards need copy, which lives outside this script by design: names and
+ * taglines are in the locale files, regions are in the catalogue data. Rather
+ * than duplicating either, we read them back — the same approach
+ * `scripts/check-i18n.mjs` takes, and `npm run check` keeps all three in sync.
+ */
+async function loadCardCopy() {
+  const productsSource = await readFile(join(ROOT, 'app/data/products.ts'), 'utf8')
+  const regions = new Map(
+    [...productsSource.matchAll(/slug: '([^']+)',\s*category: '[^']+',\s*region: '([^']+)'/g)].map(
+      (match) => [match[1], match[2]],
+    ),
+  )
+
+  const locales = {}
+  for (const locale of ['id', 'en']) {
+    const raw = await readFile(join(ROOT, `i18n/locales/${locale}/products.json`), 'utf8')
+    locales[locale] = JSON.parse(raw).products ?? {}
+  }
+
+  return { regions, locales }
+}
+
+/** Trims a tagline to one line on the card without cutting mid-word. */
+function shorten(text, max = 62) {
+  if (!text || text.length <= max) return text ?? ''
+  const cut = text.slice(0, max)
+  const space = cut.lastIndexOf(' ')
+  return `${(space > max * 0.6 ? cut.slice(0, space) : cut).replace(/[,;:—-]$/, '').trim()}…`
+}
+
 async function main() {
   const written = []
 
@@ -261,6 +383,41 @@ async function main() {
     written.push(await write(`images/products/${item.slug}-drape.svg`, drapeView(item)))
     written.push(await write(`images/products/${item.slug}-macro.svg`, macroView(item)))
     written.push(await write(`images/products/${item.slug}-fold.svg`, foldView(item)))
+  }
+
+  // -- Per-product social cards (raster; SVG is not accepted as og:image) -------
+  const { regions, locales } = await loadCardCopy()
+  let largestCard = 0
+
+  for (const item of CATALOG) {
+    for (const locale of ['id', 'en']) {
+      const copy = locales[locale][item.slug]
+      if (!copy) throw new Error(`Missing ${locale} copy for ${item.slug} — run \`npm run check\``)
+
+      const svg = productOgCard(
+        { ...item, region: regions.get(item.slug) ?? '' },
+        copy.name,
+        shorten(copy.tagline),
+      )
+      const png = await sharp(Buffer.from(svg), { density: 144 })
+        .resize(1200, 630)
+        .png({ compressionLevel: 9, palette: true })
+        .toBuffer()
+
+      largestCard = Math.max(largestCard, png.length)
+      const suffix = locale === 'id' ? '' : `-${locale}`
+      written.push(await write(`images/products/${item.slug}-og${suffix}.png`, png))
+    }
+  }
+
+  // WhatsApp silently drops preview images above roughly 300 KB, so this is a
+  // hard budget rather than a nice-to-have.
+  const budgetKb = 300
+  const largestKb = Math.round(largestCard / 1024)
+  if (largestKb > budgetKb) {
+    throw new Error(
+      `Largest social card is ${largestKb} KB, over the ${budgetKb} KB WhatsApp preview budget.`,
+    )
   }
 
   // -- Brand marks -------------------------------------------------------------
@@ -324,6 +481,7 @@ async function main() {
 
   console.log(`Generated ${written.length} asset(s) into public/`)
   console.log(`  ${CATALOG.length} products x 3 views = ${CATALOG.length * 3} SVG swatches`)
+  console.log(`  ${CATALOG.length * 2} social cards (id + en), largest ${largestKb} KB / ${budgetKb} KB budget`)
 }
 
 main().catch((error) => {

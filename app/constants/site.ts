@@ -6,7 +6,7 @@
 export const SITE = {
   name: 'Kainku',
   /** Canonical origin. Override per-environment via NUXT_PUBLIC_SITE_URL. */
-  url: 'https://kainku.id',
+  url: 'https://kainku.vercel.app',
   defaultLocale: 'id',
   contactEmail: 'maulanayusupp@gmail.com',
   owner: 'Maulana Yusup Abdullah',

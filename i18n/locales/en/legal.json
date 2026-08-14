@@ -2,7 +2,7 @@
   "legal": {
     "lastUpdated": "Last updated",
     "appliesTo": "Applies to",
-    "appliesToValue": "kainku.id and all of its pages",
+    "appliesToValue": "kainku.vercel.app and all of its pages",
     "questions": "Questions about this document? Get in touch through our {contact} page.",
 
     "overview": {

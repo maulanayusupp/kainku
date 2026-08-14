@@ -4,7 +4,7 @@ import { getProductBySlug, getRelatedProducts } from '~/services/product.service
 import { normalizeMeters } from '~/services/cart.service'
 
 const route = useRoute()
-const { t } = useI18n()
+const { t, locale } = useI18n()
 const config = useRuntimeConfig()
 const localePath = useLocalePath()
 const { price, meters, discountPercent } = useFormat()
@@ -59,7 +59,8 @@ const siteUrl = (config.public.siteUrl as string) || SITE.url
 useSeo(() => ({
   title: content.value.name,
   description: content.value.tagline,
-  image: item.value.images[0]!.src,
+  // Raster, not the SVG swatch: WhatsApp/Instagram/Facebook ignore SVG.
+  image: item.value.ogImage[locale.value === 'en' ? 'en' : 'id'],
   type: 'product',
   jsonLd: [
     {

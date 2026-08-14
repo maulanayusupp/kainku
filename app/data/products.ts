@@ -13,6 +13,12 @@ import type { Product, ProductImage } from '~/types/product'
  * `npm run check` asserts that all three stay in sync.
  */
 
+/** Raster social cards, one per locale — see `Product.ogImage`. */
+const cards = (slug: string): Record<'id' | 'en', string> => ({
+  id: `/images/products/${slug}-og.png`,
+  en: `/images/products/${slug}-og-en.png`,
+})
+
 const views = (slug: string): ProductImage[] => [
   { src: `/images/products/${slug}-drape.svg`, viewKey: 'drape', width: 900, height: 1200 },
   { src: `/images/products/${slug}-macro.svg`, viewKey: 'macro', width: 1000, height: 1000 },
@@ -35,6 +41,7 @@ export const PRODUCTS: Product[] = [
     stepMeters: 0.5,
     stockMeters: 24,
     images: views('batik-tulis-parang-barong'),
+    ogImage: cards('batik-tulis-parang-barong'),
     badge: 'terbatas',
     featured: true,
     addedAt: '2026-05-18',
@@ -54,6 +61,7 @@ export const PRODUCTS: Product[] = [
     stepMeters: 0.5,
     stockMeters: 38,
     images: views('tenun-ikat-sumba-tanah'),
+    ogImage: cards('tenun-ikat-sumba-tanah'),
     featured: true,
     addedAt: '2026-04-02',
   },
@@ -72,6 +80,7 @@ export const PRODUCTS: Product[] = [
     stepMeters: 0.5,
     stockMeters: 9,
     images: views('songket-palembang-lepus'),
+    ogImage: cards('songket-palembang-lepus'),
     badge: 'terbatas',
     featured: true,
     addedAt: '2026-06-11',
@@ -92,6 +101,7 @@ export const PRODUCTS: Product[] = [
     stepMeters: 0.5,
     stockMeters: 120,
     images: views('batik-mega-mendung-cirebon'),
+    ogImage: cards('batik-mega-mendung-cirebon'),
     badge: 'favorit',
     featured: true,
     addedAt: '2026-03-21',
@@ -111,6 +121,7 @@ export const PRODUCTS: Product[] = [
     stepMeters: 0.5,
     stockMeters: 165,
     images: views('lurik-yogya-klasik'),
+    ogImage: cards('lurik-yogya-klasik'),
     featured: false,
     addedAt: '2026-02-08',
   },
@@ -129,6 +140,7 @@ export const PRODUCTS: Product[] = [
     stepMeters: 0.5,
     stockMeters: 22,
     images: views('ulos-batak-ragidup'),
+    ogImage: cards('ulos-batak-ragidup'),
     featured: false,
     addedAt: '2026-05-04',
   },
@@ -147,6 +159,7 @@ export const PRODUCTS: Product[] = [
     stepMeters: 0.5,
     stockMeters: 64,
     images: views('tenun-endek-bali-giri'),
+    ogImage: cards('tenun-endek-bali-giri'),
     badge: 'baru',
     featured: true,
     addedAt: '2026-07-30',
@@ -166,6 +179,7 @@ export const PRODUCTS: Product[] = [
     stepMeters: 0.5,
     stockMeters: 88,
     images: views('sasirangan-banjar-gelombang'),
+    ogImage: cards('sasirangan-banjar-gelombang'),
     featured: false,
     addedAt: '2026-06-26',
   },
@@ -185,6 +199,7 @@ export const PRODUCTS: Product[] = [
     stepMeters: 0.5,
     stockMeters: 74,
     images: views('batik-kawung-solo-sogan'),
+    ogImage: cards('batik-kawung-solo-sogan'),
     badge: 'favorit',
     featured: false,
     addedAt: '2026-01-19',
@@ -204,6 +219,7 @@ export const PRODUCTS: Product[] = [
     stepMeters: 0.5,
     stockMeters: 12,
     images: views('tapis-lampung-pucuk-rebung'),
+    ogImage: cards('tapis-lampung-pucuk-rebung'),
     badge: 'terbatas',
     featured: false,
     addedAt: '2026-04-27',
@@ -223,6 +239,7 @@ export const PRODUCTS: Product[] = [
     stepMeters: 0.5,
     stockMeters: 31,
     images: views('lipa-sabbe-bugis-sengkang'),
+    ogImage: cards('lipa-sabbe-bugis-sengkang'),
     featured: true,
     addedAt: '2026-07-09',
   },
@@ -241,6 +258,7 @@ export const PRODUCTS: Product[] = [
     stepMeters: 0.5,
     stockMeters: 0,
     images: views('tenun-troso-jepara-ombak'),
+    ogImage: cards('tenun-troso-jepara-ombak'),
     badge: 'baru',
     featured: false,
     addedAt: '2026-08-01',
