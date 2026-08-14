@@ -16,7 +16,10 @@
     "typecheck": "nuxt typecheck",
     "assets:generate": "node scripts/generate-assets.mjs",
     "i18n:check": "node scripts/check-i18n.mjs",
-    "check": "node scripts/check-i18n.mjs"
+    "check": "node scripts/check-i18n.mjs",
+    "test": "node scripts/test-reveal.mjs",
+    "test:reveal": "node scripts/test-reveal.mjs",
+    "verify": "npm run typecheck && npm run check && npm run test"
   },
   "dependencies": {
     "@nuxt/fonts": "^0.14.0",
@@ -29,6 +32,8 @@
     "vue": "3.5.41"
   },
   "devDependencies": {
+    "esbuild": "0.25.12",
+    "happy-dom": "20.0.0",
     "sass-embedded": "1.102.0",
     "sharp": "0.35.3",
     "typescript": "5.9.3",

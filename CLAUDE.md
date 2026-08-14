@@ -41,6 +41,8 @@ npm run build            # production build (prerenders 142 routes)
 npm run preview          # serve the build
 npm run typecheck        # vue-tsc — MUST be 0 errors before committing
 npm run check            # project consistency gate (see §8)
+npm run test             # headless tests (see §16)
+npm run verify           # typecheck + check + test, in one go
 npm run assets:generate  # regenerate all product artwork + favicons
 ```
 
@@ -267,11 +269,51 @@ Do not attribute commits to an AI agent. Commit and push each completed change.
 
 ---
 
-## 15. Before you commit
+## 15. Scroll reveal — an invariant worth knowing
+
+`[data-reveal]` elements start at `opacity: 0` and are revealed by
+`app/utils/reveal.ts`. **A target the controller fails to register does not lose
+its animation — it stays invisible.** On a page where every section is a reveal
+target, that reads as a completely blank page.
+
+This already bit once. The controller used to re-scan on `router.afterEach`,
+which is too early: with `pageTransition: { mode: 'out-in' }` the incoming page
+mounts only *after* the outgoing one finishes leaving, so the scan ran against a
+DOM that did not yet contain the new route. Symptom: blank on client-side
+navigation, correct after a hard reload.
+
+Two independent guards now prevent it, and both are covered by `npm run test`:
+
+1. A **MutationObserver** on `#main` — fires when the new DOM actually lands and
+   cannot be out-raced by a transition of any duration.
+2. A **timed failsafe** — anything already inside the viewport is revealed even
+   if the IntersectionObserver never delivers. Below-the-fold targets are left
+   alone so the effect still works.
+
+If you change the page transition, the reveal timing, or the layout structure,
+run `npm run test` — the suite reproduces the exact `out-in` timing.
+
+---
+
+## 16. Tests
+
+`app/utils/reveal.ts` is deliberately free of Vue and Nuxt imports so it can be
+driven headlessly; `useScrollReveal()` is only a lifecycle wrapper. Follow that
+pattern — put logic in `utils/` or `services/` and keep composables thin, and it
+stays testable.
+
+`scripts/test-reveal.mjs` runs on happy-dom, compiling the TypeScript through
+esbuild in memory. It supplies its own IntersectionObserver so intersection
+delivery can be withheld, which is how the failsafe is exercised.
+
+Broader coverage is still outstanding — see `TODO.md` §P3.
+
+---
+
+## 17. Before you commit
 
 ```bash
-npm run typecheck   # must be 0 errors
-npm run check       # must pass
+npm run verify      # typecheck + consistency check + tests
 npm run build       # must complete with no warnings
 ```
 

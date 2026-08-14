@@ -72,13 +72,17 @@ Status: `[ ]` not started · `[~]` in progress · `[x]` done
 
 ## P3 — engineering
 
-- [ ] **Tests.** No test suite exists yet. Highest-value targets first:
-      `cart.service` (`normalizeMeters`, `calculateTotals`, free-shipping
-      threshold), `utils/validate`, `utils/format`, `product.service` filtering
-      and sorting. Then component tests for `BaseQuantity` and the checkout form.
+- [~] **Tests.** A headless harness exists (`npm run test`, happy-dom +
+      esbuild) and currently covers `app/utils/reveal.ts` — added after a
+      scroll-reveal regression rendered pages blank on client-side navigation.
+      Remaining high-value targets, in order: `cart.service`
+      (`normalizeMeters`, `calculateTotals`, free-shipping threshold),
+      `utils/validate`, `utils/format`, `product.service` filtering and
+      sorting. Then component tests for `BaseQuantity` and the checkout form.
+      Consider moving to Vitest once there is more than one suite.
 - [ ] ESLint + Prettier config and a pre-commit hook. Code is written to a
       consistent style but nothing enforces it.
-- [ ] CI: run `typecheck`, `check`, and `build` on every push.
+- [ ] CI: run `npm run verify` and `npm run build` on every push.
 - [ ] Move `app/data/products.ts` behind a CMS or database; `services/` is
       already the seam for this — make the functions async and nothing else
       needs to change.
