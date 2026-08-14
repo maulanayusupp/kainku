@@ -35,3 +35,17 @@ pnpm-debug.log*
 .cache/
 .temp/
 .eslintcache
+
+# -----------------------------------------------------------------------------
+# Re-include files excluded by a global gitignore
+# -----------------------------------------------------------------------------
+# ~/.gitignore_global on this machine lists `README.md` and `package-lock.json`.
+# A repository .gitignore takes precedence over core.excludesFile, so these
+# negations bring both back for THIS project. Without them the repo ships with
+# no README and no lockfile, and neither absence is visible in `git status`.
+#
+# The lockfile is kept deliberately: this project pins Nuxt to 4.3.1 because
+# 4.4+ requires Node >=22.19 (see CLAUDE.md §2), and the lockfile is what makes
+# the rest of the dependency tree reproducible on a fresh install.
+!README.md
+!package-lock.json
